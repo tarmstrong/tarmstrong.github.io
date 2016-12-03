@@ -1,0 +1,78 @@
+<html>
+<head>
+  <style type='text/css'>
+    body {
+      font-family: courier;
+    }
+  </style>
+
+  <script src="processing.js"></script>
+  <script src="tavishlib.js"></script>
+</head>
+<body>
+
+<h1 align='center'>Draw Circles</h1>
+<p align='center'><canvas id="canvas1" width="800" height="500"></canvas></p>
+
+<script id="script1" type="text/javascript">
+function sketchProc($) {
+  $.setup = function () {
+    var i;
+
+    $.frameRate(160);
+    Tavish.randomBG($);
+
+    for (i=0; i < 3; i+=1) {
+      Tavish.randomFG($);
+      $.text('Click to start!', 100 + i*100, 100 + i*100);
+    }
+  };
+
+  var i=0;
+  var startx=0, starty=0;
+  var wait = true;
+
+  var restartFG = function () {
+      i = 0;
+      Tavish.randomFG($);
+  };
+
+  $.draw = function() {
+    if (wait === true) { return; } 
+
+    i += 1;
+
+    
+    startx = $.mouseX; starty = $.mouseY;
+
+    
+    
+    var size = 5 + Math.sin(parseFloat(i)/100)*55;
+    $.ellipse(startx, starty, size, size);
+
+    
+    if (i > 400) {
+      Tavish.randomBG($);
+      restartFG();
+    }
+  };
+
+  
+  $.mousePressed = function () {
+    i = 0;
+    wait = !wait;
+    restartFG();
+  };
+}
+
+var canvas = document.getElementById("canvas1");
+
+var p = new Processing(canvas, sketchProc);
+
+</script>
+
+<div style="height:0px;width:0px;overflow:hidden;"></div>
+
+</body>
+</html>
+

@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/index.xml</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://example.org/a-semi-coherent-review-of-pycon-canada-2012/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/a-semi-coherent-review-of-pycon-canada-2012/</guid>
+      <description>
+
+&lt;p&gt;Title: A Semi-Coherent Review of PyCon Canada 2012
+Date: 2012-11-27 17:20
+Author: Tavish Armstrong
+Tags: code, tech&lt;/p&gt;
+
+&lt;p&gt;Two weeks ago I was foolish enough to take a few days to escape from
+university life long enough to go to &lt;a href=&#34;http://pycon.ca&#34;&gt;PyCon Canada&lt;/a&gt;, a
+nice little conference in Toronto that can only be described with words
+that end with exclamation marks: &lt;em&gt;fantastic!&lt;/em&gt;, &lt;em&gt;awesome!&lt;/em&gt;, etc. I’m no
+veteran of tech conferences — this was, I think, the ninth I’ve ever
+attended&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fn1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:fn1&#34;&gt;0&lt;/a&gt;&lt;/sup&gt;^ — so I have a narrow view of what conferences can
+look like.&lt;/p&gt;
+
+&lt;p&gt;This was, however, the first non-student conference I’ve been to without
+it being related to work. That was &lt;em&gt;nice&lt;/em&gt; — I could just relax and watch
+the talks and hang out with fellow Python enthusiasts like my friend
+(and former co-worker) &lt;a href=&#34;http://j-vk.com&#34;&gt;Jon “VK” Villemaire-Krajden&lt;/a&gt;.
+That also drew attention to something I noticed about the conference: it
+was delightfully non-commercial, as far as conferences go. Sure, there
+were sponsors, and the sponsors said things at the microphone, and there
+was an area where you could schmooze with the sponsors — but on the
+whole, it felt like a conference of enthusiasts and open source people,
+not people trying to sell things.&lt;/p&gt;
+
+&lt;h3 id=&#34;people-who-spoke-words&#34;&gt;People who spoke words&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pyvideo.org/video/1560/saturday-morning-keynote&#34;&gt;Jessica
+McKellar&lt;/a&gt;
+started things off with a talk on fostering a welcoming open source
+community. Near the beginning of her talk, she told a story about her
+time as an instructor at Hacker School: they took a few whiteboards and
+wrote questions on them like “What are your fears as a programmer?” She
+showed a slide with a bunch of students’ answers and it &lt;em&gt;really&lt;/em&gt;
+resonated with me.&lt;/p&gt;
+
+&lt;p&gt;Sometimes programming is hard because it is hard, and sometimes
+programming is hard because of seemingly silly, trivial emotions.
+Sometimes programming is hard because you’re afraid of breaking
+something. Or because you’re afraid of looking stupid on the internet.
+Or because you’re afraid of looking stupid &lt;em&gt;off&lt;/em&gt; the internet.
+Recognizing these things and talking about these things is more
+important than it sounds. To me, seeing this really smart open source
+hacker on a stage talk about these things and admit that they, too, are
+afraid of not being smart enough is so much more encouraging than just
+knowing that I &lt;em&gt;can&lt;/em&gt; contribute to open source.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=8gkrE6q9Tzw&#34;&gt;Michael Feathers&lt;/a&gt; spoke
+about functional programming. I’ve been drinking the FP Kool-Aid for a
+while now, so it wasn’t a mind-blowing talk for me; but he had a way
+with words and said what other people have been saying, but &lt;em&gt;better&lt;/em&gt;.
+I’m not sure what his exact words are, but he said something along the
+lines of “these functional things are cool because you need to learn
+them only once,” that is, a lot of those functional programming tools
+that people talk about are pre-packaged general, common algorithms.
+Sure, you can get the job done in two nested for-loops, but maybe using
+someone *else*’s for-loops will work out better?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pyvideo.org/video/1605/science-and-python-retrospective-of-a-mostly-s&#34;&gt;Fernando
+Perez&lt;/a&gt;
+ended the conference on a high note with his talk on the IPython
+Notebook, a browser-based tool for Python programming. The IPython
+Notebook is a bit like a REPL, a bit like an IDE, but the main idea is
+that it’s &lt;em&gt;in the browser&lt;/em&gt;. That means if you write code that generates
+an image, it can show the image alongside your code. It means that if
+you have code that outputs a protein, the result can be an interactive
+3D model. This project is so cool that I’ve wasted spent more time than
+I care to admit playing with it since the conference.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sprints&#34;&gt;Code Sprints!&lt;/h3&gt;
+
+&lt;p&gt;I wasn’t in town for long — and I wanted to spend some time with friends
+— but I did manage to drop by the code sprints for a while. The sprints
+were at the &lt;a href=&#34;http://ladieslearningcode.com/&#34;&gt;Ladies Learning Code&lt;/a&gt; space
+near Honest Ed’s, a lovely little building with a pretty decent cafe in
+the basement.&lt;/p&gt;
+
+&lt;p&gt;Sleep deprivation might have done strange things to me, but I’m &lt;em&gt;pretty
+sure&lt;/em&gt; these things happened:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Pizza with beet slices instead of pepperoni (awesome)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I had a really nice chat with Fernando Perez about IPython. And then
+he got me a cortado, which was incredibly sweet of him.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;After I thanked Diana Clark for putting on the conference and
+generally being awesome, &lt;em&gt;she gave me a hug&lt;/em&gt;. I swear to Guido, she
+almost made me cry.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although I wasn’t around to see much, it does sound like a lot got done
+at the sprint. I’ll be sure to stick around longer next time.&lt;/p&gt;
+
+&lt;h3 id=&#34;things-that-were-not-good-about-this-conference&#34;&gt;Things that were not good about this conference&lt;/h3&gt;
+
+&lt;p&gt;I really don’t have anything bad to say about how the conference was
+run. Really. Sure, the venue was cold the first day. The wireless was a
+bit patchy here and there. But whatever. Did I mention my ticket cost
+$25?&lt;/p&gt;
+
+&lt;p&gt;Personally, I think all “code sprints” should be called “Happy Fun Best
+Friends Coding Club But Also Testing and Documentation and Learning
+Extravaganza,” but sports and athletics metaphors are, unfortunately,
+thoroughly entrenched in the software world and I suppose I’m not going
+to win this one. &lt;em&gt;Sigh&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Oh, and it may not surprise you to hear that I detected a substantial
+dose of Python elitism. I like Python too, but can we all try not to
+alienate PHP and Java developers? Couldn&amp;rsquo;t hurt, anyways.&lt;/p&gt;
+
+&lt;h3 id=&#34;would-i-go-again-would-i-bring-a-friend&#34;&gt;Would I go again? Would I bring a friend?&lt;/h3&gt;
+
+&lt;p&gt;Yes and yes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Woah. When did that happen?&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/announcing-nbdiff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/announcing-nbdiff/</guid>
+      <description>&lt;p&gt;Title: NBDiff: A diffing and merging tool for the IPython Notebook
+Date: 2014-04-06 15:18
+Author: Tavish Armstrong
+Tags: school, coding&lt;/p&gt;
+
+&lt;p&gt;Final-year engineering students at many universities have to complete a &amp;ldquo;Capstone&amp;rdquo; project that gives them a chance to apply everything they learned throughout school to a practical, hands-on group project. My team just finished ours &amp;ndash; a project called &lt;a href=&#34;http://nbdiff.org&#34;&gt;NBDiff&lt;/a&gt; &amp;ndash; and I&amp;rsquo;m happy to report that it was a success.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve spoken to me in the last couple years, you&amp;rsquo;ve probably heard me ramble about the IPython Notebook, a rich web-based environment for scientific computing. Well, that project is wonderful, but there&amp;rsquo;s a catch with working on notebook files: the file format is a giant JSON blob and makes version control tricky. If you use &lt;code&gt;git diff&lt;/code&gt;, it can be hard to understand what you&amp;rsquo;ve actually changed, and if you need to resolve a merge conflict? Fasten your seatbelt.&lt;/p&gt;
+
+&lt;p&gt;NBDiff takes a stab at making these tasks easier. It presents diffs in a two-pane format and shows you deleted/added cells how you originally saw them in the notebook: if an image was changed, you see the image instead of a 10000-line diff of a base64 encoded PNG file. When resolving merge conflicts, you don&amp;rsquo;t have to worry about mangling the JSON by hand &amp;ndash; you just drag and drop changes into the final version and click &amp;lsquo;save&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/main-screenshot.png&#34; alt=&#34;A screenshot of nbdiff&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As far as school projects go, this one was very satisfying. We have 50 GitHub stars and several hundred downloads already; I can actually use it to solve problems &lt;em&gt;right now&lt;/em&gt;; and the IPython folks are interested in seeing it maintained beyond Capstone. Considering many school projects &amp;ndash; even Capstone projects &amp;ndash; never see the light of day, let alone continued maintenance, I&amp;rsquo;m really happy about this.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Homepage: &lt;a href=&#34;http://nbdiff.org&#34;&gt;nbdiff.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub repo: &lt;a href=&#34;https://github.com/tarmstrong/nbdiff&#34;&gt;tarmstrong/nbdiff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PyPI package: &lt;a href=&#34;https://pypi.python.org/pypi/nbdiff&#34;&gt;nbdiff&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/april-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/april-links/</guid>
+      <description>&lt;p&gt;Title: April links
+Date: 2011-04-14 22:49
+Author: Tavish Armstrong
+Tags: Uncategorized&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.pnas.org/content/early/2011/03/29/1018033108&#34;&gt;Hungry judges are
+ruthless&lt;/a&gt;. This
+study finds that judges will not grant parole right before breaks or
+meals, or when they are tired. Assuming some pre-lunch cases deserved a
+favourable ruling (i.e. the judges were indeed being too heavy-handed
+with their pre-lunch cases), this suggests that you should &lt;a href=&#34;http://lesswrong.com/lw/58y/the_bias_you_didnt_expect/&#34;&gt;avoid making
+difficult decisions when you are
+hungry&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Charlie Stross
+&lt;a href=&#34;http://www.antipope.org/charlie/blog-static/2011/04/you-probably-already-saw-this-.html&#34;&gt;predicts&lt;/a&gt;
+that SpaceX could put a man on the moon by 2016 for \$1 Billion USD.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fakescience.tumblr.com/&#34;&gt;Fake Science&lt;/a&gt; is so amusing that I
+think some dopamines leaked out of my ear. (Thanks Helen!)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://maycontaindragons.blogspot.com/2011/03/few-d-things-and-happy-birthday-to.html&#34;&gt;Simon paints awesome
+stuff&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cultureisnotyourfriend.bandcamp.com/&#34;&gt;Lachlan is saving Japan with his drone
+friends&lt;/a&gt;. His bass is like
+an earthquake that helps Japan instead of destroying it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cjlo.com/news/concordia/your-concordia-and-action-disqualified-csu-elections&#34;&gt;Concordia&amp;rsquo;s undergraduate student union is
+ridiculous&lt;/a&gt;.
+After a decent party finally got voted in, the guy in charge of
+elections, Oliver Cohen, decides both parties broke the rules, and thus
+we need to have a another election. &lt;a href=&#34;http://oncampus.macleans.ca/education/2011/04/14/concordia-student-elecitons-chief-throws-out-vote-results/&#34;&gt;The party that got voted in is not
+allowed to run again for two
+years.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; I forgot: if you&amp;rsquo;re a software engineering student at
+Concordia, you can now plan your class schedule with the
+&lt;a href=&#34;http://wolfdragon.org&#34;&gt;WolfDragonScheduler&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/april-links2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/april-links2/</guid>
+      <description>&lt;p&gt;Title: April links 2016
+Date: 2016-04-04 20:09
+Author: Tavish Armstrong
+Tags: Uncategorized&lt;/p&gt;
+
+&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dancres.github.io/Pages/&#34;&gt;A Distributed Systems Reading List&lt;/a&gt;. I found the &amp;ldquo;Harvest and Yield&amp;rdquo; paper particularly helpful.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://12factor.net/&#34;&gt;The Twelve-Factor App&lt;/a&gt;: opinionated guidelines for how to architect web services.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wipp.energy.gov/picsprog/articles/wipp%20exhibit%20message%20to%2012,000%20a_d.htm&#34;&gt;This is not a place of honour&lt;/a&gt;: how to identify nuclear waste to future generations. (via mhoye)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://danluu.com/programmer-moneyball/&#34;&gt;We only hire the trendiest&lt;/a&gt; by Dan Luu, who is great.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://danluu.com/postmortem-lessons/&#34;&gt;Lessons learned from reading postmortems&lt;/a&gt;, also Dan Luu&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf&#34;&gt;How Complex Systems Fail&lt;/a&gt;, which is referenced in the above Dan Luu post&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/blog-your-mistakes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog-your-mistakes/</guid>
+      <description>&lt;p&gt;Title: Blog your mistakes, please
+Date: 2013-11-13 00:23
+Author: Tavish Armstrong
+Tags: coding, writing, architecture&lt;/p&gt;
+
+&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
+Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
+for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
+
+&lt;p&gt;I usually don&amp;rsquo;t like titles like &amp;ldquo;why you should never use MongoDB&amp;rdquo; because the
+author usually means &amp;ldquo;why you shouldn&amp;rsquo;t use MongoDB if you are me and you are
+using it in the specific way I am using it and you are in the specific business
+that I work for.&amp;rdquo; The author writes the snappy title because it looks good on
+the Hacker News front page.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t that kind of blog post, though, and she makes a compelling argument
+that almost earns the title.&lt;/p&gt;
+
+&lt;p&gt;The title &lt;em&gt;should&lt;/em&gt; be &amp;ldquo;Why &lt;em&gt;You&lt;/em&gt; Should Never Use MongoDB&amp;rdquo;. I&amp;rsquo;m being pedantic,
+but I think the emphasis makes the point clearer. The post is making an
+assumption about you, and that assumption is this: you are not as smart as she
+is and if you are not as smart as she is, how can you hope to avoid the problem
+she is describing? I am not as smart as she is, so I&amp;rsquo;m going to learn from her
+mistake.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m an inexperienced software developer; a n00b. I haven&amp;rsquo;t watched a large
+software system go from infancy to smouldering ruins, nor have I watched design
+decisions explode in my face nine months after making them. And how could I
+have? I&amp;rsquo;m an undergraduate student and there aren&amp;rsquo;t enough months of summer
+jobs to string together to create those experiences.&lt;/p&gt;
+
+&lt;p&gt;Since I don&amp;rsquo;t have many of these experiences of my own, I&amp;rsquo;m forced to use the
+experiences of others. Let&amp;rsquo;s call these &lt;a href=&#34;http://aosabook.org/en/index.html&#34;&gt;&lt;em&gt;prosthetic experiences&lt;/em&gt;&lt;/a&gt;.
+Brave, humble, smart folks like Sarah Mei, who can talk about the projects
+they&amp;rsquo;ve seen crash and burn, are a boon; prosthetic experiences can help me
+think about design tradeoffs in ways I wouldn&amp;rsquo;t otherwise be able to without
+dealing with those problems myself.  They help me develop paranoia in the right
+places. Hopefully, it&amp;rsquo;ll help me avoid boring mistakes and make more
+interesting messes instead.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not fun to write about your mistakes. But I like it when you do.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/check-out-my-talk-at-d4d-boston-2011/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/check-out-my-talk-at-d4d-boston-2011/</guid>
+      <description>&lt;p&gt;Title: Check out my talk at D4D Boston 2011!
+Date: 2011-08-03 03:14
+Author: Tavish Armstrong
+Tags: code, engineering, school, tech, work&lt;/p&gt;
+
+&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
+2011&lt;/a&gt;, a Drupal conference with a
+focus on design. Even so, I was given the chance to do my talk on Drupal
+7&amp;rsquo;s Field API. To my surprise, I had an audience of around fifty to talk
+to (or it at least felt like fifty).&lt;/p&gt;
+
+&lt;p&gt;The talk was based on blog post I wrote for Evolving Web about &lt;a href=&#34;http://evolvingweb.ca/story/poutine-maker-introduction-field-api-drupal-7-part-1&#34;&gt;Poutine
+Maker&lt;/a&gt;,
+my custom Drupal field that lets users design crazy poutines. (You can
+see the formatter in action
+&lt;a href=&#34;http://poutinemaker.evolvingweb.ca/node/1&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;object name=&#34;ttvplayer&#34; id=&#34;ttvplayer&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allownetworking=&#34;all&#34; allowfullscreen=&#34;true&#34; height=&#34;165&#34; width=&#34;240&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;flashVars&#34; value=&#34;autoPlay=false&amp;amp;streamerType=rtmp&#34;&gt;&lt;a href=&#34;http://ttv.mit.edu&#34;&gt;MIT Tech TV&lt;/a&gt;&lt;/object&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a fantastic experience. I&amp;rsquo;m a little shy at conferences,
+so it was nice to meet people after who had seen my talk (even the guy
+who kept calling me Tarvis).&lt;/p&gt;
+
+&lt;p&gt;Also, I&amp;rsquo;m totally going to &lt;a href=&#34;http://london2011.drupal.org/&#34;&gt;DrupalCon
+London&lt;/a&gt; at the end of the month, which
+I&amp;rsquo;m super jazzed about. Co-op jobs aren&amp;rsquo;t supposed to be like this, but
+I am &lt;em&gt;definitely not complaining&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;(By the way, if you want to work with me and the cool people I work
+with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web is hiring&lt;/a&gt;.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/concordia-encs-hostnames/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/concordia-encs-hostnames/</guid>
+      <description>&lt;p&gt;Title: Concordia ENCS hostnames
+Date: 2010-12-03 09:04
+Author: Tavish Armstrong
+Tags: tech&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been doing a lot of my internetting in the lab at school, since my
+laptop is in the shop. As I write this, I&amp;rsquo;m sitting at
+&lt;code&gt;chipewyan.cs.concordia.ca&lt;/code&gt;, and to my sides are &lt;code&gt;carrier&lt;/code&gt; and
+&lt;code&gt;cowichan&lt;/code&gt;. My favourite so far is &lt;code&gt;absentee&lt;/code&gt;. I used it while skipping
+class the other day.&lt;/p&gt;
+
+&lt;p&gt;My new dream job: anything that lets me name computers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/cusec-2011-thoughts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/cusec-2011-thoughts/</guid>
+      <description>&lt;p&gt;Title: CUSEC 2011 thoughts
+Date: 2011-01-17 00:36
+Author: Tavish Armstrong
+Tags: engineering, school, tech&lt;/p&gt;
+
+&lt;p&gt;CUSEC 2011 was my second time at the Canadian University Software
+Engineering Conference. I felt less lost this time around, and it was a
+good time. We saw some good talks, spoke to some cool people, and
+skipped a lot of class.&lt;/p&gt;
+
+&lt;p&gt;Some highlights (my top 3):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.drewconway.com/Drew_Conway/About.html&#34;&gt;Drew Conway&lt;/a&gt;
+spoke about terrorism and drug networks, and how to visualize them
+using R (a language that specializes in visualizing data). The
+biggest takeaway was that domain expertise + code = awesome cool
+stuff.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://topologicalmedialab.net/xinwei/&#34;&gt;Sha Xin Wei&lt;/a&gt; spoke about
+the Topological Media Lab at Concordia. It was refreshing to see a
+talk like that at a tech conference; it wouldn&amp;rsquo;t have been out of
+place at an art conference, but it also wasn&amp;rsquo;t out of place at
+CUSEC. I like using code to do art, so it was a pretty inspiring
+talk.&lt;/li&gt;
+&lt;li&gt;Mike Shaver spoke about managing the Mozilla team. This guy is the
+one of the smartest people I&amp;rsquo;ve ever heard speak. He gave amazing
+answers to difficult questions, and answered even Linus
+Torvalds-grade flames with calm balance. You couldn&amp;rsquo;t even get him
+to say incendiary stuff about Internet Explorer, which just blew my
+mind.&lt;br /&gt;
+Mike began his talk by speaking briefly about how he is bi-polar.
+People don&amp;rsquo;t understand problems of mental health very well, he
+says, and we need to be able to talk about it more openly. I admire
+his courage and ability to speak about it in front of a crowd of
+possibly immature students. Here is &lt;a href=&#34;http://shaver.off.net/diary/&#34;&gt;Mike Shaver&amp;rsquo;s
+blog&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Great conference. I look forward to a new year of hackery. I made the
+same resolution last year, but my new resolution is to get something
+impressive ready to demo at CUSEC next year.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/cusec-2014/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/cusec-2014/</guid>
+      <description>
+
+&lt;p&gt;Title: CUSEC 2014
+Date: 2014-01-22 13:16
+Author: Tavish Armstrong
+Tags: code, conferences, tech, engineering, school&lt;/p&gt;
+
+&lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
+
+&lt;p&gt;Since I wasn&amp;rsquo;t on the organizing board this year, I got to enjoy the conference in a much more relaxing fashion.
+It was also my fifth CUSEC, so I&amp;rsquo;ve figured out how this conference works and how to talk to people.
+Having a lot of friends in the companies at the career fair helps; being friends with &lt;a href=&#34;http://jvns.ca&#34;&gt;one&lt;/a&gt; of the speakers helps too.
+But more importantly, I&amp;rsquo;m just way older and more confident than my 19-year-old self.
+I feel comfortable around nerds, and I&amp;rsquo;m not totally lost in a technical conversation.
+I&amp;rsquo;ve grown just as much as CUSEC has grown.&lt;/p&gt;
+
+&lt;h2 id=&#34;talks&#34;&gt;Talks!&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ll talk about a few of the talks that really stood out to me.&lt;/p&gt;
+
+&lt;p&gt;Famous blogger &lt;a href=&#34;http://jvns.ca&#34;&gt;Julia Evans&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; gave a fun talk on hacking
+on the kernel. Operating system kernels are a really neat part of computers
+that I don&amp;rsquo;t know much about, and Julia makes it seem easy and not scary at
+all. She had a neat trick of hiding all the parts of a C program that aren&amp;rsquo;t
+relevant to understanding it on a high level. It&amp;rsquo;s quite rare for someone to
+take a very technically intimidating subject and make it seem within your
+grasp.&lt;/p&gt;
+
+&lt;p&gt;Josh Matthews gave a &lt;a href=&#34;http://www.joshmatthews.net/cusec14/&#34;&gt;talk&lt;/a&gt; on developing
+for Firefox: the kinds of projects Mozilla has that you can work on, how to
+find a bug to work on, and what the patch process is like. I spent the last
+summer looking at how open source projects do code review, so a lot of this
+was obvious to me, but this is exactly the kind of talk that would have
+completely blown my mind a couple years ago.&lt;/p&gt;
+
+&lt;p&gt;He went a few steps further and bravely walked the audience through a complete
+Firefox patch, explaining the important parts of the code, and giving a brief
+overview of the architecture along the way. Similarly to Julia&amp;rsquo;s talk, it was a
+very non-threatening introduction to an extremely intimidating topic.&lt;/p&gt;
+
+&lt;p&gt;Nadim Kobeissi spoke about &lt;a href=&#34;http://crypto.cat&#34;&gt;CryptoCat&lt;/a&gt;, a controvertial
+encrypted chat service that&amp;rsquo;s been under a lot of fire since it started for
+horrible &lt;a href=&#34;http://tobtu.com/decryptocat.php&#34;&gt;bugs&lt;/a&gt; and being developed by a 23
+year old (ad-hominem attacks abound). I admit I have a soft spot for Nadim
+because he is a recent Concordia graduate &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but also because I think he&amp;rsquo;s
+solving a tough problem that needs solving if encryption is ever to become
+popular &amp;mdash; usability.&lt;/p&gt;
+
+&lt;p&gt;Nadim&amp;rsquo;s talk wasn&amp;rsquo;t technical in nature &amp;mdash; it was more about the political
+side of things. He shared insightful observations on the nature of the struggle
+between hackers and the surveillance state. In essence, he argued that they
+both feed off making the other look like an adversary to be defeated, but the
+real solution lies in common understanding. That&amp;rsquo;s no easy feat when your
+adversaries are organizations like CSEC and the NSA who have had no serious
+oversight.&lt;/p&gt;
+
+&lt;p&gt;I was honestly surprised to find Nadim very approachable, humble, and easy to
+talk to. He gave me some good advice on learning more about computer security
+and finding mentors.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to spoil &lt;a href=&#34;https://www.destroyallsoftware.com/screencasts&#34;&gt;Gary
+Bernhardt&lt;/a&gt;&amp;rsquo;s talk &amp;mdash;
+you&amp;rsquo;ll have to watch it when it comes out &amp;mdash; but it was stylistically very
+interesting to me. I love science fiction and informative, thought-provoking
+technical talks. The marriage of both is something else entirely, and I liked it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nerd.kelseyinnis.com/&#34;&gt;Kelsey Gilmore-Innis&lt;/a&gt; gave a fun, bombastic
+introduction to functional programming.  &lt;a href=&#34;https://twitter.com/avibryant&#34;&gt;Avi
+Bryant&lt;/a&gt; spoke about detecting fraud, but I
+missed the first half of his talk because I was talking to someone in the
+hallway and didn&amp;rsquo;t realize it had started. Oops. I had a nice chat with him
+later, though, which sort of made up for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;question-time&#34;&gt;Question time&lt;/h2&gt;
+
+&lt;p&gt;This year I gave myself a challenge: to ask a question after every talk I saw.
+With two exceptions, I managed to do this, and it went pretty well. I got a
+little better at handling my nerves throughout the weekend and managed not to
+say anything too stupid. Julia&amp;rsquo;s encouragement &amp;mdash; something along the
+lines of &amp;ldquo;everyone thinks you&amp;rsquo;re dumb anyways&amp;rdquo; &amp;mdash; was very helpful.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; I have good taste in questions. I might write a blog post on what I
+think makes a good post-talk question at some point.&lt;/p&gt;
+
+&lt;h2 id=&#34;conference-pro-tips&#34;&gt;Conference pro-tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Volunteering is a good way to make friends.&lt;/li&gt;
+&lt;li&gt;Talk to younger students and say nice encouraging things to them. Don&amp;rsquo;t act like a smartypants, even if you are. Lower the ladder instead of pulling it up behind you.&lt;/li&gt;
+&lt;li&gt;Have a &lt;a href=&#34;http://aosabook.org&#34;&gt;physical object&lt;/a&gt; that you built that you can
+show off to company recruiters. Hack together a bunch of LEDs and a
+microcontroller and sew it into your backpack. Whatever.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t complain about talks you didn&amp;rsquo;t like, unless the presenter said
+something harmful. Life is too short for inadvertently making people feel bad
+about things they like, and it makes you look like a jerk. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Get as much sleep as you can without being a hermit. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;CUSEC was fun and I recommend going.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;She really likes it when you call her internet-famous.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;I&amp;rsquo;m pretty sure we were at least registered for a class together at one point, though he was in a much different degree program.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Ahem.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;This is probably the most controversial part of this post.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women/</guid>
+      <description>&lt;p&gt;Title: Diversity in practice: How the Boston Python User Group grew to 1700 people and over 15% women
+Date: 2012-03-18 19:37
+Author: Tavish Armstrong
+Tags: code, tech&lt;/p&gt;
+
+&lt;p&gt;The sheer humility, honesty, and deliberate action these two people took
+to fight a problem they saw in the world is inspiring. They listened to
+people, &lt;em&gt;really&lt;/em&gt; listened to people, and didn&amp;rsquo;t shy away from the faults
+in their approach. This is the most practical guide for how to get fresh
+blood into programming that I&amp;rsquo;ve seen yet.&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t been programming for that long. Three years ago, when I was in
+my first year of school, I really wanted to learn how to program. At
+that point, I had considered going to Montreal Python meetups, but I was
+too shy and didn&amp;rsquo;t think I&amp;rsquo;d know what was going on, or that I wouldn&amp;rsquo;t
+fit in. So when people make an effort to reach shy outsiders, especially
+people who are minorities in the development community who may feel even
+more shy than I did for that reason, it makes me really happy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[On advertising workshops:] Make the tone very clear. We&amp;rsquo;re about
+being inclusive and growing communities, and not about being
+exclusive. So if you&amp;rsquo;re just a little bit careful about your language
+there, I think you&amp;rsquo;ll find that everyone is thrilled to support you in
+this. Men, women, everyone. — Jessica McKellar&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/drawcircles/drawcircles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/drawcircles/drawcircles/</guid>
+      <description>&lt;html&gt;
+&lt;head&gt;
+  &lt;style type=&#39;text/css&#39;&gt;
+    body {
+      font-family: courier;
+    }
+  &lt;/style&gt;
+
+  &lt;script src=&#34;processing.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;tavishlib.js&#34;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 align=&#39;center&#39;&gt;Draw Circles&lt;/h1&gt;
+&lt;p align=&#39;center&#39;&gt;&lt;canvas id=&#34;canvas1&#34; width=&#34;800&#34; height=&#34;500&#34;&gt;&lt;/canvas&gt;&lt;/p&gt;
+
+&lt;script id=&#34;script1&#34; type=&#34;text/javascript&#34;&gt;
+function sketchProc($) {
+  $.setup = function () {
+    var i;
+
+    $.frameRate(160);
+    Tavish.randomBG($);
+
+    for (i=0; i &lt; 3; i+=1) {
+      Tavish.randomFG($);
+      $.text(&#39;Click to start!&#39;, 100 + i*100, 100 + i*100);
+    }
+  };
+
+  var i=0;
+  var startx=0, starty=0;
+  var wait = true;
+
+  var restartFG = function () {
+      i = 0;
+      Tavish.randomFG($);
+  };
+
+  $.draw = function() {
+    if (wait === true) { return; } // wait for a click
+
+    i += 1;
+
+    // get mouse position
+    startx = $.mouseX; starty = $.mouseY;
+
+    // Draw an ellipse -- they should fluctuate in size like
+    // a sine function
+    var size = 5 + Math.sin(parseFloat(i)/100)*55;
+    $.ellipse(startx, starty, size, size);
+
+    // After a while, let&#39;s start the animation again.
+    if (i &gt; 400) {
+      Tavish.randomBG($);
+      restartFG();
+    }
+  };
+
+  // Start the fun when you click
+  $.mousePressed = function () {
+    i = 0;
+    wait = !wait;
+    restartFG();
+  };
+}
+
+var canvas = document.getElementById(&#34;canvas1&#34;);
+// attaching the sketchProc function to the canvas
+var p = new Processing(canvas, sketchProc);
+// p.exit(); to detach it
+&lt;/script&gt;
+
+&lt;div style=&#34;height:0px;width:0px;overflow:hidden;&#34;&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/e-prime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/e-prime/</guid>
+      <description>&lt;p&gt;Title: E-Prime
+Date: 2012-02-03 00:53
+Author: Tavish Armstrong
+Tags: writing&lt;/p&gt;
+
+&lt;p&gt;From Wikipedia
+(&lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/E-Prime&#34;&gt;link&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;E-Prime (short for English-Prime, sometimes denoted E′) is a version
+of the English language that excludes all forms of the verb to be.
+E-Prime does not allow conjugations of to be (am, are, is, was, were,
+be, been, being), archaic forms (e.g. art, wast, wert), or
+contractions (&amp;rsquo;s, &amp;rsquo;m, &amp;rsquo;re).&lt;/p&gt;
+
+&lt;p&gt;Some scholars advocate using E-Prime as a device to clarify thinking
+and strengthen writing. For example, the sentence &amp;ldquo;the film was good&amp;rdquo;
+could translate into E-Prime as &amp;ldquo;I liked the film&amp;rdquo; or as &amp;ldquo;the film
+made me laugh&amp;rdquo;. The E-Prime versions communicate the speaker&amp;rsquo;s
+experience rather than judgment, making it harder for the writer or
+reader to confuse opinion with fact.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This exercise helped me strengthen this sentence, I think.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/george-orwell-likes-tea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/george-orwell-likes-tea/</guid>
+      <description>&lt;p&gt;Title: George Orwell likes tea
+Date: 2010-12-02 18:51
+Author: Tavish Armstrong
+Tags: food, writing&lt;/p&gt;
+
+&lt;p&gt;I enjoyed this essay by George Orwell on tea:
+&lt;a href=&#34;http://www.booksatoz.com/witsend/tea/orwell.htm&#34; title=&#34;George Orwell: A Nice Cup of Tea&#34;&gt;link&lt;/a&gt;.
+He attacks the subject with as much force as anything he&amp;rsquo;s written. What
+struck me, in particular, was how much he enjoyed writing it. It&amp;rsquo;s
+obvious, even in his reserved tone. This is something Zinsser talks
+about often, and I&amp;rsquo;m noticing it often in the writers I enjoy reading,
+speakers I enjoy listening to, and teachers I enjoy learning from.&lt;/p&gt;
+
+&lt;p&gt;Orwell seems to think milk is a necessary ingredient in a nice cup of
+tea. I disagree, for the same reason he disagrees with people who like
+sugar in their tea. It tarnishes the drink, and I can&amp;rsquo;t imagine feeling
+&amp;ldquo;wiser, braver, or more optimistic&amp;rdquo; after drinking a milky tea.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/git-interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/git-interface/</guid>
+      <description>
+
+&lt;p&gt;Title: The Git Harness
+Date: 2013-11-24 16:30
+Author: Tavish Armstrong
+Tags: coding, git&lt;/p&gt;
+
+&lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
+
+&lt;p&gt;That said, most people can agree on one thing: the interface sucks. Git is a powerful tool, but it&amp;rsquo;s almost impossible to learn how all the commands and their options work. The arguments have inconsistent orders, and the flags mean different things in different contexts. Some of the commands share duties with others. I&amp;rsquo;ve learned to deal with it — it involves reading the man pages every time you want to use &lt;code&gt;git branch&lt;/code&gt; — but it is a struggle.&lt;/p&gt;
+
+&lt;p&gt;Complaining is fun, but it isn&amp;rsquo;t going to get us anywhere —  how do we go about fixing this problem instead? Is the answer a slick GUI like the GitHub desktop client? For some people, sure. But too many GUIs solve the wrong problem: &lt;em&gt;affordance&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Affordance is the idea that you should be able to figure out how to use parts of an interface intuitively. Buttons should look like they can be pressed, editable text should look like it can be edited, etc. Command line tools generally solve this problem with man pages and usage messages — and that&amp;rsquo;s a powerful mechanism.&lt;/p&gt;
+
+&lt;p&gt;However, it doesn&amp;rsquo;t let you predict the outcome of your actions. Git forces you to have a solid mental model of how a Git history works. You have to understand what the various commands do to that mental model, and be able to simulate a proposed action in your head. Most of us developed this mental model through using Git and making a lot of mistakes.&lt;/p&gt;
+
+&lt;p&gt;Practice makes perfect, but there is no virtue in unnecessary struggle. We &lt;em&gt;could&lt;/em&gt; build a Git interface that helps novices develop their mental models faster, with less pain. We could do it without hiding the complexities of Git, too. And I think we should.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is the Git interface that I would actually want to use:&lt;/p&gt;
+
+&lt;h2 id=&#34;the-napkin-sketch&#34;&gt;The Napkin Sketch&lt;/h2&gt;
+
+&lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you use Git, you probably understand this. You might visualize it differently — maybe your arrows go the other way, or maybe you like a vertical graph. In any case, this visualization helps you make decisions about what to do next, depending on your goals.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
+
+&lt;p&gt;This idea reminds me of &lt;a href=&#34;http://www.jumpharness.com/skate%20harness%20system.jpg&#34;&gt;figure skating harnesses&lt;/a&gt;. When you&amp;rsquo;re learning to do a double salchow, your coach will often strap you into one of those. You are then free to throw yourself into the jump without fear of falling on your ass. You get to try things out without suffering the consequences, so that you can develop good habits before it hurts.&lt;/p&gt;
+
+&lt;p&gt;With Git, the idea is the same, but instead of falling on your ass,
+you&amp;rsquo;re avoiding an hour of sifting through your reflogs.&lt;/p&gt;
+
+&lt;p&gt;So: who wants to build the Git harness?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/graduation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/graduation/</guid>
+      <description>&lt;p&gt;Title: Graduation
+Date: 2014-06-10 22:34
+Author: Tavish Armstrong
+Tags: school&lt;/p&gt;
+
+&lt;p&gt;Six years ago I moved to Montreal for university. An undergraduate degree should not be treated as a race, but it starts to feel that way after six years. Today, I finally graduated.&lt;/p&gt;
+
+&lt;p&gt;It feels good. I can complain all day about the things I didn&amp;rsquo;t like about university &amp;ndash; there are all too many of them, and I like to complain &amp;ndash; but I&amp;rsquo;m happy enough with where I am professionally, personally, intellectually right now that I can overlook that and just be happy.&lt;/p&gt;
+
+&lt;p&gt;Onward!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
