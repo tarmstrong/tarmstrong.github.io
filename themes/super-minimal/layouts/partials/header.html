@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+      <h4>
+      {{- range .Data.Pages -}}
+        {{- if eq .Type "page" -}}
+          <span><a href="{{ .Permalink }}">{{ .Title }}</a>&nbsp;</span>
+        {{- end -}}
+      {{- end -}}
+      </h4>

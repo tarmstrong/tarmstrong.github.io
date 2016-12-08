@@ -2,3 +2,5 @@ title = "My New Hugo Site"
 languageCode = "en-us"
 baseurl = "http://example.org/"
 theme = "super-minimal"
+[permalinks]
+    post = "/:year/:month/:day/:slug"

@@ -1,0 +1,17 @@
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        {{- range .Data.Pages -}}
+            {{- if eq .Type "page" }}
+                <h4><a href="{{ .Permalink }}">{{ .Title  }}</a></h4>
+            {{- end -}}
+          {{- end }}  -->
+{{ partial "header.html" . }}
+        <ul>
+            {{- range .Data.Pages -}}
+                {{- if eq .Type "post" }}
+                    <li>{{ .Date.Format "Mon Jan 02 2006" }} &#183; <a href="{{ .Permalink  }}">{{ .Title }}</a></li>
+                {{- end -}}
+            {{- end}}
+        </ul>
+{{ partial "footer.html" . }}
