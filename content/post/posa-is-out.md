@@ -11,7 +11,7 @@ or, soon, electronic copies.
 
 If you do purchase it, the royalties go to Amnesty International.
 
-![The Performance of Open Source Applications Cover](/img/photos/posa-front.jpg)
+![The Performance of Open Source Applications Cover](/photos/posa-front.jpg)
 
 If you want to know more about what the book is about, the
 [introduction](http://aosabook.org/en/posa/introduction.html) is a good place

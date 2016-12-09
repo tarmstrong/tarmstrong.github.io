@@ -30,7 +30,7 @@ plot(df.ts, plot.type='single', col = 1:ncol(df.ts))
 legend("bottomleft", colnames(df.ts), col=1:ncol(df), lty=1)
 ```
 
-![](/img/what-i-cannot-create_files/what-i-cannot-create_fig_00.png)
+![](/what-i-cannot-create_files/what-i-cannot-create_fig_00.png)
 
 This is silly. But this lets me make a hypothesis about what the result of the `ccf()` function will be. I *think* it'll show a correlation around 1 for a lag of 10. Let's try it out.
 
@@ -38,7 +38,7 @@ This is silly. But this lets me make a hypothesis about what the result of the `
 ccf(fishpop, watertemp)
 ```
 
-![](/img/what-i-cannot-create_files/what-i-cannot-create_fig_01.png)
+![](/what-i-cannot-create_files/what-i-cannot-create_fig_01.png)
 
 That wasn't what I expected. This plot suggests that the two series are correlated *without* a lag. After a moment, I realize that there's a bug in my code. The line
 
@@ -53,7 +53,7 @@ fishpop <- c(rep(270, 10), watertemp[1:489]*0.9)
 ccf(fishpop, watertemp)
 ```
 
-![](/img/what-i-cannot-create_files/what-i-cannot-create_fig_02.png)
+![](/what-i-cannot-create_files/what-i-cannot-create_fig_02.png)
 
 
 I was close. The correlation is at `lag = 10`. The correct way to read the plot is *`watertemp` predicts `fishpop` ten periods later*. Or, more simply, `fishpop` leads watertemp by 10 periods. Either way, I now have a better mental model of how the `ccf()` function works. If I applied it to real data, I'd be better equipped to interpret the results.
