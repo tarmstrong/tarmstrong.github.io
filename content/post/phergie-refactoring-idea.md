@@ -37,7 +37,7 @@ actually refactor the code.
 
 ![Most often changed files. The blue line is the mean and the red line
 is one standard deviation above the
-mean.](http://tavisharmstrong.com/static/phergie/commits.png)
+mean.](/img/phergie/commits.png)
 
 Figure 1. Most often changed files. The blue line is the mean and the
 red line is one standard deviation above the mean.
@@ -82,12 +82,12 @@ lengths of approximately 400 lines of code. This is closer to the mean
 each class has more clearly defined responsibility.
 
 ![Current architecture of the IRC/TCP subsystem in
-Phergie](http://tavisharmstrong.com/static/phergie/refactor-1.png)
+Phergie](/img/phergie/refactor-1.png)
 
 Figure 2. Current architecture of the IRC/TCP subsystem in Phergie
 
 ![Proposed refactoring of the IRC/TCP subsystem in
-Phergie](http://tavisharmstrong.com/static/phergie/refactor-2.png)
+Phergie](/img/phergie/refactor-2.png)
 
 Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie
 

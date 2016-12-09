@@ -1,6 +1,8 @@
-title = "My New Hugo Site"
+title = "Tavish Armstrong"
 languageCode = "en-us"
 baseurl = "http://example.org/"
 theme = "super-minimal"
+pygmentsstyle = "colorful"
+PygmentsCodeFences = true
 [permalinks]
     post = "/:year/:month/:day/:slug"

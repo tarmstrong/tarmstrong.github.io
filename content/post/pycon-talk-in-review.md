@@ -59,4 +59,4 @@ So all in all, I'd call it a success. If you saw the talk and this sort of thing
 
 Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not *actually* heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.
 
-My notes are available [here](//tavi.sh/solitude).
+My notes are available [here](/solitude).

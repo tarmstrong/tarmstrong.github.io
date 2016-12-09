@@ -16,7 +16,7 @@ you see a message that says:
 > This page must be viewed using the SeatGeek browser.
 
 ![User agent
-challenge](http://tavisharmstrong.com/photos/seatgeek/useragent.png)
+challenge](/img/photos/seatgeek/useragent.png)
 
 Websites don't actually test what browser you're using. Your browser
 just tells the website what its name is (well, there are probably other
@@ -34,7 +34,7 @@ easily (directions are for Firefox):
 Now, if you refresh the page, you'll see the full job application form.
 
 ![Full job
-application](http://tavisharmstrong.com/photos/seatgeek/ignorethis.png)
+application](/img/photos/seatgeek/ignorethis.png)
 
 But wait! There's a problem: "only 'admin' users may submit new
 applicants."
@@ -91,7 +91,7 @@ that any job applications include one of these "tokens" they've issued.
 
 Now I could fill out the form and hit submit. And it worked!
 
-![Win!](http://tavisharmstrong.com/photos/seatgeek/seatgeek_win.png)
+![Win!](/img/photos/seatgeek/seatgeek_win.png)
 
 So, there you have it. This is a pretty contrived example of hacking
 (they made it easy on purpose), but this is actually how a lot of it

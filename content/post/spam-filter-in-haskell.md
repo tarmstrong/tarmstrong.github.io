@@ -19,7 +19,7 @@ Paul Graham has a very readable explanation of how this works
 For those of you who think programming is hard, I'm probably going to
 convince you further by posting this snippet of incredibly confusing,
 poorly written code. Sorry! Read [this blog post
-instead](http://tavisharmstrong.com/2010/12/15/exams-are-almost-over/).
+instead](/2010/12/15/exams-are-almost-over/).
 
     :::haskell
     import qualified Data.Map as DM

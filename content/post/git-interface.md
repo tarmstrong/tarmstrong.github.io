@@ -22,7 +22,7 @@ Practice makes perfect, but there is no virtue in unnecessary struggle. We *coul
 
 Most people who know how to use Git have a conceptual model of a Git log that looks something like this:
 
-![](/git-diagrams/basic-vis.png)
+![](/img/git-diagrams/basic-vis.png)
 
 First, you've got the initial state of the repository -- the files that were there when you started. Then you have a set of commits (or "changes") that transform those initial files into what they are today in the `HEAD` version. The state of the working directory is indicated by the `HEAD` ref. In the above diagram, our `HEAD` is pointed at `master`.
 
@@ -30,31 +30,31 @@ If you use Git, you probably understand this. You might visualize it differently
 
 Let's say you have some unstaged changes in your working directory. You start typing `git commit -a`...
 
-![](/git-diagrams/adding-a-commit-start-typing.png)
+![](/img/git-diagrams/adding-a-commit-start-typing.png)
 
 ... and when the interface realizes what command you're typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.
 
-![](/git-diagrams/adding-a-commit-pre-refmove.png)
+![](/img/git-diagrams/adding-a-commit-pre-refmove.png)
 
 And then it updates `master` and `HEAD` to point to it.
 
-![](/git-diagrams/adding-a-commit.png)
+![](/img/git-diagrams/adding-a-commit.png)
 
 But you haven't hit enter yet. This lets you understand the change you're about to make. If it's not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.
 
 Here's another situation. You have a `dev` branch and you want to take a look at the files in it.
 
-![](/git-diagrams/basic-branch-vis.png)
+![](/img/git-diagrams/basic-branch-vis.png)
 
 You try `git checkout dev`:
 
-![](/git-diagrams/checking-out-a-branch-typing.png)
+![](/img/git-diagrams/checking-out-a-branch-typing.png)
 
 It fades the current `HEAD` and shows you where your new `HEAD` will be after hitting enter. If that's what you want, you can run that command and feel confident you're doing the right thing.
 
 Let's say that you don't want to check it out, though. Instead, you want to merge `dev` into `master`. This is what the preview shows you:
 
-![](/git-diagrams/git-merge.png)
+![](/img/git-diagrams/git-merge.png)
 
 Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it's going to do what you want without having to ask your friend the Git wizard if it's going to break stuff.
 
