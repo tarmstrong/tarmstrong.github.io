@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>{{ .Title }}</title>
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
   </head>
   <body>
       <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
