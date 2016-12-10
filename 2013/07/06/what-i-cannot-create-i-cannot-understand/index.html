@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What I cannot create, I cannot understand</title>
+    
+  </head>
+  <body>
+      <h1><a href="http://example.org/">Tavish Armstrong</a></h1>
+      <h4><span><a href="http://example.org/about/">About</a></span></h4>
+
+        <h1>What I cannot create, I cannot understand</h1>
+        <h6>Sat 06 Jul 2013 16:54:00</h6>
+        <p>My friend Corey, author of the excellent <a href="http://bayesianbiologist.com">Bayesian Biologist</a> blog, recently <a href="https://twitter.com/CjBayesian/status/350630554804305922">said</a>:</p>
+
+<blockquote>
+<p>&ldquo;What I cannot create, I cannot understand&rdquo; -Richard Feynman. This is why I always build a simulation of any problem I&rsquo;m working on.</p>
+</blockquote>
+
+<p><a href="http://bayesianbiologist.com/2012/08/10/simulation-the-modellers-laboratory/">This post</a> gives a good, elaborate example involving &ldquo;trip taking behaviour of recreational boaters in Ontario.&rdquo; I&rsquo;ve recently been dabbling in statistical analysis but I&rsquo;m not as much of a smartypants as Corey, so I&rsquo;ve been using the same technique to <em>learn</em> basic statistical analysis.</p>
+
+<p>Here&rsquo;s an example. When modeling time series (e.g., fish population and water temperature over time), it&rsquo;s useful to detect if one variable has a dependence on the other at a certain log. Does a spike in water temperature at a given time cause an increase in fish a week later? The <a href="https://en.wikipedia.org/wiki/Cross-correlation">cross-correlation</a> of water temperature and fish population would let us detect this relationship.</p>
+
+<p>In R, there&rsquo;s a handy <code>ccf()</code> function that will do this for me. But I&rsquo;m not totally sure how it works, or what it looks like when it works. I&rsquo;ll run it on some fake data to see what happens.</p>
+require(graphics)
+# This is contrived, but let's pretend that water temperature is
+# around 300 kelvin, +/- 5 kelvins. The error is normally distributed.
+watertemp <- 300 + rnorm(500, 0, 5)
+# This is even more contrived. Let's pretend that the fish population is
+# around 270 in our pond, and that you can predict the population ten
+# periods from now by multiplying the current water temperature by 0.9.
+fishpop <- c(rep(270, 10), watertemp[11:500]*0.9)
+x <- 1:500
+df <- data.frame(fishpop, watertemp)
+df.ts <- ts(df)
+plot(df.ts, plot.type='single', col = 1:ncol(df.ts))
+legend("bottomleft", colnames(df.ts), col=1:ncol(df), lty=1)
+
+<p><img src="/what-i-cannot-create_files/what-i-cannot-create_fig_00.png" alt="" /></p>
+
+<p>This is silly. But this lets me make a hypothesis about what the result of the <code>ccf()</code> function will be. I <em>think</em> it&rsquo;ll show a correlation around 1 for a lag of 10. Let&rsquo;s try it out.</p>
+ccf(fishpop, watertemp)
+
+<p><img src="/what-i-cannot-create_files/what-i-cannot-create_fig_01.png" alt="" /></p>
+
+<p>That wasn&rsquo;t what I expected. This plot suggests that the two series are correlated <em>without</em> a lag. After a moment, I realize that there&rsquo;s a bug in my code. The line</p>
+
+<pre><code>fishpop &lt;- c(rep(270, 10), watertemp[11:500]*0.9)
+</code></pre>
+
+<p>does not produce a shifted time series; it just creates one identical to <code>watertemp</code> but with the first 10 values changed to 270. If I change this line to properly shift the series, I should see a correlation at <code>lag = -10</code>. Right?</p>
+fishpop <- c(rep(270, 10), watertemp[1:489]*0.9)
+ccf(fishpop, watertemp)
+
+<p><img src="/what-i-cannot-create_files/what-i-cannot-create_fig_02.png" alt="" /></p>
+
+<p>I was close. The correlation is at <code>lag = 10</code>. The correct way to read the plot is <em><code>watertemp</code> predicts <code>fishpop</code> ten periods later</em>. Or, more simply, <code>fishpop</code> leads watertemp by 10 periods. Either way, I now have a better mental model of how the <code>ccf()</code> function works. If I applied it to real data, I&rsquo;d be better equipped to interpret the results.</p>
+
+<p>Most programmers do this instinctually in other domains. I certainly do. But with data analysis, my instinct is to run analyses on real data first &mdash; sometimes without really understanding what I&rsquo;m doing.</p>
+
+</body>
+</html>
+

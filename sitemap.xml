@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2016-07-23T23:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2016/07/23/making-sounds-with-overtone</loc>
+    <lastmod>2016-07-23T23:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2016/07/20/timeutc-in-ruby</loc>
+    <lastmod>2016-07-20T20:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2016/04/04/april-links-2016</loc>
+    <lastmod>2016-04-04T20:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</loc>
+    <lastmod>2015-07-26T04:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2015/07/12/shows-ive-been-watching</loc>
+    <lastmod>2015-07-12T22:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2015/05/24/the-last-line</loc>
+    <lastmod>2015-05-24T21:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2015/05/09/programming-as-argument</loc>
+    <lastmod>2015-05-09T14:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2015/04/04/books-i-read-in-2014</loc>
+    <lastmod>2015-04-04T14:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2014/06/10/graduation</loc>
+    <lastmod>2014-06-10T22:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2014/04/19/the-two-solitudes-for-hackers</loc>
+    <lastmod>2014-04-19T13:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</loc>
+    <lastmod>2014-04-06T15:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2014/01/22/cusec-2014</loc>
+    <lastmod>2014-01-22T13:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</loc>
+    <lastmod>2013-12-06T00:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2013/11/24/the-git-harness</loc>
+    <lastmod>2013-11-24T16:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2013/11/13/blog-your-mistakes-please</loc>
+    <lastmod>2013-11-13T00:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2013/10/07/the-performance-of-open-source-applications-is-out</loc>
+    <lastmod>2013-10-07T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2013/07/06/what-i-cannot-create-i-cannot-understand</loc>
+    <lastmod>2013-07-06T16:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/11/29/phergie-refactoring-idea</loc>
+    <lastmod>2012-11-29T14:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</loc>
+    <lastmod>2012-11-27T17:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/10/03/teensy/arduino-timer-simulator</loc>
+    <lastmod>2012-10-03T17:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</loc>
+    <lastmod>2012-05-08T22:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</loc>
+    <lastmod>2012-03-18T19:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/02/03/e-prime</loc>
+    <lastmod>2012-02-03T00:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2012/01/31/the-maeslant-kering-bos-development</loc>
+    <lastmod>2012-01-31T14:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</loc>
+    <lastmod>2011-12-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/11/26/mathematics-in-movies</loc>
+    <lastmod>2011-11-26T12:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/11/02/spam-filter-in-haskell</loc>
+    <lastmod>2011-11-02T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</loc>
+    <lastmod>2011-08-03T03:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/07/01/write-pretty-story-a-writing-program</loc>
+    <lastmod>2011-07-01T15:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/04/14/april-links</loc>
+    <lastmod>2011-04-14T22:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/02/22/the-speed-with-which-the-wave-of-revolutions-swept-across-europe-was-due-to-the-wonders-of-modern-technology</loc>
+    <lastmod>2011-02-22T23:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/02/06/practical-cryptography-and-the-birthday-attack</loc>
+    <lastmod>2011-02-06T14:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2011/01/17/cusec-2011-thoughts</loc>
+    <lastmod>2011-01-17T00:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/12/14/planets</loc>
+    <lastmod>2010-12-14T01:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/12/13/pause</loc>
+    <lastmod>2010-12-13T14:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/12/03/concordia-encs-hostnames</loc>
+    <lastmod>2010-12-03T09:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/12/02/george-orwell-likes-tea</loc>
+    <lastmod>2010-12-02T18:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/11/21/how-i-applied-for-a-job-at-seatgeek</loc>
+    <lastmod>2010-11-21T12:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/11/20/tavishs-super-special-pancake-recipe</loc>
+    <lastmod>2010-11-20T11:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/11/13/make-delicious-yogurt-make-cows-happy</loc>
+    <lastmod>2010-11-13T22:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/2010/10/26/home-made-cheese</loc>
+    <lastmod>2010-10-26T07:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2010-10-07T00:36:00+00:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://example.org/tags/conferences/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://example.org/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Two Solitudes (for Hackers)</title>
+      <link>http://example.org/2014/04/19/the-two-solitudes-for-hackers</link>
+      <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
+This year we were lucky to have it in Montreal (only a short walk from my apartment)
+and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
+
+&lt;p&gt;As I &lt;a href=&#34;https://twitter.com/tavarm/status/379409322943320064&#34;&gt;wrote&lt;/a&gt; when I submitted the proposal, I proposed a talk on a topic
+that I wished someone smarter would speak about. I was pretty nervous about giving the talk
+&amp;mdash; the usual nerves, but also a sense that the topic was much larger than I could give
+credit to in 30 minutes with the limited experience I have as someone a few weeks shy
+of an undergraduate engineering degree.&lt;/p&gt;
+
+&lt;p&gt;The gist of the talk is this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We have a lot to learn about how we work as software engineers.&lt;/li&gt;
+&lt;li&gt;We can learn a lot about how we in the open source community work through
+examining version control history, code review data, etc., and we have the
+tools and skills necessary to analyze the data. (This is a bit of an
+understatement &amp;ndash; many people in the Python community &lt;em&gt;wrote the data analysis tools&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;We understand our own projects better than any researcher could so we are in a good
+position to study them.&lt;/li&gt;
+&lt;li&gt;We have the most to gain from studying the way we work; we don&amp;rsquo;t care about citation
+counts, we just want to write better software and be happier while we do it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I finished the talk by challenging the audience to go out, learn cool things about the
+projects they work on, and present their findings next year at PyCon 2015.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vvEY6bhLXsU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I went into the talk with the goal of finding &lt;em&gt;one&lt;/em&gt; person who thought the topic was cool. Just one.
+I seem to have struck a chord though, and had lots of really interesting conversations with people
+after my talk.&lt;/p&gt;
+
+&lt;p&gt;Joel Landsteiner &lt;a href=&#34;https://twitter.com/LucidOndine/status/455417980227420160&#34;&gt;was perhaps the most generous&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; really cool talk. Most directly applicable talk I&amp;rsquo;ve attended this
+conference. Really quite inspirational.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And I&amp;rsquo;m looking forward to seeing what &lt;a href=&#34;https://twitter.com/zmagg/status/455783156256624642&#34;&gt;Maggie Zhou&lt;/a&gt; (an engineer at
+Etsy) comes up with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;hey! i really liked your talk @pycon &amp;amp; am inspired to go data collecting &amp;amp;
+visualizing for our codebase. thx. will share what i find&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So all in all, I&amp;rsquo;d call it a success. If you saw the talk and this sort of thing gets you excited, please send me an email (tavisharmstrong at gmail dot com). My hope is that if a bunch of us get together and do some cool work like this, we can make some real progress on closing the gap between the &lt;a href=&#34;http://www.slideshare.net/gvwilson/two-solitudes&#34;&gt;two solitudes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
+
+&lt;p&gt;My notes are available &lt;a href=&#34;http://example.org/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUSEC 2014</title>
+      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <description>
+
+&lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
+
+&lt;p&gt;Since I wasn&amp;rsquo;t on the organizing board this year, I got to enjoy the conference in a much more relaxing fashion.
+It was also my fifth CUSEC, so I&amp;rsquo;ve figured out how this conference works and how to talk to people.
+Having a lot of friends in the companies at the career fair helps; being friends with &lt;a href=&#34;http://jvns.ca&#34;&gt;one&lt;/a&gt; of the speakers helps too.
+But more importantly, I&amp;rsquo;m just way older and more confident than my 19-year-old self.
+I feel comfortable around nerds, and I&amp;rsquo;m not totally lost in a technical conversation.
+I&amp;rsquo;ve grown just as much as CUSEC has grown.&lt;/p&gt;
+
+&lt;h2 id=&#34;talks&#34;&gt;Talks!&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ll talk about a few of the talks that really stood out to me.&lt;/p&gt;
+
+&lt;p&gt;Famous blogger &lt;a href=&#34;http://jvns.ca&#34;&gt;Julia Evans&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; gave a fun talk on hacking
+on the kernel. Operating system kernels are a really neat part of computers
+that I don&amp;rsquo;t know much about, and Julia makes it seem easy and not scary at
+all. She had a neat trick of hiding all the parts of a C program that aren&amp;rsquo;t
+relevant to understanding it on a high level. It&amp;rsquo;s quite rare for someone to
+take a very technically intimidating subject and make it seem within your
+grasp.&lt;/p&gt;
+
+&lt;p&gt;Josh Matthews gave a &lt;a href=&#34;http://www.joshmatthews.net/cusec14/&#34;&gt;talk&lt;/a&gt; on developing
+for Firefox: the kinds of projects Mozilla has that you can work on, how to
+find a bug to work on, and what the patch process is like. I spent the last
+summer looking at how open source projects do code review, so a lot of this
+was obvious to me, but this is exactly the kind of talk that would have
+completely blown my mind a couple years ago.&lt;/p&gt;
+
+&lt;p&gt;He went a few steps further and bravely walked the audience through a complete
+Firefox patch, explaining the important parts of the code, and giving a brief
+overview of the architecture along the way. Similarly to Julia&amp;rsquo;s talk, it was a
+very non-threatening introduction to an extremely intimidating topic.&lt;/p&gt;
+
+&lt;p&gt;Nadim Kobeissi spoke about &lt;a href=&#34;http://crypto.cat&#34;&gt;CryptoCat&lt;/a&gt;, a controvertial
+encrypted chat service that&amp;rsquo;s been under a lot of fire since it started for
+horrible &lt;a href=&#34;http://tobtu.com/decryptocat.php&#34;&gt;bugs&lt;/a&gt; and being developed by a 23
+year old (ad-hominem attacks abound). I admit I have a soft spot for Nadim
+because he is a recent Concordia graduate &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but also because I think he&amp;rsquo;s
+solving a tough problem that needs solving if encryption is ever to become
+popular &amp;mdash; usability.&lt;/p&gt;
+
+&lt;p&gt;Nadim&amp;rsquo;s talk wasn&amp;rsquo;t technical in nature &amp;mdash; it was more about the political
+side of things. He shared insightful observations on the nature of the struggle
+between hackers and the surveillance state. In essence, he argued that they
+both feed off making the other look like an adversary to be defeated, but the
+real solution lies in common understanding. That&amp;rsquo;s no easy feat when your
+adversaries are organizations like CSEC and the NSA who have had no serious
+oversight.&lt;/p&gt;
+
+&lt;p&gt;I was honestly surprised to find Nadim very approachable, humble, and easy to
+talk to. He gave me some good advice on learning more about computer security
+and finding mentors.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to spoil &lt;a href=&#34;https://www.destroyallsoftware.com/screencasts&#34;&gt;Gary
+Bernhardt&lt;/a&gt;&amp;rsquo;s talk &amp;mdash;
+you&amp;rsquo;ll have to watch it when it comes out &amp;mdash; but it was stylistically very
+interesting to me. I love science fiction and informative, thought-provoking
+technical talks. The marriage of both is something else entirely, and I liked it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nerd.kelseyinnis.com/&#34;&gt;Kelsey Gilmore-Innis&lt;/a&gt; gave a fun, bombastic
+introduction to functional programming.  &lt;a href=&#34;https://twitter.com/avibryant&#34;&gt;Avi
+Bryant&lt;/a&gt; spoke about detecting fraud, but I
+missed the first half of his talk because I was talking to someone in the
+hallway and didn&amp;rsquo;t realize it had started. Oops. I had a nice chat with him
+later, though, which sort of made up for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;question-time&#34;&gt;Question time&lt;/h2&gt;
+
+&lt;p&gt;This year I gave myself a challenge: to ask a question after every talk I saw.
+With two exceptions, I managed to do this, and it went pretty well. I got a
+little better at handling my nerves throughout the weekend and managed not to
+say anything too stupid. Julia&amp;rsquo;s encouragement &amp;mdash; something along the
+lines of &amp;ldquo;everyone thinks you&amp;rsquo;re dumb anyways&amp;rdquo; &amp;mdash; was very helpful.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; I have good taste in questions. I might write a blog post on what I
+think makes a good post-talk question at some point.&lt;/p&gt;
+
+&lt;h2 id=&#34;conference-pro-tips&#34;&gt;Conference pro-tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Volunteering is a good way to make friends.&lt;/li&gt;
+&lt;li&gt;Talk to younger students and say nice encouraging things to them. Don&amp;rsquo;t act like a smartypants, even if you are. Lower the ladder instead of pulling it up behind you.&lt;/li&gt;
+&lt;li&gt;Have a &lt;a href=&#34;http://aosabook.org&#34;&gt;physical object&lt;/a&gt; that you built that you can
+show off to company recruiters. Hack together a bunch of LEDs and a
+microcontroller and sew it into your backpack. Whatever.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t complain about talks you didn&amp;rsquo;t like, unless the presenter said
+something harmful. Life is too short for inadvertently making people feel bad
+about things they like, and it makes you look like a jerk. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Get as much sleep as you can without being a hermit. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;CUSEC was fun and I recommend going.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;She really likes it when you call her internet-famous.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;I&amp;rsquo;m pretty sure we were at least registered for a class together at one point, though he was in a much different degree program.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Ahem.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;This is probably the most controversial part of this post.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

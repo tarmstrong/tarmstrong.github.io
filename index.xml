@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://example.org/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Jul 2016 23:12:00 +0000</lastBuildDate>
+    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Making sounds with overtone</title>
+      <link>http://example.org/2016/07/23/making-sounds-with-overtone</link>
+      <pubDate>Sat, 23 Jul 2016 23:12:00 +0000</pubDate>
+      
+      <guid>http://example.org/2016/07/23/making-sounds-with-overtone</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been messing about with &lt;a href=&#34;https://github.com/overtone/overtone&#34;&gt;Overtone&lt;/a&gt;, a Clojure interface to &lt;a href=&#34;http://supercollider.github.io/&#34;&gt;SuperCollider&lt;/a&gt; to make interesting sounds as a way to combine my interests in programming and music. Overtone has been particularly enjoyable to use because it is (unlike SuperCollider) a programming language that has uses beyond sound synthesis, it is surprisingly easy to set up, and is not under active development (which, for the time being, means that it is stable. I&amp;rsquo;m looking on the bright side here.)&lt;/p&gt;
+
+&lt;p&gt;At some point I&amp;rsquo;ll probably write down what I&amp;rsquo;ve learned about working with Overtone, but in the mean time, enjoy these sounds:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273272287&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time.utc in ruby</title>
+      <link>http://example.org/2016/07/20/timeutc-in-ruby</link>
+      <pubDate>Wed, 20 Jul 2016 20:09:00 +0000</pubDate>
+      
+      <guid>http://example.org/2016/07/20/timeutc-in-ruby</guid>
+      <description>&lt;p&gt;A coworker pointed out this strange behaviour in Ruby today:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;irb(main):003:0&amp;gt; Time.utc(2016, 2, 29)
+=&amp;gt; 2016-02-29 00:00:00 UTC
+irb(main):004:0&amp;gt; Time.utc(2015, 2, 29)
+=&amp;gt; 2015-03-01 00:00:00 UTC
+irb(main):005:0&amp;gt; Time.utc(2015, 1, 32)
+ArgumentError: argument out of range
+	from (irb):5:in `utc&#39;
+	from (irb):5
+	from /usr/bin/irb:11:in `&amp;lt;main&amp;gt;&#39;
+irb(main):006:0&amp;gt; Time.utc(2015, 4, 31)
+=&amp;gt; 2015-05-01 00:00:00 UTC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Clearly the authors made the effort to stop you from passing in obviously bad values. But I still find it so odd that it rolls over values that are just a little incorrect without telling you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>April links 2016</title>
+      <link>http://example.org/2016/04/04/april-links-2016</link>
+      <pubDate>Mon, 04 Apr 2016 20:09:00 +0000</pubDate>
+      
+      <guid>http://example.org/2016/04/04/april-links-2016</guid>
+      <description>&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dancres.github.io/Pages/&#34;&gt;A Distributed Systems Reading List&lt;/a&gt;. I found the &amp;ldquo;Harvest and Yield&amp;rdquo; paper particularly helpful.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://12factor.net/&#34;&gt;The Twelve-Factor App&lt;/a&gt;: opinionated guidelines for how to architect web services.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wipp.energy.gov/picsprog/articles/wipp%20exhibit%20message%20to%2012,000%20a_d.htm&#34;&gt;This is not a place of honour&lt;/a&gt;: how to identify nuclear waste to future generations. (via mhoye)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://danluu.com/programmer-moneyball/&#34;&gt;We only hire the trendiest&lt;/a&gt; by Dan Luu, who is great.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://danluu.com/postmortem-lessons/&#34;&gt;Lessons learned from reading postmortems&lt;/a&gt;, also Dan Luu&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf&#34;&gt;How Complex Systems Fail&lt;/a&gt;, which is referenced in the above Dan Luu post&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What they didn&#39;t teach me in school</title>
+      <link>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</link>
+      <pubDate>Sun, 26 Jul 2015 04:28:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</guid>
+      <description>&lt;p&gt;Mike Hoye has some &lt;a href=&#34;http://exple.tive.org/blarg/2015/06/15/september-never-changes/&#34;&gt;good advice&lt;/a&gt; for university professors hoping to
+incorporate open source development into their courses:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[W]e’re grateful any effort put in, large or small, to making Firefox better
+and supporting a free and open Web. Only this: there are a couple of things
+that make working with Firefox in an academic context challenging and you
+should be aware of them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The main problem he talks about is the disconnect between the cadence of the
+university project and of an open source release. Sometimes a small bug can
+turn into a large one, and open source developers won&amp;rsquo;t merge patches
+willy-nilly just to appease an impatient professor. It&amp;rsquo;s hard for developers to
+find bugs that will be easily fixed within that short time frame, and it&amp;rsquo;s made
+much harder by the lack of warning they&amp;rsquo;re given by professors. His advice is
+good, and if you&amp;rsquo;re hoping to unleash a bunch of hapless undergrads onto
+an open source project you should follow it.&lt;/p&gt;
+
+&lt;p&gt;The post reminded me of a few things that I&amp;rsquo;ve been thinking about lately,
+especially things that are way harder than I understood when I was in school.&lt;/p&gt;
+
+&lt;p&gt;In the case of open source development, I never truly understood what was so
+damn hard about it when you&amp;rsquo;re starting out. When I was in first year, I read
+a bunch of ideologically-charged essays by Stallman, Doctorow, and friends.
+Easy &amp;ndash; just download the source code to an open source project you use. Muck
+around with the source code and you&amp;rsquo;ll learn how to code. Before you know it,
+you&amp;rsquo;ll be submitting patches. Great. This all sounded reasonable to me back then.
+On the internet, no one knows you&amp;rsquo;re a dog, and so I pulled myself onto my hind
+legs and compiled &lt;code&gt;nano&lt;/code&gt; and tried to figure out how the source code worked &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+But it never seemed to stick; I didn&amp;rsquo;t actually learn how the internals worked,
+I never actually got around to fixing any bugs, and I thought it was all because
+I was too dumb to be a developer.&lt;/p&gt;
+
+&lt;p&gt;Over the next few years I would occasionally convince myself that I could make
+it happen. And it never really did.&lt;/p&gt;
+
+&lt;p&gt;Part of the problem was that I didn&amp;rsquo;t really know how to program all that well,
+and you need to know how to program pretty well to be able to contribute
+anything meaningful to, say, Firefox. Or maybe you don&amp;rsquo;t, but you sure as hell need
+to be able to figure out the build system.&lt;/p&gt;
+
+&lt;p&gt;But I think you can overcome that, especially if you&amp;rsquo;re brave enough to ask for help
+on the internet. The hardest part is that people who run open source projects are
+working engineers, and they expect you to also be a working engineer. They expect
+you to understand the social norms around software development and to have familiarity
+with the tools necessary to keep up with them.&lt;/p&gt;
+
+&lt;p&gt;I first started making open source patches when I was an intern at a Drupal
+consulting company. Here&amp;rsquo;s &lt;a href=&#34;https://www.drupal.org/node/1260528&#34;&gt;one&lt;/a&gt;. And that took a lot of hand-holding
+from some very good mentors who I am very grateful for. It wasn&amp;rsquo;t just the code
+that was hard to figure out. I needed to figure out how to create an actual &lt;code&gt;.patch&lt;/code&gt;
+file. I needed to understand how to interpret test output. And I needed to do all
+of the above enough times to appease the reviewers. It takes many different skills
+to work with other developers, and it&amp;rsquo;s difficult to learn these skills independently
+of the others.&lt;/p&gt;
+
+&lt;p&gt;The point about mentors is, I guess, what this whole post is really about. The
+thing that has been most useful to me when learning to write software has
+been sitting down with someone who is better than me and watching them work.
+This is still true today: whenever I can, I try to watch how my peers do their
+work and it&amp;rsquo;s staggering how much I can learn in a few minutes. I imagine
+some people don&amp;rsquo;t need to watch over other people&amp;rsquo;s shoulders to learn the
+trade, but it really works for me.&lt;/p&gt;
+
+&lt;p&gt;If I was going to give advice to a more junior developer, I guess it&amp;rsquo;d be this:
+find someone more experienced and try to convince them to let you watch them
+work.  Ask questions when you don&amp;rsquo;t understand something. And try to mimic them
+when you write software yourself. If you&amp;rsquo;re a more experienced engineer, offer
+this to people more junior to you. I know it&amp;rsquo;s hard to work when someone&amp;rsquo;s
+looking over your shoulder, but do it anyways.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;p&gt;To this day I receive the nano-devel mailing list to my inbox; it baffles
+  me that I ever thought this would help launch my open source career.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shows I&#39;ve been watching</title>
+      <link>http://example.org/2015/07/12/shows-ive-been-watching</link>
+      <pubDate>Sun, 12 Jul 2015 22:32:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/07/12/shows-ive-been-watching</guid>
+      <description>&lt;p&gt;Earlier this year I learned to knit. Part of the appeal for me is that it&amp;rsquo;s very easy to sit down, knit some stitches, and make progress. It&amp;rsquo;s possible to screw up so badly you have to start over, but for the most part it&amp;rsquo;s difficult to take large steps backward. Unlike with programming, it&amp;rsquo;s hard to knit a scarf so badly it causes active harm to you and the people around you. If you&amp;rsquo;re patient, you&amp;rsquo;ll eventually have a scarf or a sweater, and no matter how many stiches you accidentally added in the wrong places, you still have something that represents a tonne of work to be proud of. Also you are now warmer than you were before, which is kind of cool.&lt;/p&gt;
+
+&lt;p&gt;One nice thing about knitting is that you can do it while you watch television. Some shows I&amp;rsquo;ve been watching lately:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The West Wing&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Adventure Time&lt;/em&gt;, which is hilarious and cuter than a show has any right to be.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Bomb Girls&lt;/em&gt;, which follows the stories of the workers of a Toronto munitions factory during WWII. Like &lt;em&gt;The Bletchley Circle&lt;/em&gt;, it focuses on parts of the war effort that are not usually explored in war movies, viz., the home front. It also spends some time on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Italian-Canadian_internment&#34;&gt;darker parts of Canadian history&lt;/a&gt;, which I appreciate.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sense8&lt;/em&gt;, the new Netflix show from The Wachowskis and J. Michael Straczynski. &lt;a href=&#34;https://twitter.com/aphyr/status/617943823243546625&#34;&gt;This show is great&lt;/a&gt;. And hey, some of it takes place in SF which is kind of neat.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(This fluff post is brought to you by a few weeks of travel and strep throat. Pro-tip: don&amp;rsquo;t get strep throat.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Last Line</title>
+      <link>http://example.org/2015/05/24/the-last-line</link>
+      <pubDate>Sun, 24 May 2015 21:42:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/05/24/the-last-line</guid>
+      <description>&lt;p&gt;Greg Wilson posted a &lt;a href=&#34;http://software-carpentry.org/blog/2015/05/icse2015.html&#34;&gt;list of papers worth reading&lt;/a&gt; from
+the 2015 &lt;em&gt;International Conference on Software Engineering&lt;/em&gt;.  One of the
+abstracts that caught my eye was from &lt;a href=&#34;http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_zaidman_karpov_the_last_line_effect_preprint.pdf&#34;&gt;&lt;em&gt;The Last Line Effect&lt;/em&gt;&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:cite&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:cite&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Abstract: Micro-clones are tiny duplicated pieces of code; they
+typically comprise only a few statements or lines. In this paper,
+we expose the “last line effect,” the phenomenon that the last
+line or statement in a micro-clone is much more likely to contain
+an error than the previous lines or statements. We do this by
+analyzing 208 open source projects and reporting on 202 faulty
+micro-clones.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It might be easier to just look at an example of what they&amp;rsquo;re talking about:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x += other.x;
+y += other.y;
+z += other.y;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, the last line reads &lt;code&gt;other.y&lt;/code&gt; instead of &lt;code&gt;other.z&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think this is a great example of the kind of software engineering research
+paper I really enjoy. The paper isn&amp;rsquo;t claiming that much: in the software they
+studied using their tool, they found a bunch of copy pasta. Among that copy
+pasta, they found that the last, er, noodle is more likely to be buggy.
+Many engineers could guess at this result, but having evidence to back up your
+anecdote is useful.&lt;/p&gt;
+
+&lt;p&gt;The other part that I like is that it&amp;rsquo;s &lt;em&gt;useful&lt;/em&gt;. Next time
+I&amp;rsquo;m reviewing code, I&amp;rsquo;m probably going to look more suspiciously at &amp;ldquo;micro-clones&amp;rdquo;,
+and when I do, I&amp;rsquo;ll know where to focus my efforts &amp;ndash; on the last line.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:cite&#34;&gt;Beller, Zaidman, and Karpov, 2015.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:cite&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programming as argument</title>
+      <link>http://example.org/2015/05/09/programming-as-argument</link>
+      <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/05/09/programming-as-argument</guid>
+      <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
+making a machine perform a task and primarily about telling other humans what
+you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
+humans can discuss what a pseudocode program &lt;em&gt;would&lt;/em&gt; do and whether or not it
+would be a good idea, without ever running the code on a computer.  The
+pseudocode program is an argument &amp;ndash; it argues that a program could be
+constructed to accomplish the task at hand. The problem with pseudocode
+is &lt;em&gt;not&lt;/em&gt; that it doesn&amp;rsquo;t run on a computer. The problem with pseudocode is that it has no
+way of convincing you that it would work if it &lt;em&gt;did&lt;/em&gt; run on a computer.&lt;/p&gt;
+
+&lt;p&gt;The reason why a pseudocode program of any respectable size is not a convincing
+argument is probably obvious to anyone who writes software for a living: it&amp;rsquo;s
+easy to write code that looks plausible to other humans, but unless you run
+the program, it&amp;rsquo;s hard to believe that it will actually work. Software that is easy to
+run is more convincing because you can watch it work. You provide inputs, it
+provides outputs. You can do this to prove or disprove hypotheses. In this case, though,
+the code stops being an argument that a program &lt;em&gt;could&lt;/em&gt; be constructed to perform
+a task (as is the case with pseudocode). Instead, it becomes an argument that
+the compiled program will perform the task correctly. Testing the program manually
+is one way of convincing yourself that it will do that. But it is only one way.&lt;/p&gt;
+
+&lt;p&gt;An automated testing framework can be useful for making your code more convincing.
+You can show that given &lt;em&gt;this&lt;/em&gt; input and &lt;em&gt;that&lt;/em&gt; input, the program will produce
+the correct output. Other programmers can run the tests and feel more confident
+that the program will behave that way.&lt;/p&gt;
+
+&lt;p&gt;A few arguments are implicit in every test: these fake inputs are
+representative of real inputs. This is an accurate simulation of global state.
+These expected outputs are the &lt;em&gt;correct&lt;/em&gt; outputs.  When you use mocks or stubs
+in your tests, you argue that the dependencies you are simulating
+actually behave that way; a common mistake is over-mocking dependencies so much
+that you have to just &lt;em&gt;trust&lt;/em&gt; that the code will work when connected to real dependencies.
+For example, if your tests don&amp;rsquo;t open a socket
+to a functioning server, can you really be sure that the code will do so correctly in
+production?  If you can&amp;rsquo;t, you have to &lt;em&gt;trust&lt;/em&gt; that the networking code works. The
+argument becomes &amp;ldquo;&lt;em&gt;if&lt;/em&gt; we assume the networking code exists, the following code
+will write this message over the socket.&amp;rdquo; That &lt;em&gt;if&lt;/em&gt; might be a very big &lt;em&gt;if&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code review makes this argumentation-model-of-programming more obvious. If you
+write useless tests, a reviewer will often tell you that they are terrible
+tests.  The point they are making is &lt;em&gt;not&lt;/em&gt; that your code doesn&amp;rsquo;t work.  The
+point is that they have little reason to believe it will. They have not been
+convinced by your argument.&lt;/p&gt;
+
+&lt;p&gt;If code is an argument, what does that mean for working programmers?  Well, it
+means that the rules of rhetoric apply when writing software. If you want your
+code to be merged, or you want your project to be adopted, you need it to be
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Cialdini&#34;&gt;persuasive&lt;/a&gt;.  This raises an important question: is &lt;em&gt;persuasive&lt;/em&gt;
+code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Books I read in 2014</title>
+      <link>http://example.org/2015/04/04/books-i-read-in-2014</link>
+      <pubDate>Sat, 04 Apr 2015 14:35:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/04/04/books-i-read-in-2014</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to start writing on this blog again, but blogging takes a lot of work so I&amp;rsquo;m just going to list some of the fiction I read in 2014. I&amp;rsquo;m pretty sure I read more books than this, but these are the ones that I remember. They are in order from most to least favourite.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Use of Weapons&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ancillary Justice&lt;/em&gt; by Ann Leckie&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Dispossessed&lt;/em&gt; by Ursula K. Le Guin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;A Deepness in the Sky&lt;/em&gt; by Vernor Vinge&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Diamond Age&lt;/em&gt; by Neal Stephenson&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Player of Games&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Excession&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Name of the Wind&lt;/em&gt; by Patrick Rothfuss&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Windup Girl&lt;/em&gt; by Paolo Bacigalupi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also read some short fiction, but mostly can&amp;rsquo;t remember it. This is what I do remember:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://subterraneanpress.com/magazine/fall_2010/fiction_the_lifecycle_of_software_objects_by_ted_chiang&#34;&gt;&lt;em&gt;The Lifecycle of Software Objects&lt;/em&gt;&lt;/a&gt; by Ted Chiang&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/mcdonald_07_13_reprint/&#34;&gt;&lt;em&gt;The Dust Assassin&lt;/em&gt;&lt;/a&gt; by Ian McDonald&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/macfarlane_08_13/&#34;&gt;&lt;em&gt;Found&lt;/em&gt;&lt;/a&gt; by Alex Dally MacFarlane&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Graduation</title>
+      <link>http://example.org/2014/06/10/graduation</link>
+      <pubDate>Tue, 10 Jun 2014 22:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/06/10/graduation</guid>
+      <description>&lt;p&gt;Six years ago I moved to Montreal for university. An undergraduate degree should not be treated as a race, but it starts to feel that way after six years. Today, I finally graduated.&lt;/p&gt;
+
+&lt;p&gt;It feels good. I can complain all day about the things I didn&amp;rsquo;t like about university &amp;ndash; there are all too many of them, and I like to complain &amp;ndash; but I&amp;rsquo;m happy enough with where I am professionally, personally, intellectually right now that I can overlook that and just be happy.&lt;/p&gt;
+
+&lt;p&gt;Onward!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Two Solitudes (for Hackers)</title>
+      <link>http://example.org/2014/04/19/the-two-solitudes-for-hackers</link>
+      <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
+This year we were lucky to have it in Montreal (only a short walk from my apartment)
+and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
+
+&lt;p&gt;As I &lt;a href=&#34;https://twitter.com/tavarm/status/379409322943320064&#34;&gt;wrote&lt;/a&gt; when I submitted the proposal, I proposed a talk on a topic
+that I wished someone smarter would speak about. I was pretty nervous about giving the talk
+&amp;mdash; the usual nerves, but also a sense that the topic was much larger than I could give
+credit to in 30 minutes with the limited experience I have as someone a few weeks shy
+of an undergraduate engineering degree.&lt;/p&gt;
+
+&lt;p&gt;The gist of the talk is this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We have a lot to learn about how we work as software engineers.&lt;/li&gt;
+&lt;li&gt;We can learn a lot about how we in the open source community work through
+examining version control history, code review data, etc., and we have the
+tools and skills necessary to analyze the data. (This is a bit of an
+understatement &amp;ndash; many people in the Python community &lt;em&gt;wrote the data analysis tools&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;We understand our own projects better than any researcher could so we are in a good
+position to study them.&lt;/li&gt;
+&lt;li&gt;We have the most to gain from studying the way we work; we don&amp;rsquo;t care about citation
+counts, we just want to write better software and be happier while we do it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I finished the talk by challenging the audience to go out, learn cool things about the
+projects they work on, and present their findings next year at PyCon 2015.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vvEY6bhLXsU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I went into the talk with the goal of finding &lt;em&gt;one&lt;/em&gt; person who thought the topic was cool. Just one.
+I seem to have struck a chord though, and had lots of really interesting conversations with people
+after my talk.&lt;/p&gt;
+
+&lt;p&gt;Joel Landsteiner &lt;a href=&#34;https://twitter.com/LucidOndine/status/455417980227420160&#34;&gt;was perhaps the most generous&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; really cool talk. Most directly applicable talk I&amp;rsquo;ve attended this
+conference. Really quite inspirational.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And I&amp;rsquo;m looking forward to seeing what &lt;a href=&#34;https://twitter.com/zmagg/status/455783156256624642&#34;&gt;Maggie Zhou&lt;/a&gt; (an engineer at
+Etsy) comes up with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;hey! i really liked your talk @pycon &amp;amp; am inspired to go data collecting &amp;amp;
+visualizing for our codebase. thx. will share what i find&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So all in all, I&amp;rsquo;d call it a success. If you saw the talk and this sort of thing gets you excited, please send me an email (tavisharmstrong at gmail dot com). My hope is that if a bunch of us get together and do some cool work like this, we can make some real progress on closing the gap between the &lt;a href=&#34;http://www.slideshare.net/gvwilson/two-solitudes&#34;&gt;two solitudes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
+
+&lt;p&gt;My notes are available &lt;a href=&#34;http://example.org/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NBDiff: A diffing and merging tool for the IPython Notebook</title>
+      <link>http://example.org/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</link>
+      <pubDate>Sun, 06 Apr 2014 15:18:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</guid>
+      <description>&lt;p&gt;Final-year engineering students at many universities have to complete a &amp;ldquo;Capstone&amp;rdquo; project that gives them a chance to apply everything they learned throughout school to a practical, hands-on group project. My team just finished ours &amp;ndash; a project called &lt;a href=&#34;http://nbdiff.org&#34;&gt;NBDiff&lt;/a&gt; &amp;ndash; and I&amp;rsquo;m happy to report that it was a success.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve spoken to me in the last couple years, you&amp;rsquo;ve probably heard me ramble about the IPython Notebook, a rich web-based environment for scientific computing. Well, that project is wonderful, but there&amp;rsquo;s a catch with working on notebook files: the file format is a giant JSON blob and makes version control tricky. If you use &lt;code&gt;git diff&lt;/code&gt;, it can be hard to understand what you&amp;rsquo;ve actually changed, and if you need to resolve a merge conflict? Fasten your seatbelt.&lt;/p&gt;
+
+&lt;p&gt;NBDiff takes a stab at making these tasks easier. It presents diffs in a two-pane format and shows you deleted/added cells how you originally saw them in the notebook: if an image was changed, you see the image instead of a 10000-line diff of a base64 encoded PNG file. When resolving merge conflicts, you don&amp;rsquo;t have to worry about mangling the JSON by hand &amp;ndash; you just drag and drop changes into the final version and click &amp;lsquo;save&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/main-screenshot.png&#34; alt=&#34;A screenshot of nbdiff&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As far as school projects go, this one was very satisfying. We have 50 GitHub stars and several hundred downloads already; I can actually use it to solve problems &lt;em&gt;right now&lt;/em&gt;; and the IPython folks are interested in seeing it maintained beyond Capstone. Considering many school projects &amp;ndash; even Capstone projects &amp;ndash; never see the light of day, let alone continued maintenance, I&amp;rsquo;m really happy about this.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Homepage: &lt;a href=&#34;http://nbdiff.org&#34;&gt;nbdiff.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub repo: &lt;a href=&#34;https://github.com/tarmstrong/nbdiff&#34;&gt;tarmstrong/nbdiff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PyPI package: &lt;a href=&#34;https://pypi.python.org/pypi/nbdiff&#34;&gt;nbdiff&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUSEC 2014</title>
+      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
+      
+      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <description>
+
+&lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
+
+&lt;p&gt;Since I wasn&amp;rsquo;t on the organizing board this year, I got to enjoy the conference in a much more relaxing fashion.
+It was also my fifth CUSEC, so I&amp;rsquo;ve figured out how this conference works and how to talk to people.
+Having a lot of friends in the companies at the career fair helps; being friends with &lt;a href=&#34;http://jvns.ca&#34;&gt;one&lt;/a&gt; of the speakers helps too.
+But more importantly, I&amp;rsquo;m just way older and more confident than my 19-year-old self.
+I feel comfortable around nerds, and I&amp;rsquo;m not totally lost in a technical conversation.
+I&amp;rsquo;ve grown just as much as CUSEC has grown.&lt;/p&gt;
+
+&lt;h2 id=&#34;talks&#34;&gt;Talks!&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ll talk about a few of the talks that really stood out to me.&lt;/p&gt;
+
+&lt;p&gt;Famous blogger &lt;a href=&#34;http://jvns.ca&#34;&gt;Julia Evans&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; gave a fun talk on hacking
+on the kernel. Operating system kernels are a really neat part of computers
+that I don&amp;rsquo;t know much about, and Julia makes it seem easy and not scary at
+all. She had a neat trick of hiding all the parts of a C program that aren&amp;rsquo;t
+relevant to understanding it on a high level. It&amp;rsquo;s quite rare for someone to
+take a very technically intimidating subject and make it seem within your
+grasp.&lt;/p&gt;
+
+&lt;p&gt;Josh Matthews gave a &lt;a href=&#34;http://www.joshmatthews.net/cusec14/&#34;&gt;talk&lt;/a&gt; on developing
+for Firefox: the kinds of projects Mozilla has that you can work on, how to
+find a bug to work on, and what the patch process is like. I spent the last
+summer looking at how open source projects do code review, so a lot of this
+was obvious to me, but this is exactly the kind of talk that would have
+completely blown my mind a couple years ago.&lt;/p&gt;
+
+&lt;p&gt;He went a few steps further and bravely walked the audience through a complete
+Firefox patch, explaining the important parts of the code, and giving a brief
+overview of the architecture along the way. Similarly to Julia&amp;rsquo;s talk, it was a
+very non-threatening introduction to an extremely intimidating topic.&lt;/p&gt;
+
+&lt;p&gt;Nadim Kobeissi spoke about &lt;a href=&#34;http://crypto.cat&#34;&gt;CryptoCat&lt;/a&gt;, a controvertial
+encrypted chat service that&amp;rsquo;s been under a lot of fire since it started for
+horrible &lt;a href=&#34;http://tobtu.com/decryptocat.php&#34;&gt;bugs&lt;/a&gt; and being developed by a 23
+year old (ad-hominem attacks abound). I admit I have a soft spot for Nadim
+because he is a recent Concordia graduate &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but also because I think he&amp;rsquo;s
+solving a tough problem that needs solving if encryption is ever to become
+popular &amp;mdash; usability.&lt;/p&gt;
+
+&lt;p&gt;Nadim&amp;rsquo;s talk wasn&amp;rsquo;t technical in nature &amp;mdash; it was more about the political
+side of things. He shared insightful observations on the nature of the struggle
+between hackers and the surveillance state. In essence, he argued that they
+both feed off making the other look like an adversary to be defeated, but the
+real solution lies in common understanding. That&amp;rsquo;s no easy feat when your
+adversaries are organizations like CSEC and the NSA who have had no serious
+oversight.&lt;/p&gt;
+
+&lt;p&gt;I was honestly surprised to find Nadim very approachable, humble, and easy to
+talk to. He gave me some good advice on learning more about computer security
+and finding mentors.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to spoil &lt;a href=&#34;https://www.destroyallsoftware.com/screencasts&#34;&gt;Gary
+Bernhardt&lt;/a&gt;&amp;rsquo;s talk &amp;mdash;
+you&amp;rsquo;ll have to watch it when it comes out &amp;mdash; but it was stylistically very
+interesting to me. I love science fiction and informative, thought-provoking
+technical talks. The marriage of both is something else entirely, and I liked it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nerd.kelseyinnis.com/&#34;&gt;Kelsey Gilmore-Innis&lt;/a&gt; gave a fun, bombastic
+introduction to functional programming.  &lt;a href=&#34;https://twitter.com/avibryant&#34;&gt;Avi
+Bryant&lt;/a&gt; spoke about detecting fraud, but I
+missed the first half of his talk because I was talking to someone in the
+hallway and didn&amp;rsquo;t realize it had started. Oops. I had a nice chat with him
+later, though, which sort of made up for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;question-time&#34;&gt;Question time&lt;/h2&gt;
+
+&lt;p&gt;This year I gave myself a challenge: to ask a question after every talk I saw.
+With two exceptions, I managed to do this, and it went pretty well. I got a
+little better at handling my nerves throughout the weekend and managed not to
+say anything too stupid. Julia&amp;rsquo;s encouragement &amp;mdash; something along the
+lines of &amp;ldquo;everyone thinks you&amp;rsquo;re dumb anyways&amp;rdquo; &amp;mdash; was very helpful.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; I have good taste in questions. I might write a blog post on what I
+think makes a good post-talk question at some point.&lt;/p&gt;
+
+&lt;h2 id=&#34;conference-pro-tips&#34;&gt;Conference pro-tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Volunteering is a good way to make friends.&lt;/li&gt;
+&lt;li&gt;Talk to younger students and say nice encouraging things to them. Don&amp;rsquo;t act like a smartypants, even if you are. Lower the ladder instead of pulling it up behind you.&lt;/li&gt;
+&lt;li&gt;Have a &lt;a href=&#34;http://aosabook.org&#34;&gt;physical object&lt;/a&gt; that you built that you can
+show off to company recruiters. Hack together a bunch of LEDs and a
+microcontroller and sew it into your backpack. Whatever.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t complain about talks you didn&amp;rsquo;t like, unless the presenter said
+something harmful. Life is too short for inadvertently making people feel bad
+about things they like, and it makes you look like a jerk. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Get as much sleep as you can without being a hermit. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;CUSEC was fun and I recommend going.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;She really likes it when you call her internet-famous.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;I&amp;rsquo;m pretty sure we were at least registered for a class together at one point, though he was in a much different degree program.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Ahem.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;This is probably the most controversial part of this post.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How long does it take to review a pull request on IPython?</title>
+      <link>http://example.org/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
+      <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
+      
+      <guid>http://example.org/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
+      <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
+IPython Notebook that looks at how long it takes to review a pull request on
+the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/tarmstrong/code-analysis/blob/master/IPythonReviewTime.ipynb&#34;&gt;How long does it take to review a pull request on IPython?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I had fun writing it, and I&amp;rsquo;d like to see more of this from non-academics.
+Hackers should be able to answer questions they have about a code base without
+too much of a fuss. If I can find the time, I hope to make this a bit easier
+with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
+you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Git Harness</title>
+      <link>http://example.org/2013/11/24/the-git-harness</link>
+      <pubDate>Sun, 24 Nov 2013 16:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/2013/11/24/the-git-harness</guid>
+      <description>
+
+&lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
+
+&lt;p&gt;That said, most people can agree on one thing: the interface sucks. Git is a powerful tool, but it&amp;rsquo;s almost impossible to learn how all the commands and their options work. The arguments have inconsistent orders, and the flags mean different things in different contexts. Some of the commands share duties with others. I&amp;rsquo;ve learned to deal with it — it involves reading the man pages every time you want to use &lt;code&gt;git branch&lt;/code&gt; — but it is a struggle.&lt;/p&gt;
+
+&lt;p&gt;Complaining is fun, but it isn&amp;rsquo;t going to get us anywhere —  how do we go about fixing this problem instead? Is the answer a slick GUI like the GitHub desktop client? For some people, sure. But too many GUIs solve the wrong problem: &lt;em&gt;affordance&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Affordance is the idea that you should be able to figure out how to use parts of an interface intuitively. Buttons should look like they can be pressed, editable text should look like it can be edited, etc. Command line tools generally solve this problem with man pages and usage messages — and that&amp;rsquo;s a powerful mechanism.&lt;/p&gt;
+
+&lt;p&gt;However, it doesn&amp;rsquo;t let you predict the outcome of your actions. Git forces you to have a solid mental model of how a Git history works. You have to understand what the various commands do to that mental model, and be able to simulate a proposed action in your head. Most of us developed this mental model through using Git and making a lot of mistakes.&lt;/p&gt;
+
+&lt;p&gt;Practice makes perfect, but there is no virtue in unnecessary struggle. We &lt;em&gt;could&lt;/em&gt; build a Git interface that helps novices develop their mental models faster, with less pain. We could do it without hiding the complexities of Git, too. And I think we should.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is the Git interface that I would actually want to use:&lt;/p&gt;
+
+&lt;h2 id=&#34;the-napkin-sketch&#34;&gt;The Napkin Sketch&lt;/h2&gt;
+
+&lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you use Git, you probably understand this. You might visualize it differently — maybe your arrows go the other way, or maybe you like a vertical graph. In any case, this visualization helps you make decisions about what to do next, depending on your goals.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
+
+&lt;p&gt;This idea reminds me of &lt;a href=&#34;http://www.jumpharness.com/skate%20harness%20system.jpg&#34;&gt;figure skating harnesses&lt;/a&gt;. When you&amp;rsquo;re learning to do a double salchow, your coach will often strap you into one of those. You are then free to throw yourself into the jump without fear of falling on your ass. You get to try things out without suffering the consequences, so that you can develop good habits before it hurts.&lt;/p&gt;
+
+&lt;p&gt;With Git, the idea is the same, but instead of falling on your ass,
+you&amp;rsquo;re avoiding an hour of sifting through your reflogs.&lt;/p&gt;
+
+&lt;p&gt;So: who wants to build the Git harness?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog your mistakes, please</title>
+      <link>http://example.org/2013/11/13/blog-your-mistakes-please</link>
+      <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
+      
+      <guid>http://example.org/2013/11/13/blog-your-mistakes-please</guid>
+      <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
+Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
+for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
+
+&lt;p&gt;I usually don&amp;rsquo;t like titles like &amp;ldquo;why you should never use MongoDB&amp;rdquo; because the
+author usually means &amp;ldquo;why you shouldn&amp;rsquo;t use MongoDB if you are me and you are
+using it in the specific way I am using it and you are in the specific business
+that I work for.&amp;rdquo; The author writes the snappy title because it looks good on
+the Hacker News front page.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t that kind of blog post, though, and she makes a compelling argument
+that almost earns the title.&lt;/p&gt;
+
+&lt;p&gt;The title &lt;em&gt;should&lt;/em&gt; be &amp;ldquo;Why &lt;em&gt;You&lt;/em&gt; Should Never Use MongoDB&amp;rdquo;. I&amp;rsquo;m being pedantic,
+but I think the emphasis makes the point clearer. The post is making an
+assumption about you, and that assumption is this: you are not as smart as she
+is and if you are not as smart as she is, how can you hope to avoid the problem
+she is describing? I am not as smart as she is, so I&amp;rsquo;m going to learn from her
+mistake.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m an inexperienced software developer; a n00b. I haven&amp;rsquo;t watched a large
+software system go from infancy to smouldering ruins, nor have I watched design
+decisions explode in my face nine months after making them. And how could I
+have? I&amp;rsquo;m an undergraduate student and there aren&amp;rsquo;t enough months of summer
+jobs to string together to create those experiences.&lt;/p&gt;
+
+&lt;p&gt;Since I don&amp;rsquo;t have many of these experiences of my own, I&amp;rsquo;m forced to use the
+experiences of others. Let&amp;rsquo;s call these &lt;a href=&#34;http://aosabook.org/en/index.html&#34;&gt;&lt;em&gt;prosthetic experiences&lt;/em&gt;&lt;/a&gt;.
+Brave, humble, smart folks like Sarah Mei, who can talk about the projects
+they&amp;rsquo;ve seen crash and burn, are a boon; prosthetic experiences can help me
+think about design tradeoffs in ways I wouldn&amp;rsquo;t otherwise be able to without
+dealing with those problems myself.  They help me develop paranoia in the right
+places. Hopefully, it&amp;rsquo;ll help me avoid boring mistakes and make more
+interesting messes instead.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not fun to write about your mistakes. But I like it when you do.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
