@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/the-performance-of-open-source-applications/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/the-performance-of-open-source-applications/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/the-performance-of-open-source-applications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/the-performance-of-open-source-applications/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Performance of Open Source Applications is out!</title>
-      <link>http://example.org/2013/10/07/the-performance-of-open-source-applications-is-out</link>
+      <link>http://tavisharmstrong.com/2013/10/07/the-performance-of-open-source-applications-is-out</link>
       <pubDate>Mon, 07 Oct 2013 08:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/10/07/the-performance-of-open-source-applications-is-out</guid>
+      <guid>http://tavisharmstrong.com/2013/10/07/the-performance-of-open-source-applications-is-out</guid>
       <description>&lt;p&gt;I&amp;rsquo;m happy to announce that &lt;em&gt;The Performance of Open Source Applications&lt;/em&gt; is
 finally out. You can head over to &lt;a href=&#34;http://aosabook.org&#34;&gt;the AOSA website&lt;/a&gt; to
 read it for free online and find links to places where you can purchase paper
@@ -21,7 +21,7 @@ or, soon, electronic copies.&lt;/p&gt;
 
 &lt;p&gt;If you do purchase it, the royalties go to Amnesty International.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/photos/posa-front.jpg&#34; alt=&#34;The Performance of Open Source Applications Cover&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/photos/posa-front.jpg&#34; alt=&#34;The Performance of Open Source Applications Cover&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to know more about what the book is about, the
 &lt;a href=&#34;http://aosabook.org/en/posa/introduction.html&#34;&gt;introduction&lt;/a&gt; is a good place
@@ -32,10 +32,10 @@ from them; I hope you do too.&lt;/p&gt;
     
     <item>
       <title>Phergie refactoring idea</title>
-      <link>http://example.org/2012/11/29/phergie-refactoring-idea</link>
+      <link>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</link>
       <pubDate>Thu, 29 Nov 2012 14:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/11/29/phergie-refactoring-idea</guid>
+      <guid>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m taking a course this semester on software architecture — the high
@@ -69,7 +69,7 @@ actually refactor the code.&lt;/p&gt;
 
 &lt;h3 id=&#34;refactoring-a-large-class-in-phergie&#34;&gt;Refactoring a large class in Phergie&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
 is one standard deviation above the
 mean.&#34; /&gt;&lt;/p&gt;
 
@@ -119,12 +119,12 @@ lengths of approximately 400 lines of code. This is closer to the mean
 (227 LOC) and in my opinion much more manageable and understandable &amp;mdash;
 each class has more clearly defined responsibility.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 2. Current architecture of the IRC/TCP subsystem in Phergie&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie&lt;/p&gt;

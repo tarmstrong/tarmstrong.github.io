@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/work/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/work/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/work/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
       <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
       <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
 2011&lt;/a&gt;, a Drupal conference with a
 focus on design. Even so, I was given the chance to do my talk on Drupal

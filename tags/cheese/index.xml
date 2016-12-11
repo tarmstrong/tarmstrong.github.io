@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/cheese/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/cheese/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/cheese/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/cheese/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Make delicious yogurt. Make cows happy.</title>
-      <link>http://example.org/2010/11/13/make-delicious-yogurt-make-cows-happy</link>
+      <link>http://tavisharmstrong.com/2010/11/13/make-delicious-yogurt-make-cows-happy</link>
       <pubDate>Sat, 13 Nov 2010 22:50:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/11/13/make-delicious-yogurt-make-cows-happy</guid>
+      <guid>http://tavisharmstrong.com/2010/11/13/make-delicious-yogurt-make-cows-happy</guid>
       <description>&lt;p&gt;Making your own yogurt is like growing your own vegetables, but it
 happens overnight. The yogurt you get out of it is delicate, cheap, and
 way better than that gelatinous stuff you get in the store.&lt;/p&gt;
@@ -52,10 +52,10 @@ everywhere proud.&lt;/p&gt;
     
     <item>
       <title>Home-made cheese</title>
-      <link>http://example.org/2010/10/26/home-made-cheese</link>
+      <link>http://tavisharmstrong.com/2010/10/26/home-made-cheese</link>
       <pubDate>Tue, 26 Oct 2010 07:32:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/10/26/home-made-cheese</guid>
+      <guid>http://tavisharmstrong.com/2010/10/26/home-made-cheese</guid>
       <description>&lt;p&gt;I made this batch in the summer before school. On a scale from 1 to 10,
 how jealous of me are you?&lt;/p&gt;
 

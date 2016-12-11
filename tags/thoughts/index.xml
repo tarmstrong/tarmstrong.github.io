@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/thoughts/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/thoughts/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Thoughts on the Quorum paper</title>
-      <link>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
       <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
       <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
 blog&lt;/a&gt; Greg Wilson blogged about
 a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim

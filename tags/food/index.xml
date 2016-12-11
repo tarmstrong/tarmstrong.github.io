@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/food/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/food/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/food/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>George Orwell likes tea</title>
-      <link>http://example.org/2010/12/02/george-orwell-likes-tea</link>
+      <link>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</link>
       <pubDate>Thu, 02 Dec 2010 18:51:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/12/02/george-orwell-likes-tea</guid>
+      <guid>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</guid>
       <description>&lt;p&gt;I enjoyed this essay by George Orwell on tea:
 &lt;a href=&#34;http://www.booksatoz.com/witsend/tea/orwell.htm&#34; title=&#34;George Orwell: A Nice Cup of Tea&#34;&gt;link&lt;/a&gt;.
 He attacks the subject with as much force as anything he&amp;rsquo;s written. What
@@ -31,10 +31,10 @@ sugar in their tea. It tarnishes the drink, and I can&amp;rsquo;t imagine feelin
     
     <item>
       <title>Tavish&#39;s super special pancake recipe</title>
-      <link>http://example.org/2010/11/20/tavishs-super-special-pancake-recipe</link>
+      <link>http://tavisharmstrong.com/2010/11/20/tavishs-super-special-pancake-recipe</link>
       <pubDate>Sat, 20 Nov 2010 11:25:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/11/20/tavishs-super-special-pancake-recipe</guid>
+      <guid>http://tavisharmstrong.com/2010/11/20/tavishs-super-special-pancake-recipe</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;2 cups white flour&lt;/li&gt;
 &lt;li&gt;1 cup whole wheat flour&lt;/li&gt;
@@ -67,10 +67,10 @@ twice as much sugar in.&lt;/p&gt;
     
     <item>
       <title>Make delicious yogurt. Make cows happy.</title>
-      <link>http://example.org/2010/11/13/make-delicious-yogurt-make-cows-happy</link>
+      <link>http://tavisharmstrong.com/2010/11/13/make-delicious-yogurt-make-cows-happy</link>
       <pubDate>Sat, 13 Nov 2010 22:50:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/11/13/make-delicious-yogurt-make-cows-happy</guid>
+      <guid>http://tavisharmstrong.com/2010/11/13/make-delicious-yogurt-make-cows-happy</guid>
       <description>&lt;p&gt;Making your own yogurt is like growing your own vegetables, but it
 happens overnight. The yogurt you get out of it is delicate, cheap, and
 way better than that gelatinous stuff you get in the store.&lt;/p&gt;
@@ -109,10 +109,10 @@ everywhere proud.&lt;/p&gt;
     
     <item>
       <title>Home-made cheese</title>
-      <link>http://example.org/2010/10/26/home-made-cheese</link>
+      <link>http://tavisharmstrong.com/2010/10/26/home-made-cheese</link>
       <pubDate>Tue, 26 Oct 2010 07:32:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/10/26/home-made-cheese</guid>
+      <guid>http://tavisharmstrong.com/2010/10/26/home-made-cheese</guid>
       <description>&lt;p&gt;I made this batch in the summer before school. On a scale from 1 to 10,
 how jealous of me are you?&lt;/p&gt;
 

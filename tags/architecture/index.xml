@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/architecture/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/architecture/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Blog your mistakes, please</title>
-      <link>http://example.org/2013/11/13/blog-your-mistakes-please</link>
+      <link>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</link>
       <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/11/13/blog-your-mistakes-please</guid>
+      <guid>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</guid>
       <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
 Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
 for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;

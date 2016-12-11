@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/uncategorized/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/uncategorized/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>April links 2016</title>
-      <link>http://example.org/2016/04/04/april-links-2016</link>
+      <link>http://tavisharmstrong.com/2016/04/04/april-links-2016</link>
       <pubDate>Mon, 04 Apr 2016 20:09:00 +0000</pubDate>
       
-      <guid>http://example.org/2016/04/04/april-links-2016</guid>
+      <guid>http://tavisharmstrong.com/2016/04/04/april-links-2016</guid>
       <description>&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>What I cannot create, I cannot understand</title>
-      <link>http://example.org/2013/07/06/what-i-cannot-create-i-cannot-understand</link>
+      <link>http://tavisharmstrong.com/2013/07/06/what-i-cannot-create-i-cannot-understand</link>
       <pubDate>Sat, 06 Jul 2013 16:54:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/07/06/what-i-cannot-create-i-cannot-understand</guid>
+      <guid>http://tavisharmstrong.com/2013/07/06/what-i-cannot-create-i-cannot-understand</guid>
       <description>&lt;p&gt;My friend Corey, author of the excellent &lt;a href=&#34;http://bayesianbiologist.com&#34;&gt;Bayesian Biologist&lt;/a&gt; blog, recently &lt;a href=&#34;https://twitter.com/CjBayesian/status/350630554804305922&#34;&gt;said&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -58,12 +58,12 @@ df.ts &lt;- ts(df)
 plot(df.ts, plot.type=&#39;single&#39;, col = 1:ncol(df.ts))
 legend(&#34;bottomleft&#34;, colnames(df.ts), col=1:ncol(df), lty=1)
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/what-i-cannot-create_files/what-i-cannot-create_fig_00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is silly. But this lets me make a hypothesis about what the result of the &lt;code&gt;ccf()&lt;/code&gt; function will be. I &lt;em&gt;think&lt;/em&gt; it&amp;rsquo;ll show a correlation around 1 for a lag of 10. Let&amp;rsquo;s try it out.&lt;/p&gt;
 ccf(fishpop, watertemp)
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/what-i-cannot-create_files/what-i-cannot-create_fig_01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That wasn&amp;rsquo;t what I expected. This plot suggests that the two series are correlated &lt;em&gt;without&lt;/em&gt; a lag. After a moment, I realize that there&amp;rsquo;s a bug in my code. The line&lt;/p&gt;
 
@@ -74,7 +74,7 @@ ccf(fishpop, watertemp)
 fishpop &lt;- c(rep(270, 10), watertemp[1:489]*0.9)
 ccf(fishpop, watertemp)
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/what-i-cannot-create_files/what-i-cannot-create_fig_02.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_02.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was close. The correlation is at &lt;code&gt;lag = 10&lt;/code&gt;. The correct way to read the plot is &lt;em&gt;&lt;code&gt;watertemp&lt;/code&gt; predicts &lt;code&gt;fishpop&lt;/code&gt; ten periods later&lt;/em&gt;. Or, more simply, &lt;code&gt;fishpop&lt;/code&gt; leads watertemp by 10 periods. Either way, I now have a better mental model of how the &lt;code&gt;ccf()&lt;/code&gt; function works. If I applied it to real data, I&amp;rsquo;d be better equipped to interpret the results.&lt;/p&gt;
 
@@ -84,24 +84,24 @@ ccf(fishpop, watertemp)
     
     <item>
       <title>Teensy/Arduino timer simulator</title>
-      <link>http://example.org/2012/10/03/teensy/arduino-timer-simulator</link>
+      <link>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</link>
       <pubDate>Wed, 03 Oct 2012 17:52:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/10/03/teensy/arduino-timer-simulator</guid>
+      <guid>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</guid>
       <description>&lt;p&gt;I built a simulator for the 16-bit timer in the Teensy++/Arduino
 microcontroller in the hopes that people (e.g. fellow students of SOEN
 422) might find it useful. Keep in mind that it&amp;rsquo;s a work in progress and
-has some bugs. &lt;a href=&#34;http://example.org/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
+has some bugs. &lt;a href=&#34;http://tavisharmstrong.com/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
 16-bit timer (Timer1)&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>April links</title>
-      <link>http://example.org/2011/04/14/april-links</link>
+      <link>http://tavisharmstrong.com/2011/04/14/april-links</link>
       <pubDate>Thu, 14 Apr 2011 22:49:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/04/14/april-links</guid>
+      <guid>http://tavisharmstrong.com/2011/04/14/april-links</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.pnas.org/content/early/2011/03/29/1018033108&#34;&gt;Hungry judges are
 ruthless&lt;/a&gt;. This
 study finds that judges will not grant parole right before breaks or
@@ -141,10 +141,10 @@ Concordia, you can now plan your class schedule with the
     
     <item>
       <title>Planets!</title>
-      <link>http://example.org/2010/12/14/planets</link>
+      <link>http://tavisharmstrong.com/2010/12/14/planets</link>
       <pubDate>Tue, 14 Dec 2010 01:02:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/12/14/planets</guid>
+      <guid>http://tavisharmstrong.com/2010/12/14/planets</guid>
       <description>&lt;p&gt;Three things you should know about the planets in our solar system:&lt;/p&gt;
 
 &lt;ol&gt;

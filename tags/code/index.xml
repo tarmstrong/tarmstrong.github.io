@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/code/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/code/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Making sounds with overtone</title>
-      <link>http://example.org/2016/07/23/making-sounds-with-overtone</link>
+      <link>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</link>
       <pubDate>Sat, 23 Jul 2016 23:12:00 +0000</pubDate>
       
-      <guid>http://example.org/2016/07/23/making-sounds-with-overtone</guid>
+      <guid>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been messing about with &lt;a href=&#34;https://github.com/overtone/overtone&#34;&gt;Overtone&lt;/a&gt;, a Clojure interface to &lt;a href=&#34;http://supercollider.github.io/&#34;&gt;SuperCollider&lt;/a&gt; to make interesting sounds as a way to combine my interests in programming and music. Overtone has been particularly enjoyable to use because it is (unlike SuperCollider) a programming language that has uses beyond sound synthesis, it is surprisingly easy to set up, and is not under active development (which, for the time being, means that it is stable. I&amp;rsquo;m looking on the bright side here.)&lt;/p&gt;
 
 &lt;p&gt;At some point I&amp;rsquo;ll probably write down what I&amp;rsquo;ve learned about working with Overtone, but in the mean time, enjoy these sounds:&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Time.utc in ruby</title>
-      <link>http://example.org/2016/07/20/timeutc-in-ruby</link>
+      <link>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</link>
       <pubDate>Wed, 20 Jul 2016 20:09:00 +0000</pubDate>
       
-      <guid>http://example.org/2016/07/20/timeutc-in-ruby</guid>
+      <guid>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</guid>
       <description>&lt;p&gt;A coworker pointed out this strange behaviour in Ruby today:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;irb(main):003:0&amp;gt; Time.utc(2016, 2, 29)
@@ -49,10 +49,10 @@ irb(main):006:0&amp;gt; Time.utc(2015, 4, 31)
     
     <item>
       <title>Programming as argument</title>
-      <link>http://example.org/2015/05/09/programming-as-argument</link>
+      <link>http://tavisharmstrong.com/2015/05/09/programming-as-argument</link>
       <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/05/09/programming-as-argument</guid>
+      <guid>http://tavisharmstrong.com/2015/05/09/programming-as-argument</guid>
       <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
 making a machine perform a task and primarily about telling other humans what
 you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
@@ -107,10 +107,10 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     
     <item>
       <title>The Two Solitudes (for Hackers)</title>
-      <link>http://example.org/2014/04/19/the-two-solitudes-for-hackers</link>
+      <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
       <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <guid>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</guid>
       <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
 This year we were lucky to have it in Montreal (only a short walk from my apartment)
 and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
@@ -163,16 +163,16 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 
 &lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
 
-&lt;p&gt;My notes are available &lt;a href=&#34;http://example.org/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CUSEC 2014</title>
-      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
       <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
       <description>
 
 &lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
@@ -289,10 +289,10 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
     
     <item>
       <title>How long does it take to review a pull request on IPython?</title>
-      <link>http://example.org/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
+      <link>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
       <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
+      <guid>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
       <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
 IPython Notebook that looks at how long it takes to review a pull request on
 the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
@@ -309,10 +309,10 @@ you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
     
     <item>
       <title>Phergie refactoring idea</title>
-      <link>http://example.org/2012/11/29/phergie-refactoring-idea</link>
+      <link>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</link>
       <pubDate>Thu, 29 Nov 2012 14:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/11/29/phergie-refactoring-idea</guid>
+      <guid>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m taking a course this semester on software architecture — the high
@@ -346,7 +346,7 @@ actually refactor the code.&lt;/p&gt;
 
 &lt;h3 id=&#34;refactoring-a-large-class-in-phergie&#34;&gt;Refactoring a large class in Phergie&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
 is one standard deviation above the
 mean.&#34; /&gt;&lt;/p&gt;
 
@@ -396,12 +396,12 @@ lengths of approximately 400 lines of code. This is closer to the mean
 (227 LOC) and in my opinion much more manageable and understandable &amp;mdash;
 each class has more clearly defined responsibility.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 2. Current architecture of the IRC/TCP subsystem in Phergie&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie&lt;/p&gt;
@@ -452,10 +452,10 @@ described by their developers&amp;hellip;&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>A Semi-Coherent Review of PyCon Canada 2012</title>
-      <link>http://example.org/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</link>
+      <link>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</link>
       <pubDate>Tue, 27 Nov 2012 17:20:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</guid>
+      <guid>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</guid>
       <description>
 
 &lt;p&gt;Two weeks ago I was foolish enough to take a few days to escape from
@@ -577,10 +577,10 @@ alienate PHP and Java developers? Couldn&amp;rsquo;t hurt, anyways.&lt;/p&gt;
     
     <item>
       <title>The Architecture of Open Source Applications, Volume 2</title>
-      <link>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
       <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
       <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
 Applications&lt;/a&gt; was just released thanks to the hard
 work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
@@ -618,10 +618,10 @@ version is available
     
     <item>
       <title>Diversity in practice: How the Boston Python User Group grew to 1700 people and over 15% women</title>
-      <link>http://example.org/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</link>
+      <link>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</link>
       <pubDate>Sun, 18 Mar 2012 19:37:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</guid>
+      <guid>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</guid>
       <description>&lt;p&gt;The sheer humility, honesty, and deliberate action these two people took
 to fight a problem they saw in the world is inspiring. They listened to
 people, &lt;em&gt;really&lt;/em&gt; listened to people, and didn&amp;rsquo;t shy away from the faults
@@ -648,10 +648,10 @@ this. Men, women, everyone. — Jessica McKellar&lt;/p&gt;
     
     <item>
       <title>The Maeslant Kering: BOS development</title>
-      <link>http://example.org/2012/01/31/the-maeslant-kering-bos-development</link>
+      <link>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</link>
       <pubDate>Tue, 31 Jan 2012 14:25:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/01/31/the-maeslant-kering-bos-development</guid>
+      <guid>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</guid>
       <description>&lt;p&gt;I came across &lt;a href=&#34;http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.5280&#34;&gt;this
 paper&lt;/a&gt;
 (found via Lambda the Ultimate) on the development of BOS, the control
@@ -699,10 +699,10 @@ been much more interested.&lt;/p&gt;
     
     <item>
       <title>Thoughts on the Quorum paper</title>
-      <link>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
       <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
       <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
 blog&lt;/a&gt; Greg Wilson blogged about
 a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
@@ -800,10 +800,10 @@ programming languages as if they are tools, not religions.&lt;/p&gt;
     
     <item>
       <title>Spam Filter in Haskell</title>
-      <link>http://example.org/2011/11/02/spam-filter-in-haskell</link>
+      <link>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</link>
       <pubDate>Wed, 02 Nov 2011 07:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/11/02/spam-filter-in-haskell</guid>
+      <guid>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</guid>
       <description>&lt;p&gt;Check out this spam filter I wrote in Haskell while watching the
 &lt;a href=&#34;http://ai-class.com&#34;&gt;Stanford AI lectures&lt;/a&gt;! The same technique (Naive
 Bayes Classification) is used in most effective spam filters, albeit
@@ -818,7 +818,7 @@ works!&lt;/p&gt;
 
 &lt;p&gt;For those of you who think programming is hard, I&amp;rsquo;m probably going to
 convince you further by posting this snippet of incredibly confusing,
-poorly written code. Sorry! Read &lt;a href=&#34;http://example.org/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
+poorly written code. Sorry! Read &lt;a href=&#34;http://tavisharmstrong.com/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
 instead&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;:::haskell
@@ -917,10 +917,10 @@ main = do
     
     <item>
       <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
       <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
       <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
 2011&lt;/a&gt;, a Drupal conference with a
 focus on design. Even so, I was given the chance to do my talk on Drupal
@@ -951,10 +951,10 @@ with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web i
     
     <item>
       <title>Write Pretty Story, a writing program</title>
-      <link>http://example.org/2011/07/01/write-pretty-story-a-writing-program</link>
+      <link>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</link>
       <pubDate>Fri, 01 Jul 2011 15:33:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/07/01/write-pretty-story-a-writing-program</guid>
+      <guid>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</guid>
       <description>&lt;p&gt;I just made a browser-based writing program that lets you write without
 editing. Every time you hit return, it formats the paragraph you just
 wrote. You can&amp;rsquo;t go back and edit that paragraph. Editing is for people

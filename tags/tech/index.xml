@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/tech/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/tech/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Two Solitudes (for Hackers)</title>
-      <link>http://example.org/2014/04/19/the-two-solitudes-for-hackers</link>
+      <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
       <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <guid>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</guid>
       <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
 This year we were lucky to have it in Montreal (only a short walk from my apartment)
 and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
@@ -66,16 +66,16 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 
 &lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
 
-&lt;p&gt;My notes are available &lt;a href=&#34;http://example.org/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CUSEC 2014</title>
-      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
       <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
       <description>
 
 &lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
@@ -192,10 +192,10 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
     
     <item>
       <title>A Semi-Coherent Review of PyCon Canada 2012</title>
-      <link>http://example.org/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</link>
+      <link>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</link>
       <pubDate>Tue, 27 Nov 2012 17:20:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</guid>
+      <guid>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</guid>
       <description>
 
 &lt;p&gt;Two weeks ago I was foolish enough to take a few days to escape from
@@ -317,10 +317,10 @@ alienate PHP and Java developers? Couldn&amp;rsquo;t hurt, anyways.&lt;/p&gt;
     
     <item>
       <title>The Architecture of Open Source Applications, Volume 2</title>
-      <link>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
       <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
       <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
 Applications&lt;/a&gt; was just released thanks to the hard
 work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
@@ -358,10 +358,10 @@ version is available
     
     <item>
       <title>Diversity in practice: How the Boston Python User Group grew to 1700 people and over 15% women</title>
-      <link>http://example.org/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</link>
+      <link>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</link>
       <pubDate>Sun, 18 Mar 2012 19:37:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</guid>
+      <guid>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</guid>
       <description>&lt;p&gt;The sheer humility, honesty, and deliberate action these two people took
 to fight a problem they saw in the world is inspiring. They listened to
 people, &lt;em&gt;really&lt;/em&gt; listened to people, and didn&amp;rsquo;t shy away from the faults
@@ -388,10 +388,10 @@ this. Men, women, everyone. — Jessica McKellar&lt;/p&gt;
     
     <item>
       <title>Thoughts on the Quorum paper</title>
-      <link>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
       <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
       <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
 blog&lt;/a&gt; Greg Wilson blogged about
 a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
@@ -489,10 +489,10 @@ programming languages as if they are tools, not religions.&lt;/p&gt;
     
     <item>
       <title>Spam Filter in Haskell</title>
-      <link>http://example.org/2011/11/02/spam-filter-in-haskell</link>
+      <link>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</link>
       <pubDate>Wed, 02 Nov 2011 07:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/11/02/spam-filter-in-haskell</guid>
+      <guid>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</guid>
       <description>&lt;p&gt;Check out this spam filter I wrote in Haskell while watching the
 &lt;a href=&#34;http://ai-class.com&#34;&gt;Stanford AI lectures&lt;/a&gt;! The same technique (Naive
 Bayes Classification) is used in most effective spam filters, albeit
@@ -507,7 +507,7 @@ works!&lt;/p&gt;
 
 &lt;p&gt;For those of you who think programming is hard, I&amp;rsquo;m probably going to
 convince you further by posting this snippet of incredibly confusing,
-poorly written code. Sorry! Read &lt;a href=&#34;http://example.org/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
+poorly written code. Sorry! Read &lt;a href=&#34;http://tavisharmstrong.com/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
 instead&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;:::haskell
@@ -606,10 +606,10 @@ main = do
     
     <item>
       <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
       <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
       <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
 2011&lt;/a&gt;, a Drupal conference with a
 focus on design. Even so, I was given the chance to do my talk on Drupal
@@ -640,10 +640,10 @@ with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web i
     
     <item>
       <title>The speed with which the wave of revolutions swept across Europe was due to the wonders of modern technology</title>
-      <link>http://example.org/2011/02/22/the-speed-with-which-the-wave-of-revolutions-swept-across-europe-was-due-to-the-wonders-of-modern-technology</link>
+      <link>http://tavisharmstrong.com/2011/02/22/the-speed-with-which-the-wave-of-revolutions-swept-across-europe-was-due-to-the-wonders-of-modern-technology</link>
       <pubDate>Tue, 22 Feb 2011 23:30:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/02/22/the-speed-with-which-the-wave-of-revolutions-swept-across-europe-was-due-to-the-wonders-of-modern-technology</guid>
+      <guid>http://tavisharmstrong.com/2011/02/22/the-speed-with-which-the-wave-of-revolutions-swept-across-europe-was-due-to-the-wonders-of-modern-technology</guid>
       <description>&lt;p&gt;From &lt;em&gt;1848: Year of Revolution&lt;/em&gt; by Mike Rapport:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -659,10 +659,10 @@ were being heard within days or even minutes.&lt;/p&gt;
     
     <item>
       <title>Practical Cryptography and the Birthday Attack</title>
-      <link>http://example.org/2011/02/06/practical-cryptography-and-the-birthday-attack</link>
+      <link>http://tavisharmstrong.com/2011/02/06/practical-cryptography-and-the-birthday-attack</link>
       <pubDate>Sun, 06 Feb 2011 14:31:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/02/06/practical-cryptography-and-the-birthday-attack</guid>
+      <guid>http://tavisharmstrong.com/2011/02/06/practical-cryptography-and-the-birthday-attack</guid>
       <description>&lt;p&gt;The other day I took &lt;em&gt;Practical Cryptography&lt;/em&gt; out of the library. In
 this slim book, Bruce Schneier and Niels Ferguson cover what you need to
 know about cryptography so you don&amp;rsquo;t shoot yourself in the foot. So far
@@ -707,10 +707,10 @@ what this book is about. I&amp;rsquo;ll let you know how it is when I&amp;rsquo;
     
     <item>
       <title>CUSEC 2011 thoughts</title>
-      <link>http://example.org/2011/01/17/cusec-2011-thoughts</link>
+      <link>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</link>
       <pubDate>Mon, 17 Jan 2011 00:36:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/01/17/cusec-2011-thoughts</guid>
+      <guid>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</guid>
       <description>&lt;p&gt;CUSEC 2011 was my second time at the Canadian University Software
 Engineering Conference. I felt less lost this time around, and it was a
 good time. We saw some good talks, spoke to some cool people, and
@@ -752,10 +752,10 @@ impressive ready to demo at CUSEC next year.&lt;/p&gt;
     
     <item>
       <title>Concordia ENCS hostnames</title>
-      <link>http://example.org/2010/12/03/concordia-encs-hostnames</link>
+      <link>http://tavisharmstrong.com/2010/12/03/concordia-encs-hostnames</link>
       <pubDate>Fri, 03 Dec 2010 09:04:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/12/03/concordia-encs-hostnames</guid>
+      <guid>http://tavisharmstrong.com/2010/12/03/concordia-encs-hostnames</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been doing a lot of my internetting in the lab at school, since my
 laptop is in the shop. As I write this, I&amp;rsquo;m sitting at
 &lt;code&gt;chipewyan.cs.concordia.ca&lt;/code&gt;, and to my sides are &lt;code&gt;carrier&lt;/code&gt; and

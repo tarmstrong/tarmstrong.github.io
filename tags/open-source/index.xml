@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/open-source/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/open-source/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What they didn&#39;t teach me in school</title>
-      <link>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</link>
+      <link>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</link>
       <pubDate>Sun, 26 Jul 2015 04:28:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</guid>
+      <guid>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</guid>
       <description>&lt;p&gt;Mike Hoye has some &lt;a href=&#34;http://exple.tive.org/blarg/2015/06/15/september-never-changes/&#34;&gt;good advice&lt;/a&gt; for university professors hoping to
 incorporate open source development into their courses:&lt;/p&gt;
 

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/engineering/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/engineering/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What they didn&#39;t teach me in school</title>
-      <link>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</link>
+      <link>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</link>
       <pubDate>Sun, 26 Jul 2015 04:28:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</guid>
+      <guid>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</guid>
       <description>&lt;p&gt;Mike Hoye has some &lt;a href=&#34;http://exple.tive.org/blarg/2015/06/15/september-never-changes/&#34;&gt;good advice&lt;/a&gt; for university professors hoping to
 incorporate open source development into their courses:&lt;/p&gt;
 
@@ -100,10 +100,10 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
     
     <item>
       <title>The Last Line</title>
-      <link>http://example.org/2015/05/24/the-last-line</link>
+      <link>http://tavisharmstrong.com/2015/05/24/the-last-line</link>
       <pubDate>Sun, 24 May 2015 21:42:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/05/24/the-last-line</guid>
+      <guid>http://tavisharmstrong.com/2015/05/24/the-last-line</guid>
       <description>&lt;p&gt;Greg Wilson posted a &lt;a href=&#34;http://software-carpentry.org/blog/2015/05/icse2015.html&#34;&gt;list of papers worth reading&lt;/a&gt; from
 the 2015 &lt;em&gt;International Conference on Software Engineering&lt;/em&gt;.  One of the
 abstracts that caught my eye was from &lt;a href=&#34;http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_zaidman_karpov_the_last_line_effect_preprint.pdf&#34;&gt;&lt;em&gt;The Last Line Effect&lt;/em&gt;&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:cite&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:cite&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
@@ -151,10 +151,10 @@ and when I do, I&amp;rsquo;ll know where to focus my efforts &amp;ndash; on the 
     
     <item>
       <title>Programming as argument</title>
-      <link>http://example.org/2015/05/09/programming-as-argument</link>
+      <link>http://tavisharmstrong.com/2015/05/09/programming-as-argument</link>
       <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/05/09/programming-as-argument</guid>
+      <guid>http://tavisharmstrong.com/2015/05/09/programming-as-argument</guid>
       <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
 making a machine perform a task and primarily about telling other humans what
 you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
@@ -209,10 +209,10 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     
     <item>
       <title>The Two Solitudes (for Hackers)</title>
-      <link>http://example.org/2014/04/19/the-two-solitudes-for-hackers</link>
+      <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
       <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <guid>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</guid>
       <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
 This year we were lucky to have it in Montreal (only a short walk from my apartment)
 and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
@@ -265,16 +265,16 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 
 &lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
 
-&lt;p&gt;My notes are available &lt;a href=&#34;http://example.org/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CUSEC 2014</title>
-      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
       <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
       <description>
 
 &lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
@@ -391,10 +391,10 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
     
     <item>
       <title>Phergie refactoring idea</title>
-      <link>http://example.org/2012/11/29/phergie-refactoring-idea</link>
+      <link>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</link>
       <pubDate>Thu, 29 Nov 2012 14:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/11/29/phergie-refactoring-idea</guid>
+      <guid>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m taking a course this semester on software architecture — the high
@@ -428,7 +428,7 @@ actually refactor the code.&lt;/p&gt;
 
 &lt;h3 id=&#34;refactoring-a-large-class-in-phergie&#34;&gt;Refactoring a large class in Phergie&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
 is one standard deviation above the
 mean.&#34; /&gt;&lt;/p&gt;
 
@@ -478,12 +478,12 @@ lengths of approximately 400 lines of code. This is closer to the mean
 (227 LOC) and in my opinion much more manageable and understandable &amp;mdash;
 each class has more clearly defined responsibility.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 2. Current architecture of the IRC/TCP subsystem in Phergie&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
 Phergie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie&lt;/p&gt;
@@ -534,10 +534,10 @@ described by their developers&amp;hellip;&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>The Architecture of Open Source Applications, Volume 2</title>
-      <link>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
       <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
       <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
 Applications&lt;/a&gt; was just released thanks to the hard
 work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
@@ -575,10 +575,10 @@ version is available
     
     <item>
       <title>The Maeslant Kering: BOS development</title>
-      <link>http://example.org/2012/01/31/the-maeslant-kering-bos-development</link>
+      <link>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</link>
       <pubDate>Tue, 31 Jan 2012 14:25:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/01/31/the-maeslant-kering-bos-development</guid>
+      <guid>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</guid>
       <description>&lt;p&gt;I came across &lt;a href=&#34;http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.5280&#34;&gt;this
 paper&lt;/a&gt;
 (found via Lambda the Ultimate) on the development of BOS, the control
@@ -626,10 +626,10 @@ been much more interested.&lt;/p&gt;
     
     <item>
       <title>Thoughts on the Quorum paper</title>
-      <link>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
       <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
       <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
 blog&lt;/a&gt; Greg Wilson blogged about
 a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
@@ -727,10 +727,10 @@ programming languages as if they are tools, not religions.&lt;/p&gt;
     
     <item>
       <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
       <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
       <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
 2011&lt;/a&gt;, a Drupal conference with a
 focus on design. Even so, I was given the chance to do my talk on Drupal
@@ -761,10 +761,10 @@ with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web i
     
     <item>
       <title>CUSEC 2011 thoughts</title>
-      <link>http://example.org/2011/01/17/cusec-2011-thoughts</link>
+      <link>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</link>
       <pubDate>Mon, 17 Jan 2011 00:36:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/01/17/cusec-2011-thoughts</guid>
+      <guid>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</guid>
       <description>&lt;p&gt;CUSEC 2011 was my second time at the Canadian University Software
 Engineering Conference. I felt less lost this time around, and it was a
 good time. We saw some good talks, spoke to some cool people, and

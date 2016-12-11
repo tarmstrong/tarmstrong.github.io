@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/git/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/git/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Git Harness</title>
-      <link>http://example.org/2013/11/24/the-git-harness</link>
+      <link>http://tavisharmstrong.com/2013/11/24/the-git-harness</link>
       <pubDate>Sun, 24 Nov 2013 16:30:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/11/24/the-git-harness</guid>
+      <guid>http://tavisharmstrong.com/2013/11/24/the-git-harness</guid>
       <description>
 
 &lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
@@ -34,7 +34,7 @@
 
 &lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 
@@ -42,31 +42,31 @@
 
 &lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
 

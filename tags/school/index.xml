@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/school/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/school/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/school/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/school/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What they didn&#39;t teach me in school</title>
-      <link>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</link>
+      <link>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</link>
       <pubDate>Sun, 26 Jul 2015 04:28:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/07/26/what-they-didnt-teach-me-in-school</guid>
+      <guid>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</guid>
       <description>&lt;p&gt;Mike Hoye has some &lt;a href=&#34;http://exple.tive.org/blarg/2015/06/15/september-never-changes/&#34;&gt;good advice&lt;/a&gt; for university professors hoping to
 incorporate open source development into their courses:&lt;/p&gt;
 
@@ -100,10 +100,10 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
     
     <item>
       <title>Graduation</title>
-      <link>http://example.org/2014/06/10/graduation</link>
+      <link>http://tavisharmstrong.com/2014/06/10/graduation</link>
       <pubDate>Tue, 10 Jun 2014 22:34:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/06/10/graduation</guid>
+      <guid>http://tavisharmstrong.com/2014/06/10/graduation</guid>
       <description>&lt;p&gt;Six years ago I moved to Montreal for university. An undergraduate degree should not be treated as a race, but it starts to feel that way after six years. Today, I finally graduated.&lt;/p&gt;
 
 &lt;p&gt;It feels good. I can complain all day about the things I didn&amp;rsquo;t like about university &amp;ndash; there are all too many of them, and I like to complain &amp;ndash; but I&amp;rsquo;m happy enough with where I am professionally, personally, intellectually right now that I can overlook that and just be happy.&lt;/p&gt;
@@ -114,17 +114,17 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
     
     <item>
       <title>NBDiff: A diffing and merging tool for the IPython Notebook</title>
-      <link>http://example.org/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</link>
+      <link>http://tavisharmstrong.com/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</link>
       <pubDate>Sun, 06 Apr 2014 15:18:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</guid>
+      <guid>http://tavisharmstrong.com/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</guid>
       <description>&lt;p&gt;Final-year engineering students at many universities have to complete a &amp;ldquo;Capstone&amp;rdquo; project that gives them a chance to apply everything they learned throughout school to a practical, hands-on group project. My team just finished ours &amp;ndash; a project called &lt;a href=&#34;http://nbdiff.org&#34;&gt;NBDiff&lt;/a&gt; &amp;ndash; and I&amp;rsquo;m happy to report that it was a success.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;ve spoken to me in the last couple years, you&amp;rsquo;ve probably heard me ramble about the IPython Notebook, a rich web-based environment for scientific computing. Well, that project is wonderful, but there&amp;rsquo;s a catch with working on notebook files: the file format is a giant JSON blob and makes version control tricky. If you use &lt;code&gt;git diff&lt;/code&gt;, it can be hard to understand what you&amp;rsquo;ve actually changed, and if you need to resolve a merge conflict? Fasten your seatbelt.&lt;/p&gt;
 
 &lt;p&gt;NBDiff takes a stab at making these tasks easier. It presents diffs in a two-pane format and shows you deleted/added cells how you originally saw them in the notebook: if an image was changed, you see the image instead of a 10000-line diff of a base64 encoded PNG file. When resolving merge conflicts, you don&amp;rsquo;t have to worry about mangling the JSON by hand &amp;ndash; you just drag and drop changes into the final version and click &amp;lsquo;save&amp;rsquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/main-screenshot.png&#34; alt=&#34;A screenshot of nbdiff&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/main-screenshot.png&#34; alt=&#34;A screenshot of nbdiff&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As far as school projects go, this one was very satisfying. We have 50 GitHub stars and several hundred downloads already; I can actually use it to solve problems &lt;em&gt;right now&lt;/em&gt;; and the IPython folks are interested in seeing it maintained beyond Capstone. Considering many school projects &amp;ndash; even Capstone projects &amp;ndash; never see the light of day, let alone continued maintenance, I&amp;rsquo;m really happy about this.&lt;/p&gt;
 
@@ -134,16 +134,16 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
 &lt;li&gt;PyPI package: &lt;a href=&#34;https://pypi.python.org/pypi/nbdiff&#34;&gt;nbdiff&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://example.org/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CUSEC 2014</title>
-      <link>http://example.org/2014/01/22/cusec-2014</link>
+      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
       <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
       
-      <guid>http://example.org/2014/01/22/cusec-2014</guid>
+      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
       <description>
 
 &lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
@@ -260,24 +260,24 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
     
     <item>
       <title>Teensy/Arduino timer simulator</title>
-      <link>http://example.org/2012/10/03/teensy/arduino-timer-simulator</link>
+      <link>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</link>
       <pubDate>Wed, 03 Oct 2012 17:52:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/10/03/teensy/arduino-timer-simulator</guid>
+      <guid>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</guid>
       <description>&lt;p&gt;I built a simulator for the 16-bit timer in the Teensy++/Arduino
 microcontroller in the hopes that people (e.g. fellow students of SOEN
 422) might find it useful. Keep in mind that it&amp;rsquo;s a work in progress and
-has some bugs. &lt;a href=&#34;http://example.org/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
+has some bugs. &lt;a href=&#34;http://tavisharmstrong.com/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
 16-bit timer (Timer1)&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The Maeslant Kering: BOS development</title>
-      <link>http://example.org/2012/01/31/the-maeslant-kering-bos-development</link>
+      <link>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</link>
       <pubDate>Tue, 31 Jan 2012 14:25:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/01/31/the-maeslant-kering-bos-development</guid>
+      <guid>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</guid>
       <description>&lt;p&gt;I came across &lt;a href=&#34;http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.5280&#34;&gt;this
 paper&lt;/a&gt;
 (found via Lambda the Ultimate) on the development of BOS, the control
@@ -325,10 +325,10 @@ been much more interested.&lt;/p&gt;
     
     <item>
       <title>Thoughts on the Quorum paper</title>
-      <link>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
       <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
       <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
 blog&lt;/a&gt; Greg Wilson blogged about
 a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
@@ -426,10 +426,10 @@ programming languages as if they are tools, not religions.&lt;/p&gt;
     
     <item>
       <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
       <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
       <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
 2011&lt;/a&gt;, a Drupal conference with a
 focus on design. Even so, I was given the chance to do my talk on Drupal
@@ -460,10 +460,10 @@ with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web i
     
     <item>
       <title>CUSEC 2011 thoughts</title>
-      <link>http://example.org/2011/01/17/cusec-2011-thoughts</link>
+      <link>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</link>
       <pubDate>Mon, 17 Jan 2011 00:36:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/01/17/cusec-2011-thoughts</guid>
+      <guid>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</guid>
       <description>&lt;p&gt;CUSEC 2011 was my second time at the Canadian University Software
 Engineering Conference. I felt less lost this time around, and it was a
 good time. We saw some good talks, spoke to some cool people, and

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://example.org/tags/writing/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/writing/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tavisharmstrong.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Programming as argument</title>
-      <link>http://example.org/2015/05/09/programming-as-argument</link>
+      <link>http://tavisharmstrong.com/2015/05/09/programming-as-argument</link>
       <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/05/09/programming-as-argument</guid>
+      <guid>http://tavisharmstrong.com/2015/05/09/programming-as-argument</guid>
       <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
 making a machine perform a task and primarily about telling other humans what
 you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
@@ -68,10 +68,10 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     
     <item>
       <title>Blog your mistakes, please</title>
-      <link>http://example.org/2013/11/13/blog-your-mistakes-please</link>
+      <link>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</link>
       <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
       
-      <guid>http://example.org/2013/11/13/blog-your-mistakes-please</guid>
+      <guid>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</guid>
       <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
 Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
 for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
@@ -113,10 +113,10 @@ interesting messes instead.&lt;/p&gt;
     
     <item>
       <title>The Architecture of Open Source Applications, Volume 2</title>
-      <link>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
       <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
       <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
 Applications&lt;/a&gt; was just released thanks to the hard
 work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
@@ -154,10 +154,10 @@ version is available
     
     <item>
       <title>E-Prime</title>
-      <link>http://example.org/2012/02/03/e-prime</link>
+      <link>http://tavisharmstrong.com/2012/02/03/e-prime</link>
       <pubDate>Fri, 03 Feb 2012 00:53:00 +0000</pubDate>
       
-      <guid>http://example.org/2012/02/03/e-prime</guid>
+      <guid>http://tavisharmstrong.com/2012/02/03/e-prime</guid>
       <description>&lt;p&gt;From Wikipedia
 (&lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/E-Prime&#34;&gt;link&lt;/a&gt;):&lt;/p&gt;
 
@@ -182,10 +182,10 @@ reader to confuse opinion with fact.&lt;/p&gt;
     
     <item>
       <title>Write Pretty Story, a writing program</title>
-      <link>http://example.org/2011/07/01/write-pretty-story-a-writing-program</link>
+      <link>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</link>
       <pubDate>Fri, 01 Jul 2011 15:33:00 +0000</pubDate>
       
-      <guid>http://example.org/2011/07/01/write-pretty-story-a-writing-program</guid>
+      <guid>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</guid>
       <description>&lt;p&gt;I just made a browser-based writing program that lets you write without
 editing. Every time you hit return, it formats the paragraph you just
 wrote. You can&amp;rsquo;t go back and edit that paragraph. Editing is for people
@@ -209,10 +209,10 @@ page it&amp;rsquo;s still there.&lt;/p&gt;
     
     <item>
       <title>Pause</title>
-      <link>http://example.org/2010/12/13/pause</link>
+      <link>http://tavisharmstrong.com/2010/12/13/pause</link>
       <pubDate>Mon, 13 Dec 2010 14:33:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/12/13/pause</guid>
+      <guid>http://tavisharmstrong.com/2010/12/13/pause</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;The true business of the literary artist is to plait or weave his
 meaning, involving it around itself; so that each sentence, by
@@ -228,10 +228,10 @@ after a moment of suspended meaning, solve and clear itself.&amp;rdquo;&lt;/p&gt
     
     <item>
       <title>George Orwell likes tea</title>
-      <link>http://example.org/2010/12/02/george-orwell-likes-tea</link>
+      <link>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</link>
       <pubDate>Thu, 02 Dec 2010 18:51:00 +0000</pubDate>
       
-      <guid>http://example.org/2010/12/02/george-orwell-likes-tea</guid>
+      <guid>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</guid>
       <description>&lt;p&gt;I enjoyed this essay by George Orwell on tea:
 &lt;a href=&#34;http://www.booksatoz.com/witsend/tea/orwell.htm&#34; title=&#34;George Orwell: A Nice Cup of Tea&#34;&gt;link&lt;/a&gt;.
 He attacks the subject with as much force as anything he&amp;rsquo;s written. What
