@@ -1,6 +1,6 @@
 title = "Tavish Armstrong"
 languageCode = "en-us"
-baseurl = "http://example.org/"
+baseurl = "http://tavisharmstrong.com/"
 theme = "super-minimal"
 pygmentsstyle = "colorful"
 PygmentsCodeFences = true
