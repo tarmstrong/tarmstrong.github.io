@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://tavisharmstrong.com/tags/work/feeds/all.atom/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tavisharmstrong.com/tags/work/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Check out my talk at D4D Boston 2011!</title>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
+2011&lt;/a&gt;, a Drupal conference with a
+focus on design. Even so, I was given the chance to do my talk on Drupal
+7&amp;rsquo;s Field API. To my surprise, I had an audience of around fifty to talk
+to (or it at least felt like fifty).&lt;/p&gt;
+
+&lt;p&gt;The talk was based on blog post I wrote for Evolving Web about &lt;a href=&#34;http://evolvingweb.ca/story/poutine-maker-introduction-field-api-drupal-7-part-1&#34;&gt;Poutine
+Maker&lt;/a&gt;,
+my custom Drupal field that lets users design crazy poutines. (You can
+see the formatter in action
+&lt;a href=&#34;http://poutinemaker.evolvingweb.ca/node/1&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;object name=&#34;ttvplayer&#34; id=&#34;ttvplayer&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allownetworking=&#34;all&#34; allowfullscreen=&#34;true&#34; height=&#34;165&#34; width=&#34;240&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;flashVars&#34; value=&#34;autoPlay=false&amp;amp;streamerType=rtmp&#34;&gt;&lt;a href=&#34;http://ttv.mit.edu&#34;&gt;MIT Tech TV&lt;/a&gt;&lt;/object&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a fantastic experience. I&amp;rsquo;m a little shy at conferences,
+so it was nice to meet people after who had seen my talk (even the guy
+who kept calling me Tarvis).&lt;/p&gt;
+
+&lt;p&gt;Also, I&amp;rsquo;m totally going to &lt;a href=&#34;http://london2011.drupal.org/&#34;&gt;DrupalCon
+London&lt;/a&gt; at the end of the month, which
+I&amp;rsquo;m super jazzed about. Co-op jobs aren&amp;rsquo;t supposed to be like this, but
+I am &lt;em&gt;definitely not complaining&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;(By the way, if you want to work with me and the cool people I work
+with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web is hiring&lt;/a&gt;.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

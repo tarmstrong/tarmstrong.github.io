@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://tavisharmstrong.com/tags/writing/feeds/atom.all/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tavisharmstrong.com/tags/writing/feeds/atom.all/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Programming as argument</title>
+      <link>http://tavisharmstrong.com/2015/05/09/programming-as-argument</link>
+      <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2015/05/09/programming-as-argument</guid>
+      <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
+making a machine perform a task and primarily about telling other humans what
+you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
+humans can discuss what a pseudocode program &lt;em&gt;would&lt;/em&gt; do and whether or not it
+would be a good idea, without ever running the code on a computer.  The
+pseudocode program is an argument &amp;ndash; it argues that a program could be
+constructed to accomplish the task at hand. The problem with pseudocode
+is &lt;em&gt;not&lt;/em&gt; that it doesn&amp;rsquo;t run on a computer. The problem with pseudocode is that it has no
+way of convincing you that it would work if it &lt;em&gt;did&lt;/em&gt; run on a computer.&lt;/p&gt;
+
+&lt;p&gt;The reason why a pseudocode program of any respectable size is not a convincing
+argument is probably obvious to anyone who writes software for a living: it&amp;rsquo;s
+easy to write code that looks plausible to other humans, but unless you run
+the program, it&amp;rsquo;s hard to believe that it will actually work. Software that is easy to
+run is more convincing because you can watch it work. You provide inputs, it
+provides outputs. You can do this to prove or disprove hypotheses. In this case, though,
+the code stops being an argument that a program &lt;em&gt;could&lt;/em&gt; be constructed to perform
+a task (as is the case with pseudocode). Instead, it becomes an argument that
+the compiled program will perform the task correctly. Testing the program manually
+is one way of convincing yourself that it will do that. But it is only one way.&lt;/p&gt;
+
+&lt;p&gt;An automated testing framework can be useful for making your code more convincing.
+You can show that given &lt;em&gt;this&lt;/em&gt; input and &lt;em&gt;that&lt;/em&gt; input, the program will produce
+the correct output. Other programmers can run the tests and feel more confident
+that the program will behave that way.&lt;/p&gt;
+
+&lt;p&gt;A few arguments are implicit in every test: these fake inputs are
+representative of real inputs. This is an accurate simulation of global state.
+These expected outputs are the &lt;em&gt;correct&lt;/em&gt; outputs.  When you use mocks or stubs
+in your tests, you argue that the dependencies you are simulating
+actually behave that way; a common mistake is over-mocking dependencies so much
+that you have to just &lt;em&gt;trust&lt;/em&gt; that the code will work when connected to real dependencies.
+For example, if your tests don&amp;rsquo;t open a socket
+to a functioning server, can you really be sure that the code will do so correctly in
+production?  If you can&amp;rsquo;t, you have to &lt;em&gt;trust&lt;/em&gt; that the networking code works. The
+argument becomes &amp;ldquo;&lt;em&gt;if&lt;/em&gt; we assume the networking code exists, the following code
+will write this message over the socket.&amp;rdquo; That &lt;em&gt;if&lt;/em&gt; might be a very big &lt;em&gt;if&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code review makes this argumentation-model-of-programming more obvious. If you
+write useless tests, a reviewer will often tell you that they are terrible
+tests.  The point they are making is &lt;em&gt;not&lt;/em&gt; that your code doesn&amp;rsquo;t work.  The
+point is that they have little reason to believe it will. They have not been
+convinced by your argument.&lt;/p&gt;
+
+&lt;p&gt;If code is an argument, what does that mean for working programmers?  Well, it
+means that the rules of rhetoric apply when writing software. If you want your
+code to be merged, or you want your project to be adopted, you need it to be
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Cialdini&#34;&gt;persuasive&lt;/a&gt;.  This raises an important question: is &lt;em&gt;persuasive&lt;/em&gt;
+code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog your mistakes, please</title>
+      <link>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</link>
+      <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</guid>
+      <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
+Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
+for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
+
+&lt;p&gt;I usually don&amp;rsquo;t like titles like &amp;ldquo;why you should never use MongoDB&amp;rdquo; because the
+author usually means &amp;ldquo;why you shouldn&amp;rsquo;t use MongoDB if you are me and you are
+using it in the specific way I am using it and you are in the specific business
+that I work for.&amp;rdquo; The author writes the snappy title because it looks good on
+the Hacker News front page.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t that kind of blog post, though, and she makes a compelling argument
+that almost earns the title.&lt;/p&gt;
+
+&lt;p&gt;The title &lt;em&gt;should&lt;/em&gt; be &amp;ldquo;Why &lt;em&gt;You&lt;/em&gt; Should Never Use MongoDB&amp;rdquo;. I&amp;rsquo;m being pedantic,
+but I think the emphasis makes the point clearer. The post is making an
+assumption about you, and that assumption is this: you are not as smart as she
+is and if you are not as smart as she is, how can you hope to avoid the problem
+she is describing? I am not as smart as she is, so I&amp;rsquo;m going to learn from her
+mistake.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m an inexperienced software developer; a n00b. I haven&amp;rsquo;t watched a large
+software system go from infancy to smouldering ruins, nor have I watched design
+decisions explode in my face nine months after making them. And how could I
+have? I&amp;rsquo;m an undergraduate student and there aren&amp;rsquo;t enough months of summer
+jobs to string together to create those experiences.&lt;/p&gt;
+
+&lt;p&gt;Since I don&amp;rsquo;t have many of these experiences of my own, I&amp;rsquo;m forced to use the
+experiences of others. Let&amp;rsquo;s call these &lt;a href=&#34;http://aosabook.org/en/index.html&#34;&gt;&lt;em&gt;prosthetic experiences&lt;/em&gt;&lt;/a&gt;.
+Brave, humble, smart folks like Sarah Mei, who can talk about the projects
+they&amp;rsquo;ve seen crash and burn, are a boon; prosthetic experiences can help me
+think about design tradeoffs in ways I wouldn&amp;rsquo;t otherwise be able to without
+dealing with those problems myself.  They help me develop paranoia in the right
+places. Hopefully, it&amp;rsquo;ll help me avoid boring mistakes and make more
+interesting messes instead.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not fun to write about your mistakes. But I like it when you do.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Architecture of Open Source Applications, Volume 2</title>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
+Applications&lt;/a&gt; was just released thanks to the hard
+work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
+Wilson&lt;/a&gt;. I had the privilege of helping copyedit
+a few chapters of the book. Here&amp;rsquo;s the blurb:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Architects look at thousands of buildings during their training, and
+study critiques of those buildings written by masters. In contrast,
+most software developers only ever get to know a handful of large
+programs well — usually programs they wrote themselves — and never
+study the great programs of history. As a result, they repeat one
+another’s mistakes rather than building on one another’s successes.&lt;/p&gt;
+
+&lt;p&gt;This second volume of The Architecture of Open Source Applications
+aims to change that. In it, the authors of twenty-four open source
+applications explain how their software is structured, and why. What
+are each program&amp;rsquo;s major components? How do they interact? And what
+did their builders learn during their development? In answering these
+questions, the contributors to this book provide unique insights into
+how they think.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go buy it &lt;a href=&#34;http://www.lulu.com/shop/amy-brown-and-greg-wilson/the-architecture-of-open-source-applications-volume-ii/paperback/product-20111008.html&#34;&gt;at
+Lulu&lt;/a&gt;
+(ebook versions will also be available). It&amp;rsquo;ll be available on Amazon at
+some point, but Lulu is preferred, because a greater percentage of the
+price goes towards royalties — which are going to Amnesty International.&lt;/p&gt;
+
+&lt;p&gt;&lt;strike&gt;A free online version will be up at some point next week.&lt;/strike&gt; The online
+version is available
+&lt;a href=&#34;http://aosabook.org&#34; title=&#34;The Architecture of Open Source Applications&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>E-Prime</title>
+      <link>http://tavisharmstrong.com/2012/02/03/e-prime</link>
+      <pubDate>Fri, 03 Feb 2012 00:53:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/02/03/e-prime</guid>
+      <description>&lt;p&gt;From Wikipedia
+(&lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/E-Prime&#34;&gt;link&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;E-Prime (short for English-Prime, sometimes denoted E′) is a version
+of the English language that excludes all forms of the verb to be.
+E-Prime does not allow conjugations of to be (am, are, is, was, were,
+be, been, being), archaic forms (e.g. art, wast, wert), or
+contractions (&amp;rsquo;s, &amp;rsquo;m, &amp;rsquo;re).&lt;/p&gt;
+
+&lt;p&gt;Some scholars advocate using E-Prime as a device to clarify thinking
+and strengthen writing. For example, the sentence &amp;ldquo;the film was good&amp;rdquo;
+could translate into E-Prime as &amp;ldquo;I liked the film&amp;rdquo; or as &amp;ldquo;the film
+made me laugh&amp;rdquo;. The E-Prime versions communicate the speaker&amp;rsquo;s
+experience rather than judgment, making it harder for the writer or
+reader to confuse opinion with fact.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This exercise helped me strengthen this sentence, I think.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Write Pretty Story, a writing program</title>
+      <link>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</link>
+      <pubDate>Fri, 01 Jul 2011 15:33:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</guid>
+      <description>&lt;p&gt;I just made a browser-based writing program that lets you write without
+editing. Every time you hit return, it formats the paragraph you just
+wrote. You can&amp;rsquo;t go back and edit that paragraph. Editing is for people
+who have completed stories.&lt;/p&gt;
+
+&lt;p&gt;Download it here:
+&lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story/zipball/master&#34;&gt;.zip&lt;/a&gt;
+or
+&lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story/tarball/master&#34;&gt;.tar.gz&lt;/a&gt;
+or &lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story&#34;&gt;github.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run it, open the &amp;ldquo;pretty.html&amp;rdquo; file with your browser.&lt;/p&gt;
+
+&lt;p&gt;You can also try it
+&lt;a href=&#34;http://tavisharmstrong.com/pretty/pretty.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Now it saves your story locally, so when you refresh the
+page it&amp;rsquo;s still there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pause</title>
+      <link>http://tavisharmstrong.com/2010/12/13/pause</link>
+      <pubDate>Mon, 13 Dec 2010 14:33:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2010/12/13/pause</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The true business of the literary artist is to plait or weave his
+meaning, involving it around itself; so that each sentence, by
+successive phrases, shall first come into a kind of knot, and then,
+after a moment of suspended meaning, solve and clear itself.&amp;rdquo;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;George Saintsbury&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>George Orwell likes tea</title>
+      <link>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</link>
+      <pubDate>Thu, 02 Dec 2010 18:51:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2010/12/02/george-orwell-likes-tea</guid>
+      <description>&lt;p&gt;I enjoyed this essay by George Orwell on tea:
+&lt;a href=&#34;http://www.booksatoz.com/witsend/tea/orwell.htm&#34; title=&#34;George Orwell: A Nice Cup of Tea&#34;&gt;link&lt;/a&gt;.
+He attacks the subject with as much force as anything he&amp;rsquo;s written. What
+struck me, in particular, was how much he enjoyed writing it. It&amp;rsquo;s
+obvious, even in his reserved tone. This is something Zinsser talks
+about often, and I&amp;rsquo;m noticing it often in the writers I enjoy reading,
+speakers I enjoy listening to, and teachers I enjoy learning from.&lt;/p&gt;
+
+&lt;p&gt;Orwell seems to think milk is a necessary ingredient in a nice cup of
+tea. I disagree, for the same reason he disagrees with people who like
+sugar in their tea. It tarnishes the drink, and I can&amp;rsquo;t imagine feeling
+&amp;ldquo;wiser, braver, or more optimistic&amp;rdquo; after drinking a milky tea.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

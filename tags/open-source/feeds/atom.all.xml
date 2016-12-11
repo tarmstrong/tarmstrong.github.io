@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://tavisharmstrong.com/tags/open-source/feeds/atom.all/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tavisharmstrong.com/tags/open-source/feeds/atom.all/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What they didn&#39;t teach me in school</title>
+      <link>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</link>
+      <pubDate>Sun, 26 Jul 2015 04:28:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2015/07/26/what-they-didnt-teach-me-in-school</guid>
+      <description>&lt;p&gt;Mike Hoye has some &lt;a href=&#34;http://exple.tive.org/blarg/2015/06/15/september-never-changes/&#34;&gt;good advice&lt;/a&gt; for university professors hoping to
+incorporate open source development into their courses:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[W]e’re grateful any effort put in, large or small, to making Firefox better
+and supporting a free and open Web. Only this: there are a couple of things
+that make working with Firefox in an academic context challenging and you
+should be aware of them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The main problem he talks about is the disconnect between the cadence of the
+university project and of an open source release. Sometimes a small bug can
+turn into a large one, and open source developers won&amp;rsquo;t merge patches
+willy-nilly just to appease an impatient professor. It&amp;rsquo;s hard for developers to
+find bugs that will be easily fixed within that short time frame, and it&amp;rsquo;s made
+much harder by the lack of warning they&amp;rsquo;re given by professors. His advice is
+good, and if you&amp;rsquo;re hoping to unleash a bunch of hapless undergrads onto
+an open source project you should follow it.&lt;/p&gt;
+
+&lt;p&gt;The post reminded me of a few things that I&amp;rsquo;ve been thinking about lately,
+especially things that are way harder than I understood when I was in school.&lt;/p&gt;
+
+&lt;p&gt;In the case of open source development, I never truly understood what was so
+damn hard about it when you&amp;rsquo;re starting out. When I was in first year, I read
+a bunch of ideologically-charged essays by Stallman, Doctorow, and friends.
+Easy &amp;ndash; just download the source code to an open source project you use. Muck
+around with the source code and you&amp;rsquo;ll learn how to code. Before you know it,
+you&amp;rsquo;ll be submitting patches. Great. This all sounded reasonable to me back then.
+On the internet, no one knows you&amp;rsquo;re a dog, and so I pulled myself onto my hind
+legs and compiled &lt;code&gt;nano&lt;/code&gt; and tried to figure out how the source code worked &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+But it never seemed to stick; I didn&amp;rsquo;t actually learn how the internals worked,
+I never actually got around to fixing any bugs, and I thought it was all because
+I was too dumb to be a developer.&lt;/p&gt;
+
+&lt;p&gt;Over the next few years I would occasionally convince myself that I could make
+it happen. And it never really did.&lt;/p&gt;
+
+&lt;p&gt;Part of the problem was that I didn&amp;rsquo;t really know how to program all that well,
+and you need to know how to program pretty well to be able to contribute
+anything meaningful to, say, Firefox. Or maybe you don&amp;rsquo;t, but you sure as hell need
+to be able to figure out the build system.&lt;/p&gt;
+
+&lt;p&gt;But I think you can overcome that, especially if you&amp;rsquo;re brave enough to ask for help
+on the internet. The hardest part is that people who run open source projects are
+working engineers, and they expect you to also be a working engineer. They expect
+you to understand the social norms around software development and to have familiarity
+with the tools necessary to keep up with them.&lt;/p&gt;
+
+&lt;p&gt;I first started making open source patches when I was an intern at a Drupal
+consulting company. Here&amp;rsquo;s &lt;a href=&#34;https://www.drupal.org/node/1260528&#34;&gt;one&lt;/a&gt;. And that took a lot of hand-holding
+from some very good mentors who I am very grateful for. It wasn&amp;rsquo;t just the code
+that was hard to figure out. I needed to figure out how to create an actual &lt;code&gt;.patch&lt;/code&gt;
+file. I needed to understand how to interpret test output. And I needed to do all
+of the above enough times to appease the reviewers. It takes many different skills
+to work with other developers, and it&amp;rsquo;s difficult to learn these skills independently
+of the others.&lt;/p&gt;
+
+&lt;p&gt;The point about mentors is, I guess, what this whole post is really about. The
+thing that has been most useful to me when learning to write software has
+been sitting down with someone who is better than me and watching them work.
+This is still true today: whenever I can, I try to watch how my peers do their
+work and it&amp;rsquo;s staggering how much I can learn in a few minutes. I imagine
+some people don&amp;rsquo;t need to watch over other people&amp;rsquo;s shoulders to learn the
+trade, but it really works for me.&lt;/p&gt;
+
+&lt;p&gt;If I was going to give advice to a more junior developer, I guess it&amp;rsquo;d be this:
+find someone more experienced and try to convince them to let you watch them
+work.  Ask questions when you don&amp;rsquo;t understand something. And try to mimic them
+when you write software yourself. If you&amp;rsquo;re a more experienced engineer, offer
+this to people more junior to you. I know it&amp;rsquo;s hard to work when someone&amp;rsquo;s
+looking over your shoulder, but do it anyways.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;&lt;p&gt;To this day I receive the nano-devel mailing list to my inbox; it baffles
+  me that I ever thought this would help launch my open source career.&lt;/p&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

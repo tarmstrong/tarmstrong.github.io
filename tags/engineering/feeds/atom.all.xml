@@ -2,70 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tavish Armstrong</title>
-    <link>http://tavisharmstrong.com/feeds/all.atom/index.xml</link>
+    <link>http://tavisharmstrong.com/tags/engineering/feeds/atom.all/index.xml</link>
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jul 2016 23:12:00 +0000</lastBuildDate>
-    <atom:link href="http://tavisharmstrong.com/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Making sounds with overtone</title>
-      <link>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</link>
-      <pubDate>Sat, 23 Jul 2016 23:12:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been messing about with &lt;a href=&#34;https://github.com/overtone/overtone&#34;&gt;Overtone&lt;/a&gt;, a Clojure interface to &lt;a href=&#34;http://supercollider.github.io/&#34;&gt;SuperCollider&lt;/a&gt; to make interesting sounds as a way to combine my interests in programming and music. Overtone has been particularly enjoyable to use because it is (unlike SuperCollider) a programming language that has uses beyond sound synthesis, it is surprisingly easy to set up, and is not under active development (which, for the time being, means that it is stable. I&amp;rsquo;m looking on the bright side here.)&lt;/p&gt;
-
-&lt;p&gt;At some point I&amp;rsquo;ll probably write down what I&amp;rsquo;ve learned about working with Overtone, but in the mean time, enjoy these sounds:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273272287&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Time.utc in ruby</title>
-      <link>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</link>
-      <pubDate>Wed, 20 Jul 2016 20:09:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</guid>
-      <description>&lt;p&gt;A coworker pointed out this strange behaviour in Ruby today:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;irb(main):003:0&amp;gt; Time.utc(2016, 2, 29)
-=&amp;gt; 2016-02-29 00:00:00 UTC
-irb(main):004:0&amp;gt; Time.utc(2015, 2, 29)
-=&amp;gt; 2015-03-01 00:00:00 UTC
-irb(main):005:0&amp;gt; Time.utc(2015, 1, 32)
-ArgumentError: argument out of range
-	from (irb):5:in `utc&#39;
-	from (irb):5
-	from /usr/bin/irb:11:in `&amp;lt;main&amp;gt;&#39;
-irb(main):006:0&amp;gt; Time.utc(2015, 4, 31)
-=&amp;gt; 2015-05-01 00:00:00 UTC
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Clearly the authors made the effort to stop you from passing in obviously bad values. But I still find it so odd that it rolls over values that are just a little incorrect without telling you.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>April links 2016</title>
-      <link>http://tavisharmstrong.com/2016/04/04/april-links-2016</link>
-      <pubDate>Mon, 04 Apr 2016 20:09:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/04/04/april-links-2016</guid>
-      <description>&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://dancres.github.io/Pages/&#34;&gt;A Distributed Systems Reading List&lt;/a&gt;. I found the &amp;ldquo;Harvest and Yield&amp;rdquo; paper particularly helpful.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://12factor.net/&#34;&gt;The Twelve-Factor App&lt;/a&gt;: opinionated guidelines for how to architect web services.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.wipp.energy.gov/picsprog/articles/wipp%20exhibit%20message%20to%2012,000%20a_d.htm&#34;&gt;This is not a place of honour&lt;/a&gt;: how to identify nuclear waste to future generations. (via mhoye)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/programmer-moneyball/&#34;&gt;We only hire the trendiest&lt;/a&gt; by Dan Luu, who is great.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/postmortem-lessons/&#34;&gt;Lessons learned from reading postmortems&lt;/a&gt;, also Dan Luu&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf&#34;&gt;How Complex Systems Fail&lt;/a&gt;, which is referenced in the above Dan Luu post&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
+    <atom:link href="http://tavisharmstrong.com/tags/engineering/feeds/atom.all/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What they didn&#39;t teach me in school</title>
@@ -154,27 +95,6 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Shows I&#39;ve been watching</title>
-      <link>http://tavisharmstrong.com/2015/07/12/shows-ive-been-watching</link>
-      <pubDate>Sun, 12 Jul 2015 22:32:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2015/07/12/shows-ive-been-watching</guid>
-      <description>&lt;p&gt;Earlier this year I learned to knit. Part of the appeal for me is that it&amp;rsquo;s very easy to sit down, knit some stitches, and make progress. It&amp;rsquo;s possible to screw up so badly you have to start over, but for the most part it&amp;rsquo;s difficult to take large steps backward. Unlike with programming, it&amp;rsquo;s hard to knit a scarf so badly it causes active harm to you and the people around you. If you&amp;rsquo;re patient, you&amp;rsquo;ll eventually have a scarf or a sweater, and no matter how many stiches you accidentally added in the wrong places, you still have something that represents a tonne of work to be proud of. Also you are now warmer than you were before, which is kind of cool.&lt;/p&gt;
-
-&lt;p&gt;One nice thing about knitting is that you can do it while you watch television. Some shows I&amp;rsquo;ve been watching lately:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;The West Wing&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Adventure Time&lt;/em&gt;, which is hilarious and cuter than a show has any right to be.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Bomb Girls&lt;/em&gt;, which follows the stories of the workers of a Toronto munitions factory during WWII. Like &lt;em&gt;The Bletchley Circle&lt;/em&gt;, it focuses on parts of the war effort that are not usually explored in war movies, viz., the home front. It also spends some time on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Italian-Canadian_internment&#34;&gt;darker parts of Canadian history&lt;/a&gt;, which I appreciate.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sense8&lt;/em&gt;, the new Netflix show from The Wachowskis and J. Michael Straczynski. &lt;a href=&#34;https://twitter.com/aphyr/status/617943823243546625&#34;&gt;This show is great&lt;/a&gt;. And hey, some of it takes place in SF which is kind of neat.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(This fluff post is brought to you by a few weeks of travel and strep throat. Pro-tip: don&amp;rsquo;t get strep throat.)&lt;/p&gt;
 </description>
     </item>
     
@@ -288,50 +208,6 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     </item>
     
     <item>
-      <title>Books I read in 2014</title>
-      <link>http://tavisharmstrong.com/2015/04/04/books-i-read-in-2014</link>
-      <pubDate>Sat, 04 Apr 2015 14:35:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2015/04/04/books-i-read-in-2014</guid>
-      <description>&lt;p&gt;I&amp;rsquo;d like to start writing on this blog again, but blogging takes a lot of work so I&amp;rsquo;m just going to list some of the fiction I read in 2014. I&amp;rsquo;m pretty sure I read more books than this, but these are the ones that I remember. They are in order from most to least favourite.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Use of Weapons&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Ancillary Justice&lt;/em&gt; by Ann Leckie&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Dispossessed&lt;/em&gt; by Ursula K. Le Guin&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;A Deepness in the Sky&lt;/em&gt; by Vernor Vinge&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Diamond Age&lt;/em&gt; by Neal Stephenson&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Player of Games&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Excession&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Name of the Wind&lt;/em&gt; by Patrick Rothfuss&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Windup Girl&lt;/em&gt; by Paolo Bacigalupi&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I also read some short fiction, but mostly can&amp;rsquo;t remember it. This is what I do remember:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://subterraneanpress.com/magazine/fall_2010/fiction_the_lifecycle_of_software_objects_by_ted_chiang&#34;&gt;&lt;em&gt;The Lifecycle of Software Objects&lt;/em&gt;&lt;/a&gt; by Ted Chiang&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/mcdonald_07_13_reprint/&#34;&gt;&lt;em&gt;The Dust Assassin&lt;/em&gt;&lt;/a&gt; by Ian McDonald&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/macfarlane_08_13/&#34;&gt;&lt;em&gt;Found&lt;/em&gt;&lt;/a&gt; by Alex Dally MacFarlane&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Graduation</title>
-      <link>http://tavisharmstrong.com/2014/06/10/graduation</link>
-      <pubDate>Tue, 10 Jun 2014 22:34:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2014/06/10/graduation</guid>
-      <description>&lt;p&gt;Six years ago I moved to Montreal for university. An undergraduate degree should not be treated as a race, but it starts to feel that way after six years. Today, I finally graduated.&lt;/p&gt;
-
-&lt;p&gt;It feels good. I can complain all day about the things I didn&amp;rsquo;t like about university &amp;ndash; there are all too many of them, and I like to complain &amp;ndash; but I&amp;rsquo;m happy enough with where I am professionally, personally, intellectually right now that I can overlook that and just be happy.&lt;/p&gt;
-
-&lt;p&gt;Onward!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>The Two Solitudes (for Hackers)</title>
       <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
       <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
@@ -390,32 +266,6 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 &lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
 
 &lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NBDiff: A diffing and merging tool for the IPython Notebook</title>
-      <link>http://tavisharmstrong.com/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</link>
-      <pubDate>Sun, 06 Apr 2014 15:18:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</guid>
-      <description>&lt;p&gt;Final-year engineering students at many universities have to complete a &amp;ldquo;Capstone&amp;rdquo; project that gives them a chance to apply everything they learned throughout school to a practical, hands-on group project. My team just finished ours &amp;ndash; a project called &lt;a href=&#34;http://nbdiff.org&#34;&gt;NBDiff&lt;/a&gt; &amp;ndash; and I&amp;rsquo;m happy to report that it was a success.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;ve spoken to me in the last couple years, you&amp;rsquo;ve probably heard me ramble about the IPython Notebook, a rich web-based environment for scientific computing. Well, that project is wonderful, but there&amp;rsquo;s a catch with working on notebook files: the file format is a giant JSON blob and makes version control tricky. If you use &lt;code&gt;git diff&lt;/code&gt;, it can be hard to understand what you&amp;rsquo;ve actually changed, and if you need to resolve a merge conflict? Fasten your seatbelt.&lt;/p&gt;
-
-&lt;p&gt;NBDiff takes a stab at making these tasks easier. It presents diffs in a two-pane format and shows you deleted/added cells how you originally saw them in the notebook: if an image was changed, you see the image instead of a 10000-line diff of a base64 encoded PNG file. When resolving merge conflicts, you don&amp;rsquo;t have to worry about mangling the JSON by hand &amp;ndash; you just drag and drop changes into the final version and click &amp;lsquo;save&amp;rsquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/main-screenshot.png&#34; alt=&#34;A screenshot of nbdiff&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As far as school projects go, this one was very satisfying. We have 50 GitHub stars and several hundred downloads already; I can actually use it to solve problems &lt;em&gt;right now&lt;/em&gt;; and the IPython folks are interested in seeing it maintained beyond Capstone. Considering many school projects &amp;ndash; even Capstone projects &amp;ndash; never see the light of day, let alone continued maintenance, I&amp;rsquo;m really happy about this.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Homepage: &lt;a href=&#34;http://nbdiff.org&#34;&gt;nbdiff.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub repo: &lt;a href=&#34;https://github.com/tarmstrong/nbdiff&#34;&gt;tarmstrong/nbdiff&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;PyPI package: &lt;a href=&#34;https://pypi.python.org/pypi/nbdiff&#34;&gt;nbdiff&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -540,138 +390,417 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
     </item>
     
     <item>
-      <title>How long does it take to review a pull request on IPython?</title>
-      <link>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
-      <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
+      <title>Phergie refactoring idea</title>
+      <link>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</link>
+      <pubDate>Thu, 29 Nov 2012 14:14:00 +0000</pubDate>
       
-      <guid>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
-      <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
-IPython Notebook that looks at how long it takes to review a pull request on
-the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/tarmstrong/code-analysis/blob/master/IPythonReviewTime.ipynb&#34;&gt;How long does it take to review a pull request on IPython?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I had fun writing it, and I&amp;rsquo;d like to see more of this from non-academics.
-Hackers should be able to answer questions they have about a code base without
-too much of a fuss. If I can find the time, I hope to make this a bit easier
-with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
-you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Git Harness</title>
-      <link>http://tavisharmstrong.com/2013/11/24/the-git-harness</link>
-      <pubDate>Sun, 24 Nov 2013 16:30:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2013/11/24/the-git-harness</guid>
+      <guid>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</guid>
       <description>
 
-&lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m taking a course this semester on software architecture — the high
+level design principles that go into building high-quality, maintainable
+software. The class is generally pretty decent, but the best part of it
+is the project. Over the course of the semester, teams have to learn and
+describe the architecture of an open source project; analyze how design
+patterns and design principles are applied; critique parts of the
+project that could benefit from refactoring; and then actually refactor
+the code &amp;ndash; and if you&amp;rsquo;re feeling brave &amp;ndash; submit the change back to the
+project.&lt;/p&gt;
 
-&lt;p&gt;That said, most people can agree on one thing: the interface sucks. Git is a powerful tool, but it&amp;rsquo;s almost impossible to learn how all the commands and their options work. The arguments have inconsistent orders, and the flags mean different things in different contexts. Some of the commands share duties with others. I&amp;rsquo;ve learned to deal with it — it involves reading the man pages every time you want to use &lt;code&gt;git branch&lt;/code&gt; — but it is a struggle.&lt;/p&gt;
+&lt;p&gt;My group is studying &lt;a href=&#34;http://phergie.org/&#34;&gt;Phergie&lt;/a&gt;, an
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Internet_Relay_Chat&#34;&gt;IRC&lt;/a&gt; bot that can
+moderate and perform administrative tasks on IRC channels. It can also
+do a few other fun things like pretend to &amp;ldquo;serve beer&amp;rdquo; to channel users,
+look up documentation for PHP code, etc.&lt;/p&gt;
 
-&lt;p&gt;Complaining is fun, but it isn&amp;rsquo;t going to get us anywhere —  how do we go about fixing this problem instead? Is the answer a slick GUI like the GitHub desktop client? For some people, sure. But too many GUIs solve the wrong problem: &lt;em&gt;affordance&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re encouraged to get on project mailing lists and bug trackers and
+introduce ourselves to the developers. I did so and &lt;a href=&#34;https://groups.google.com/forum/?fromgroups=#!topic/phergie/pb9IuHdAOhE/discussion&#34;&gt;Matthew
+Turland&lt;/a&gt;
+was kind enough to give us suggestions on how to contribute back to the
+project — and even give me feedback on my homework!&lt;/p&gt;
 
-&lt;p&gt;Affordance is the idea that you should be able to figure out how to use parts of an interface intuitively. Buttons should look like they can be pressed, editable text should look like it can be edited, etc. Command line tools generally solve this problem with man pages and usage messages — and that&amp;rsquo;s a powerful mechanism.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll post that homework here with some context. The goal is to find a
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Code_smell&#34;&gt;&amp;ldquo;code smell&amp;rdquo;&lt;/a&gt; or some other
+kind of architectural defect; describe it; and then suggest a fix (a
+&amp;ldquo;refactoring&amp;rdquo;). We&amp;rsquo;re given points for ambition and we don&amp;rsquo;t actually
+have to &lt;em&gt;implement&lt;/em&gt; the change — so we&amp;rsquo;re not limited by our ability to
+actually refactor the code.&lt;/p&gt;
 
-&lt;p&gt;However, it doesn&amp;rsquo;t let you predict the outcome of your actions. Git forces you to have a solid mental model of how a Git history works. You have to understand what the various commands do to that mental model, and be able to simulate a proposed action in your head. Most of us developed this mental model through using Git and making a lot of mistakes.&lt;/p&gt;
+&lt;h3 id=&#34;refactoring-a-large-class-in-phergie&#34;&gt;Refactoring a large class in Phergie&lt;/h3&gt;
 
-&lt;p&gt;Practice makes perfect, but there is no virtue in unnecessary struggle. We &lt;em&gt;could&lt;/em&gt; build a Git interface that helps novices develop their mental models faster, with less pain. We could do it without hiding the complexities of Git, too. And I think we should.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
+is one standard deviation above the
+mean.&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is the Git interface that I would actually want to use:&lt;/p&gt;
+&lt;p&gt;Figure 1. Most often changed files. The blue line is the mean and the
+red line is one standard deviation above the mean.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-napkin-sketch&#34;&gt;The Napkin Sketch&lt;/h2&gt;
+&lt;p&gt;I began my search for code smells by ranking the files by the number of
+commits in the git log that touched each file (see Figure 1.) &lt;strong&gt;(Edit:
+This idea comes from Michael Feathers&amp;rsquo;s talk
+&lt;a href=&#34;http://www.youtube.com/watch?v=0eAhzJ_KM-Q&#34;&gt;here&lt;/a&gt; and if you think this
+sort of thing is cool, you should read his blog
+&lt;a href=&#34;http://michaelfeathers.typepad.com/&#34;&gt;here&lt;/a&gt;.)&lt;/strong&gt; The most committed-to
+file is also one of the largest at 740 lines of code &amp;mdash;
+&lt;code&gt;Phergie/Driver/Streams.php&lt;/code&gt;, which contains the
+&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; class. Ostensibly, this class is for handling
+the TCP connection to the IRC server. I noticed two things immediately:&lt;/p&gt;
 
-&lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; is the sole child class of
+&lt;code&gt;Phergie_Driver_Abstract&lt;/code&gt;. In my opinion, this is an
+over-generalization: there appears to be no reason (nor a plan) to
+have a non-streams-based implementation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; is not only responsible for handling the
+connection to the server; it is also responsible for parsing and
+formatting IRC commands. The class is so large because it contains
+methods pertaining to both responsibilities, and methods that are
+(arguably) too large because they perform both duties as well.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;For 1), the obvious solution is to flatten the hierarchy and use only
+the &lt;code&gt;Streams&lt;/code&gt; class. For 2), my proposed solution is (see the provided
+UML diagrams):&lt;/p&gt;
 
-&lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Move the parsing logic from &lt;code&gt;getEvent()&lt;/code&gt; to its own method called
+&lt;code&gt;parseEvent()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Move the &lt;code&gt;parseEvent()&lt;/code&gt; method to a new class called
+&lt;code&gt;Phergie_IRC_Command_Handler&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Move the formatting logic from &lt;code&gt;send()&lt;/code&gt; to its own method called
+&lt;code&gt;formatCommand()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Move the &lt;code&gt;formatCommand()&lt;/code&gt; method and all methods starting with &lt;code&gt;do&lt;/code&gt;
+to &lt;code&gt;Phergie_IRC_Command_Handler&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;If you use Git, you probably understand this. You might visualize it differently — maybe your arrows go the other way, or maybe you like a vertical graph. In any case, this visualization helps you make decisions about what to do next, depending on your goals.&lt;/p&gt;
+&lt;p&gt;My best estimate is that this would split the class into two files with
+lengths of approximately 400 lines of code. This is closer to the mean
+(227 LOC) and in my opinion much more manageable and understandable &amp;mdash;
+each class has more clearly defined responsibility.&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
+Phergie&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Figure 2. Current architecture of the IRC/TCP subsystem in Phergie&lt;/p&gt;
 
-&lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
+Phergie&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie&lt;/p&gt;
 
-&lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
+&lt;h3 id=&#34;what-did-the-lead-phergie-developer-think-of-it&#34;&gt;What did the lead Phergie developer think of it?&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;I
+&lt;a href=&#34;https://groups.google.com/forum/?fromgroups=#!topic/phergie/pb9IuHdAOhE&#34;&gt;posted&lt;/a&gt;
+an earlier draft of this to the mailing list and Matthew Turland, the
+lead developer responded:&lt;/p&gt;
 
-&lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I agree that Phergie_Driver_Streams handling parsing and generation
+of IRC commands is part of why it&amp;rsquo;s so large, which is why I&amp;rsquo;m moving
+those into separate classes (and even libraries) in Phergie 3. See
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-parser&#34;&gt;https://github.com/phergie/phergie-irc-parser&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-generator&#34;&gt;https://github.com/phergie/phergie-irc-generator&lt;/a&gt;. (These also use a
+Phergie\Irc subnamespace, in anticipation of one or more Jabber
+drivers also being developed.) See also
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-client-react&#34;&gt;https://github.com/phergie/phergie-irc-client-react&lt;/a&gt;, which is still
+very much in development but is an example of a driver implementation
+that still makes use of streams, but in a somewhat different way
+(because it uses the React library).&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
+&lt;p&gt;So, that&amp;rsquo;s cool: I accidentally anticipated a change that he had already
+made for Phergie 3 (which I didn&amp;rsquo;t realize existed). He decided to split
+the new class into a parser and a generator — something I chose not to
+do in my report for the sake of simplicity.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also really pleased at how welcoming Matt&amp;rsquo;s been so far; he&amp;rsquo;s
+getting practically nothing in return except a bug fix or two (maybe)
+and he&amp;rsquo;s still more than willing to take the time to coddle newcomers
+like us. What a nice guy!&lt;/p&gt;
 
-&lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
+&lt;h3 id=&#34;what-a-cool-project&#34;&gt;What a cool project!&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This is a really great idea for a project; although not everyone is
+going to feel like sticking their neck out and embarrassing themselves
+on the internet like I did, it&amp;rsquo;s still a great opportunity to learn from
+more experienced developers and think about theory in the context of
+actual software. I certainly learned a lot and had a blast doing it.&lt;/p&gt;
 
-&lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
-
-&lt;p&gt;This idea reminds me of &lt;a href=&#34;http://www.jumpharness.com/skate%20harness%20system.jpg&#34;&gt;figure skating harnesses&lt;/a&gt;. When you&amp;rsquo;re learning to do a double salchow, your coach will often strap you into one of those. You are then free to throw yourself into the jump without fear of falling on your ass. You get to try things out without suffering the consequences, so that you can develop good habits before it hurts.&lt;/p&gt;
-
-&lt;p&gt;With Git, the idea is the same, but instead of falling on your ass,
-you&amp;rsquo;re avoiding an hour of sifting through your reflogs.&lt;/p&gt;
-
-&lt;p&gt;So: who wants to build the Git harness?&lt;/p&gt;
+&lt;p&gt;Now if only the course also spent some time looking at &lt;a href=&#34;http://aosabook.org&#34;&gt;more systems, as
+described by their developers&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Blog your mistakes, please</title>
-      <link>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</link>
-      <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
+      <title>The Architecture of Open Source Applications, Volume 2</title>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
       
-      <guid>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</guid>
-      <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
-Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
-for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
+Applications&lt;/a&gt; was just released thanks to the hard
+work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
+Wilson&lt;/a&gt;. I had the privilege of helping copyedit
+a few chapters of the book. Here&amp;rsquo;s the blurb:&lt;/p&gt;
 
-&lt;p&gt;I usually don&amp;rsquo;t like titles like &amp;ldquo;why you should never use MongoDB&amp;rdquo; because the
-author usually means &amp;ldquo;why you shouldn&amp;rsquo;t use MongoDB if you are me and you are
-using it in the specific way I am using it and you are in the specific business
-that I work for.&amp;rdquo; The author writes the snappy title because it looks good on
-the Hacker News front page.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Architects look at thousands of buildings during their training, and
+study critiques of those buildings written by masters. In contrast,
+most software developers only ever get to know a handful of large
+programs well — usually programs they wrote themselves — and never
+study the great programs of history. As a result, they repeat one
+another’s mistakes rather than building on one another’s successes.&lt;/p&gt;
 
-&lt;p&gt;This isn&amp;rsquo;t that kind of blog post, though, and she makes a compelling argument
-that almost earns the title.&lt;/p&gt;
+&lt;p&gt;This second volume of The Architecture of Open Source Applications
+aims to change that. In it, the authors of twenty-four open source
+applications explain how their software is structured, and why. What
+are each program&amp;rsquo;s major components? How do they interact? And what
+did their builders learn during their development? In answering these
+questions, the contributors to this book provide unique insights into
+how they think.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;The title &lt;em&gt;should&lt;/em&gt; be &amp;ldquo;Why &lt;em&gt;You&lt;/em&gt; Should Never Use MongoDB&amp;rdquo;. I&amp;rsquo;m being pedantic,
-but I think the emphasis makes the point clearer. The post is making an
-assumption about you, and that assumption is this: you are not as smart as she
-is and if you are not as smart as she is, how can you hope to avoid the problem
-she is describing? I am not as smart as she is, so I&amp;rsquo;m going to learn from her
-mistake.&lt;/p&gt;
+&lt;p&gt;Go buy it &lt;a href=&#34;http://www.lulu.com/shop/amy-brown-and-greg-wilson/the-architecture-of-open-source-applications-volume-ii/paperback/product-20111008.html&#34;&gt;at
+Lulu&lt;/a&gt;
+(ebook versions will also be available). It&amp;rsquo;ll be available on Amazon at
+some point, but Lulu is preferred, because a greater percentage of the
+price goes towards royalties — which are going to Amnesty International.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m an inexperienced software developer; a n00b. I haven&amp;rsquo;t watched a large
-software system go from infancy to smouldering ruins, nor have I watched design
-decisions explode in my face nine months after making them. And how could I
-have? I&amp;rsquo;m an undergraduate student and there aren&amp;rsquo;t enough months of summer
-jobs to string together to create those experiences.&lt;/p&gt;
+&lt;p&gt;&lt;strike&gt;A free online version will be up at some point next week.&lt;/strike&gt; The online
+version is available
+&lt;a href=&#34;http://aosabook.org&#34; title=&#34;The Architecture of Open Source Applications&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Maeslant Kering: BOS development</title>
+      <link>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</link>
+      <pubDate>Tue, 31 Jan 2012 14:25:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</guid>
+      <description>&lt;p&gt;I came across &lt;a href=&#34;http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.5280&#34;&gt;this
+paper&lt;/a&gt;
+(found via Lambda the Ultimate) on the development of BOS, the control
+system for The Maeslant Kering, which is &amp;ldquo;the movable dam which has to
+protect Rotterdam from floodings while, at (almost) the same time, not
+restricting ship traffic to the port of Rotterdam&amp;rdquo;. The development team
+used formal methods (such as formal models and proofs) to ensure the
+quality of the finished product. It&amp;rsquo;s an interesting look at a much
+different style of development than the one I&amp;rsquo;m used to. Whereas most of
+my experience is in projects where the requirements remained unknown for
+the length of the project and where getting the right design was more
+crucial than a controlled development cycle, in the case of BOS figuring
+out the requirements (and testing their logical consistency) ahead of
+time was worth the cost.&lt;/p&gt;
 
-&lt;p&gt;Since I don&amp;rsquo;t have many of these experiences of my own, I&amp;rsquo;m forced to use the
-experiences of others. Let&amp;rsquo;s call these &lt;a href=&#34;http://aosabook.org/en/index.html&#34;&gt;&lt;em&gt;prosthetic experiences&lt;/em&gt;&lt;/a&gt;.
-Brave, humble, smart folks like Sarah Mei, who can talk about the projects
-they&amp;rsquo;ve seen crash and burn, are a boon; prosthetic experiences can help me
-think about design tradeoffs in ways I wouldn&amp;rsquo;t otherwise be able to without
-dealing with those problems myself.  They help me develop paranoia in the right
-places. Hopefully, it&amp;rsquo;ll help me avoid boring mistakes and make more
-interesting messes instead.&lt;/p&gt;
+&lt;p&gt;Software Engineering with Formal Methods: The Development of a Storm
+Surge Barrier Control System - Seven Myths of Formal Methods Revisited
+(2001), by Jan Tretmans, Klaas Wijbrans, Michel Chaudron:&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s not fun to write about your mistakes. But I like it when you do.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The control system, called BOS, completely autonomously decides about
+closing and opening of the barrier and, when necessary, also performs
+these tasks without human intervention. BOS is a safety-critical
+software system of the highest Safety Integrity Level according to IEC
+61508. One of the reliability increasing techniques used during its
+development is formal methods. This paper reports experiences obtained
+from using formal methods in the development of BOS. These experiences
+are presented in the context of Hall’s famous “Seven Myths of Formal
+Methods”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As far as I can tell, it would be quite difficult to measure the
+effectiveness of the formal methods used in this case. The finished
+product was remarkably bug-free &amp;ndash; no faults have been found in the
+mission-critical subsystems since deployment. But it does seem like an
+attractive development model to me. Writing buggy software sucks. It&amp;rsquo;s
+annoying, and it&amp;rsquo;s costly. We can&amp;rsquo;t write perfect software, even with
+formal methods, but we should work towards writing better software.&lt;/p&gt;
+
+&lt;p&gt;Also, it&amp;rsquo;s awesome to see such a badass application of control systems.
+If my prof had opened the class with this as an example I would have
+been much more interested.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on the Quorum paper</title>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
+blog&lt;/a&gt; Greg Wilson blogged about
+a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
+Slattery on &amp;ldquo;An Empirical Comparison of the Accuracy Rates of Novices
+using the Quorum, Perl, and Randomo Programming Languages&amp;rdquo;
+(&lt;a href=&#34;http://www.cs.siue.edu/~astefik/papers/StefikPlateau2011.pdf&#34;&gt;pdf&lt;/a&gt;).
+The paper compares Perl, a popular programming language, to two others
+created by the researchers. One of the created languages is Quorum, a
+language they constructed specifically to be easy to use; and the other
+is Randomo, a language they constructed randomly as a &amp;ldquo;placebo&amp;rdquo;
+language. An empirical study showed that Quorum was significantly easier
+to learn than Perl and Randomo. Perl did not perform significantly
+better than Randomo, which should surprise anyone who read the paper.
+Randomo looks like complete garbage to anyone who knows how to program.
+I can make all kinds of jokes about Perl, but to me it looks much better
+than Randomo. However, the study showed that a programmer&amp;rsquo;s intuition on
+which language is easier to learn is not necessarily correct.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the sample of Perl from the study:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+$x = &amp;amp;z(1, 100, 3);
+sub z{
+  $a = $[0];
+  $b = $[1];
+  $c = $[2];
+  $d = 0.0;
+  $e = 0.0;
+  for ($i = $a; $i &amp;lt;= $b; $i++){
+    if ($i % $c == 0) {
+      $d = $d + 1;
+    }
+    else {
+      $e = $e + 1;
+    }
+  }
+  if ($d &amp;gt; $e) {
+    $d;
+  }
+  else {
+    $e;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And here&amp;rsquo;s the Randomo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+^ Main {
+  ~ x \ z(1, 100, 3)
+}
+^ z(@ a % @ b % @ c) |  ~ {
+  ~ d \ 0.0
+    ~ e \ 0.0
+    @ i \ a
+# (b - a) {
+  : i ; c ! 0 {
+    d \ d + 1
+  }
+  , {
+    e \ e + 1
+  }
+  i \ i + 1
+}
+: d ` e {
+  d
+}
+, {
+  e
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are new to programming, and I asked you to pick one of the above
+languages based on which one you thought would afford you more accuracy,
+which one would you choose? I would choose the former, but the results
+of the study couldn&amp;rsquo;t determine with stastical significance that it
+affords novices any more accuracy.&lt;/p&gt;
+
+&lt;p&gt;The resulting discussion on &lt;a href=&#34;http://news.ycombinator.com/item?id=3152147&#34;&gt;Hacker
+News&lt;/a&gt; was pretty sad. I
+don&amp;rsquo;t think I saw any outright name-calling, but there were a tonne of
+emotionally charged responses that largely ignored the limited scope of
+the study. The study was not saying that Perl is a bad language. It was
+not saying that you are stupid if you use Perl. It is not even saying
+that Perl is a bad language for teaching; other factors like &amp;lsquo;how easy
+is it to run language X on my computer?&amp;rsquo; need to be considered before
+making such a claim. The point is simple; now we know something more
+about the learnability of programming languages. This isn&amp;rsquo;t an anecdote,
+and can&amp;rsquo;t be dismissed by a pithy counter-anecdote.&lt;/p&gt;
+
+&lt;p&gt;We need more studies like this done, so we can start to talk about
+programming languages as if they are tools, not religions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Check out my talk at D4D Boston 2011!</title>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
+2011&lt;/a&gt;, a Drupal conference with a
+focus on design. Even so, I was given the chance to do my talk on Drupal
+7&amp;rsquo;s Field API. To my surprise, I had an audience of around fifty to talk
+to (or it at least felt like fifty).&lt;/p&gt;
+
+&lt;p&gt;The talk was based on blog post I wrote for Evolving Web about &lt;a href=&#34;http://evolvingweb.ca/story/poutine-maker-introduction-field-api-drupal-7-part-1&#34;&gt;Poutine
+Maker&lt;/a&gt;,
+my custom Drupal field that lets users design crazy poutines. (You can
+see the formatter in action
+&lt;a href=&#34;http://poutinemaker.evolvingweb.ca/node/1&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;object name=&#34;ttvplayer&#34; id=&#34;ttvplayer&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allownetworking=&#34;all&#34; allowfullscreen=&#34;true&#34; height=&#34;165&#34; width=&#34;240&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;flashVars&#34; value=&#34;autoPlay=false&amp;amp;streamerType=rtmp&#34;&gt;&lt;a href=&#34;http://ttv.mit.edu&#34;&gt;MIT Tech TV&lt;/a&gt;&lt;/object&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a fantastic experience. I&amp;rsquo;m a little shy at conferences,
+so it was nice to meet people after who had seen my talk (even the guy
+who kept calling me Tarvis).&lt;/p&gt;
+
+&lt;p&gt;Also, I&amp;rsquo;m totally going to &lt;a href=&#34;http://london2011.drupal.org/&#34;&gt;DrupalCon
+London&lt;/a&gt; at the end of the month, which
+I&amp;rsquo;m super jazzed about. Co-op jobs aren&amp;rsquo;t supposed to be like this, but
+I am &lt;em&gt;definitely not complaining&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;(By the way, if you want to work with me and the cool people I work
+with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web is hiring&lt;/a&gt;.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUSEC 2011 thoughts</title>
+      <link>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</link>
+      <pubDate>Mon, 17 Jan 2011 00:36:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/01/17/cusec-2011-thoughts</guid>
+      <description>&lt;p&gt;CUSEC 2011 was my second time at the Canadian University Software
+Engineering Conference. I felt less lost this time around, and it was a
+good time. We saw some good talks, spoke to some cool people, and
+skipped a lot of class.&lt;/p&gt;
+
+&lt;p&gt;Some highlights (my top 3):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.drewconway.com/Drew_Conway/About.html&#34;&gt;Drew Conway&lt;/a&gt;
+spoke about terrorism and drug networks, and how to visualize them
+using R (a language that specializes in visualizing data). The
+biggest takeaway was that domain expertise + code = awesome cool
+stuff.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://topologicalmedialab.net/xinwei/&#34;&gt;Sha Xin Wei&lt;/a&gt; spoke about
+the Topological Media Lab at Concordia. It was refreshing to see a
+talk like that at a tech conference; it wouldn&amp;rsquo;t have been out of
+place at an art conference, but it also wasn&amp;rsquo;t out of place at
+CUSEC. I like using code to do art, so it was a pretty inspiring
+talk.&lt;/li&gt;
+&lt;li&gt;Mike Shaver spoke about managing the Mozilla team. This guy is the
+one of the smartest people I&amp;rsquo;ve ever heard speak. He gave amazing
+answers to difficult questions, and answered even Linus
+Torvalds-grade flames with calm balance. You couldn&amp;rsquo;t even get him
+to say incendiary stuff about Internet Explorer, which just blew my
+mind.&lt;br /&gt;
+Mike began his talk by speaking briefly about how he is bi-polar.
+People don&amp;rsquo;t understand problems of mental health very well, he
+says, and we need to be able to talk about it more openly. I admire
+his courage and ability to speak about it in front of a crowd of
+possibly immature students. Here is &lt;a href=&#34;http://shaver.off.net/diary/&#34;&gt;Mike Shaver&amp;rsquo;s
+blog&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Great conference. I look forward to a new year of hackery. I made the
+same resolution last year, but my new resolution is to get something
+impressive ready to demo at CUSEC next year.&lt;/p&gt;
 </description>
     </item>
     

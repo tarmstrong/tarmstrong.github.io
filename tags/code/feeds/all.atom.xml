@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://tavisharmstrong.com/tags/code/feeds/all.atom/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tavisharmstrong.com/tags/code/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Making sounds with overtone</title>
+      <link>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</link>
+      <pubDate>Sat, 23 Jul 2016 23:12:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been messing about with &lt;a href=&#34;https://github.com/overtone/overtone&#34;&gt;Overtone&lt;/a&gt;, a Clojure interface to &lt;a href=&#34;http://supercollider.github.io/&#34;&gt;SuperCollider&lt;/a&gt; to make interesting sounds as a way to combine my interests in programming and music. Overtone has been particularly enjoyable to use because it is (unlike SuperCollider) a programming language that has uses beyond sound synthesis, it is surprisingly easy to set up, and is not under active development (which, for the time being, means that it is stable. I&amp;rsquo;m looking on the bright side here.)&lt;/p&gt;
+
+&lt;p&gt;At some point I&amp;rsquo;ll probably write down what I&amp;rsquo;ve learned about working with Overtone, but in the mean time, enjoy these sounds:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273272287&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time.utc in ruby</title>
+      <link>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</link>
+      <pubDate>Wed, 20 Jul 2016 20:09:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</guid>
+      <description>&lt;p&gt;A coworker pointed out this strange behaviour in Ruby today:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;irb(main):003:0&amp;gt; Time.utc(2016, 2, 29)
+=&amp;gt; 2016-02-29 00:00:00 UTC
+irb(main):004:0&amp;gt; Time.utc(2015, 2, 29)
+=&amp;gt; 2015-03-01 00:00:00 UTC
+irb(main):005:0&amp;gt; Time.utc(2015, 1, 32)
+ArgumentError: argument out of range
+	from (irb):5:in `utc&#39;
+	from (irb):5
+	from /usr/bin/irb:11:in `&amp;lt;main&amp;gt;&#39;
+irb(main):006:0&amp;gt; Time.utc(2015, 4, 31)
+=&amp;gt; 2015-05-01 00:00:00 UTC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Clearly the authors made the effort to stop you from passing in obviously bad values. But I still find it so odd that it rolls over values that are just a little incorrect without telling you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programming as argument</title>
+      <link>http://tavisharmstrong.com/2015/05/09/programming-as-argument</link>
+      <pubDate>Sat, 09 May 2015 14:26:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2015/05/09/programming-as-argument</guid>
+      <description>&lt;p&gt;Many people before me have argued that computer programs are secondarily about
+making a machine perform a task and primarily about telling other humans what
+you want the computer to do. Pseudocode takes this to the extreme &amp;ndash;
+humans can discuss what a pseudocode program &lt;em&gt;would&lt;/em&gt; do and whether or not it
+would be a good idea, without ever running the code on a computer.  The
+pseudocode program is an argument &amp;ndash; it argues that a program could be
+constructed to accomplish the task at hand. The problem with pseudocode
+is &lt;em&gt;not&lt;/em&gt; that it doesn&amp;rsquo;t run on a computer. The problem with pseudocode is that it has no
+way of convincing you that it would work if it &lt;em&gt;did&lt;/em&gt; run on a computer.&lt;/p&gt;
+
+&lt;p&gt;The reason why a pseudocode program of any respectable size is not a convincing
+argument is probably obvious to anyone who writes software for a living: it&amp;rsquo;s
+easy to write code that looks plausible to other humans, but unless you run
+the program, it&amp;rsquo;s hard to believe that it will actually work. Software that is easy to
+run is more convincing because you can watch it work. You provide inputs, it
+provides outputs. You can do this to prove or disprove hypotheses. In this case, though,
+the code stops being an argument that a program &lt;em&gt;could&lt;/em&gt; be constructed to perform
+a task (as is the case with pseudocode). Instead, it becomes an argument that
+the compiled program will perform the task correctly. Testing the program manually
+is one way of convincing yourself that it will do that. But it is only one way.&lt;/p&gt;
+
+&lt;p&gt;An automated testing framework can be useful for making your code more convincing.
+You can show that given &lt;em&gt;this&lt;/em&gt; input and &lt;em&gt;that&lt;/em&gt; input, the program will produce
+the correct output. Other programmers can run the tests and feel more confident
+that the program will behave that way.&lt;/p&gt;
+
+&lt;p&gt;A few arguments are implicit in every test: these fake inputs are
+representative of real inputs. This is an accurate simulation of global state.
+These expected outputs are the &lt;em&gt;correct&lt;/em&gt; outputs.  When you use mocks or stubs
+in your tests, you argue that the dependencies you are simulating
+actually behave that way; a common mistake is over-mocking dependencies so much
+that you have to just &lt;em&gt;trust&lt;/em&gt; that the code will work when connected to real dependencies.
+For example, if your tests don&amp;rsquo;t open a socket
+to a functioning server, can you really be sure that the code will do so correctly in
+production?  If you can&amp;rsquo;t, you have to &lt;em&gt;trust&lt;/em&gt; that the networking code works. The
+argument becomes &amp;ldquo;&lt;em&gt;if&lt;/em&gt; we assume the networking code exists, the following code
+will write this message over the socket.&amp;rdquo; That &lt;em&gt;if&lt;/em&gt; might be a very big &lt;em&gt;if&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code review makes this argumentation-model-of-programming more obvious. If you
+write useless tests, a reviewer will often tell you that they are terrible
+tests.  The point they are making is &lt;em&gt;not&lt;/em&gt; that your code doesn&amp;rsquo;t work.  The
+point is that they have little reason to believe it will. They have not been
+convinced by your argument.&lt;/p&gt;
+
+&lt;p&gt;If code is an argument, what does that mean for working programmers?  Well, it
+means that the rules of rhetoric apply when writing software. If you want your
+code to be merged, or you want your project to be adopted, you need it to be
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Cialdini&#34;&gt;persuasive&lt;/a&gt;.  This raises an important question: is &lt;em&gt;persuasive&lt;/em&gt;
+code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Two Solitudes (for Hackers)</title>
+      <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
+      <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</guid>
+      <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
+This year we were lucky to have it in Montreal (only a short walk from my apartment)
+and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
+
+&lt;p&gt;As I &lt;a href=&#34;https://twitter.com/tavarm/status/379409322943320064&#34;&gt;wrote&lt;/a&gt; when I submitted the proposal, I proposed a talk on a topic
+that I wished someone smarter would speak about. I was pretty nervous about giving the talk
+&amp;mdash; the usual nerves, but also a sense that the topic was much larger than I could give
+credit to in 30 minutes with the limited experience I have as someone a few weeks shy
+of an undergraduate engineering degree.&lt;/p&gt;
+
+&lt;p&gt;The gist of the talk is this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We have a lot to learn about how we work as software engineers.&lt;/li&gt;
+&lt;li&gt;We can learn a lot about how we in the open source community work through
+examining version control history, code review data, etc., and we have the
+tools and skills necessary to analyze the data. (This is a bit of an
+understatement &amp;ndash; many people in the Python community &lt;em&gt;wrote the data analysis tools&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;We understand our own projects better than any researcher could so we are in a good
+position to study them.&lt;/li&gt;
+&lt;li&gt;We have the most to gain from studying the way we work; we don&amp;rsquo;t care about citation
+counts, we just want to write better software and be happier while we do it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I finished the talk by challenging the audience to go out, learn cool things about the
+projects they work on, and present their findings next year at PyCon 2015.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vvEY6bhLXsU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I went into the talk with the goal of finding &lt;em&gt;one&lt;/em&gt; person who thought the topic was cool. Just one.
+I seem to have struck a chord though, and had lots of really interesting conversations with people
+after my talk.&lt;/p&gt;
+
+&lt;p&gt;Joel Landsteiner &lt;a href=&#34;https://twitter.com/LucidOndine/status/455417980227420160&#34;&gt;was perhaps the most generous&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash; really cool talk. Most directly applicable talk I&amp;rsquo;ve attended this
+conference. Really quite inspirational.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And I&amp;rsquo;m looking forward to seeing what &lt;a href=&#34;https://twitter.com/zmagg/status/455783156256624642&#34;&gt;Maggie Zhou&lt;/a&gt; (an engineer at
+Etsy) comes up with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;hey! i really liked your talk @pycon &amp;amp; am inspired to go data collecting &amp;amp;
+visualizing for our codebase. thx. will share what i find&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So all in all, I&amp;rsquo;d call it a success. If you saw the talk and this sort of thing gets you excited, please send me an email (tavisharmstrong at gmail dot com). My hope is that if a bunch of us get together and do some cool work like this, we can make some real progress on closing the gap between the &lt;a href=&#34;http://www.slideshare.net/gvwilson/two-solitudes&#34;&gt;two solitudes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
+
+&lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUSEC 2014</title>
+      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
+      <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
+      <description>
+
+&lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
+
+&lt;p&gt;Since I wasn&amp;rsquo;t on the organizing board this year, I got to enjoy the conference in a much more relaxing fashion.
+It was also my fifth CUSEC, so I&amp;rsquo;ve figured out how this conference works and how to talk to people.
+Having a lot of friends in the companies at the career fair helps; being friends with &lt;a href=&#34;http://jvns.ca&#34;&gt;one&lt;/a&gt; of the speakers helps too.
+But more importantly, I&amp;rsquo;m just way older and more confident than my 19-year-old self.
+I feel comfortable around nerds, and I&amp;rsquo;m not totally lost in a technical conversation.
+I&amp;rsquo;ve grown just as much as CUSEC has grown.&lt;/p&gt;
+
+&lt;h2 id=&#34;talks&#34;&gt;Talks!&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ll talk about a few of the talks that really stood out to me.&lt;/p&gt;
+
+&lt;p&gt;Famous blogger &lt;a href=&#34;http://jvns.ca&#34;&gt;Julia Evans&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; gave a fun talk on hacking
+on the kernel. Operating system kernels are a really neat part of computers
+that I don&amp;rsquo;t know much about, and Julia makes it seem easy and not scary at
+all. She had a neat trick of hiding all the parts of a C program that aren&amp;rsquo;t
+relevant to understanding it on a high level. It&amp;rsquo;s quite rare for someone to
+take a very technically intimidating subject and make it seem within your
+grasp.&lt;/p&gt;
+
+&lt;p&gt;Josh Matthews gave a &lt;a href=&#34;http://www.joshmatthews.net/cusec14/&#34;&gt;talk&lt;/a&gt; on developing
+for Firefox: the kinds of projects Mozilla has that you can work on, how to
+find a bug to work on, and what the patch process is like. I spent the last
+summer looking at how open source projects do code review, so a lot of this
+was obvious to me, but this is exactly the kind of talk that would have
+completely blown my mind a couple years ago.&lt;/p&gt;
+
+&lt;p&gt;He went a few steps further and bravely walked the audience through a complete
+Firefox patch, explaining the important parts of the code, and giving a brief
+overview of the architecture along the way. Similarly to Julia&amp;rsquo;s talk, it was a
+very non-threatening introduction to an extremely intimidating topic.&lt;/p&gt;
+
+&lt;p&gt;Nadim Kobeissi spoke about &lt;a href=&#34;http://crypto.cat&#34;&gt;CryptoCat&lt;/a&gt;, a controvertial
+encrypted chat service that&amp;rsquo;s been under a lot of fire since it started for
+horrible &lt;a href=&#34;http://tobtu.com/decryptocat.php&#34;&gt;bugs&lt;/a&gt; and being developed by a 23
+year old (ad-hominem attacks abound). I admit I have a soft spot for Nadim
+because he is a recent Concordia graduate &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but also because I think he&amp;rsquo;s
+solving a tough problem that needs solving if encryption is ever to become
+popular &amp;mdash; usability.&lt;/p&gt;
+
+&lt;p&gt;Nadim&amp;rsquo;s talk wasn&amp;rsquo;t technical in nature &amp;mdash; it was more about the political
+side of things. He shared insightful observations on the nature of the struggle
+between hackers and the surveillance state. In essence, he argued that they
+both feed off making the other look like an adversary to be defeated, but the
+real solution lies in common understanding. That&amp;rsquo;s no easy feat when your
+adversaries are organizations like CSEC and the NSA who have had no serious
+oversight.&lt;/p&gt;
+
+&lt;p&gt;I was honestly surprised to find Nadim very approachable, humble, and easy to
+talk to. He gave me some good advice on learning more about computer security
+and finding mentors.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t want to spoil &lt;a href=&#34;https://www.destroyallsoftware.com/screencasts&#34;&gt;Gary
+Bernhardt&lt;/a&gt;&amp;rsquo;s talk &amp;mdash;
+you&amp;rsquo;ll have to watch it when it comes out &amp;mdash; but it was stylistically very
+interesting to me. I love science fiction and informative, thought-provoking
+technical talks. The marriage of both is something else entirely, and I liked it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nerd.kelseyinnis.com/&#34;&gt;Kelsey Gilmore-Innis&lt;/a&gt; gave a fun, bombastic
+introduction to functional programming.  &lt;a href=&#34;https://twitter.com/avibryant&#34;&gt;Avi
+Bryant&lt;/a&gt; spoke about detecting fraud, but I
+missed the first half of his talk because I was talking to someone in the
+hallway and didn&amp;rsquo;t realize it had started. Oops. I had a nice chat with him
+later, though, which sort of made up for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;question-time&#34;&gt;Question time&lt;/h2&gt;
+
+&lt;p&gt;This year I gave myself a challenge: to ask a question after every talk I saw.
+With two exceptions, I managed to do this, and it went pretty well. I got a
+little better at handling my nerves throughout the weekend and managed not to
+say anything too stupid. Julia&amp;rsquo;s encouragement &amp;mdash; something along the
+lines of &amp;ldquo;everyone thinks you&amp;rsquo;re dumb anyways&amp;rdquo; &amp;mdash; was very helpful.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; I have good taste in questions. I might write a blog post on what I
+think makes a good post-talk question at some point.&lt;/p&gt;
+
+&lt;h2 id=&#34;conference-pro-tips&#34;&gt;Conference pro-tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Volunteering is a good way to make friends.&lt;/li&gt;
+&lt;li&gt;Talk to younger students and say nice encouraging things to them. Don&amp;rsquo;t act like a smartypants, even if you are. Lower the ladder instead of pulling it up behind you.&lt;/li&gt;
+&lt;li&gt;Have a &lt;a href=&#34;http://aosabook.org&#34;&gt;physical object&lt;/a&gt; that you built that you can
+show off to company recruiters. Hack together a bunch of LEDs and a
+microcontroller and sew it into your backpack. Whatever.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t complain about talks you didn&amp;rsquo;t like, unless the presenter said
+something harmful. Life is too short for inadvertently making people feel bad
+about things they like, and it makes you look like a jerk. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Get as much sleep as you can without being a hermit. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;CUSEC was fun and I recommend going.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;She really likes it when you call her internet-famous.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;I&amp;rsquo;m pretty sure we were at least registered for a class together at one point, though he was in a much different degree program.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;Ahem.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;This is probably the most controversial part of this post.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How long does it take to review a pull request on IPython?</title>
+      <link>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
+      <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
+      <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
+IPython Notebook that looks at how long it takes to review a pull request on
+the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/tarmstrong/code-analysis/blob/master/IPythonReviewTime.ipynb&#34;&gt;How long does it take to review a pull request on IPython?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I had fun writing it, and I&amp;rsquo;d like to see more of this from non-academics.
+Hackers should be able to answer questions they have about a code base without
+too much of a fuss. If I can find the time, I hope to make this a bit easier
+with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
+you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Phergie refactoring idea</title>
+      <link>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</link>
+      <pubDate>Thu, 29 Nov 2012 14:14:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/11/29/phergie-refactoring-idea</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m taking a course this semester on software architecture — the high
+level design principles that go into building high-quality, maintainable
+software. The class is generally pretty decent, but the best part of it
+is the project. Over the course of the semester, teams have to learn and
+describe the architecture of an open source project; analyze how design
+patterns and design principles are applied; critique parts of the
+project that could benefit from refactoring; and then actually refactor
+the code &amp;ndash; and if you&amp;rsquo;re feeling brave &amp;ndash; submit the change back to the
+project.&lt;/p&gt;
+
+&lt;p&gt;My group is studying &lt;a href=&#34;http://phergie.org/&#34;&gt;Phergie&lt;/a&gt;, an
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Internet_Relay_Chat&#34;&gt;IRC&lt;/a&gt; bot that can
+moderate and perform administrative tasks on IRC channels. It can also
+do a few other fun things like pretend to &amp;ldquo;serve beer&amp;rdquo; to channel users,
+look up documentation for PHP code, etc.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re encouraged to get on project mailing lists and bug trackers and
+introduce ourselves to the developers. I did so and &lt;a href=&#34;https://groups.google.com/forum/?fromgroups=#!topic/phergie/pb9IuHdAOhE/discussion&#34;&gt;Matthew
+Turland&lt;/a&gt;
+was kind enough to give us suggestions on how to contribute back to the
+project — and even give me feedback on my homework!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll post that homework here with some context. The goal is to find a
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Code_smell&#34;&gt;&amp;ldquo;code smell&amp;rdquo;&lt;/a&gt; or some other
+kind of architectural defect; describe it; and then suggest a fix (a
+&amp;ldquo;refactoring&amp;rdquo;). We&amp;rsquo;re given points for ambition and we don&amp;rsquo;t actually
+have to &lt;em&gt;implement&lt;/em&gt; the change — so we&amp;rsquo;re not limited by our ability to
+actually refactor the code.&lt;/p&gt;
+
+&lt;h3 id=&#34;refactoring-a-large-class-in-phergie&#34;&gt;Refactoring a large class in Phergie&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/commits.png&#34; alt=&#34;Most often changed files. The blue line is the mean and the red line
+is one standard deviation above the
+mean.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 1. Most often changed files. The blue line is the mean and the
+red line is one standard deviation above the mean.&lt;/p&gt;
+
+&lt;p&gt;I began my search for code smells by ranking the files by the number of
+commits in the git log that touched each file (see Figure 1.) &lt;strong&gt;(Edit:
+This idea comes from Michael Feathers&amp;rsquo;s talk
+&lt;a href=&#34;http://www.youtube.com/watch?v=0eAhzJ_KM-Q&#34;&gt;here&lt;/a&gt; and if you think this
+sort of thing is cool, you should read his blog
+&lt;a href=&#34;http://michaelfeathers.typepad.com/&#34;&gt;here&lt;/a&gt;.)&lt;/strong&gt; The most committed-to
+file is also one of the largest at 740 lines of code &amp;mdash;
+&lt;code&gt;Phergie/Driver/Streams.php&lt;/code&gt;, which contains the
+&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; class. Ostensibly, this class is for handling
+the TCP connection to the IRC server. I noticed two things immediately:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; is the sole child class of
+&lt;code&gt;Phergie_Driver_Abstract&lt;/code&gt;. In my opinion, this is an
+over-generalization: there appears to be no reason (nor a plan) to
+have a non-streams-based implementation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Phergie_Driver_Streams&lt;/code&gt; is not only responsible for handling the
+connection to the server; it is also responsible for parsing and
+formatting IRC commands. The class is so large because it contains
+methods pertaining to both responsibilities, and methods that are
+(arguably) too large because they perform both duties as well.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For 1), the obvious solution is to flatten the hierarchy and use only
+the &lt;code&gt;Streams&lt;/code&gt; class. For 2), my proposed solution is (see the provided
+UML diagrams):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Move the parsing logic from &lt;code&gt;getEvent()&lt;/code&gt; to its own method called
+&lt;code&gt;parseEvent()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Move the &lt;code&gt;parseEvent()&lt;/code&gt; method to a new class called
+&lt;code&gt;Phergie_IRC_Command_Handler&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Move the formatting logic from &lt;code&gt;send()&lt;/code&gt; to its own method called
+&lt;code&gt;formatCommand()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Move the &lt;code&gt;formatCommand()&lt;/code&gt; method and all methods starting with &lt;code&gt;do&lt;/code&gt;
+to &lt;code&gt;Phergie_IRC_Command_Handler&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My best estimate is that this would split the class into two files with
+lengths of approximately 400 lines of code. This is closer to the mean
+(227 LOC) and in my opinion much more manageable and understandable &amp;mdash;
+each class has more clearly defined responsibility.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-1.png&#34; alt=&#34;Current architecture of the IRC/TCP subsystem in
+Phergie&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 2. Current architecture of the IRC/TCP subsystem in Phergie&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/phergie/refactor-2.png&#34; alt=&#34;Proposed refactoring of the IRC/TCP subsystem in
+Phergie&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 3. Proposed refactoring of the IRC/TCP subsystem in Phergie&lt;/p&gt;
+
+&lt;h3 id=&#34;what-did-the-lead-phergie-developer-think-of-it&#34;&gt;What did the lead Phergie developer think of it?&lt;/h3&gt;
+
+&lt;p&gt;I
+&lt;a href=&#34;https://groups.google.com/forum/?fromgroups=#!topic/phergie/pb9IuHdAOhE&#34;&gt;posted&lt;/a&gt;
+an earlier draft of this to the mailing list and Matthew Turland, the
+lead developer responded:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I agree that Phergie_Driver_Streams handling parsing and generation
+of IRC commands is part of why it&amp;rsquo;s so large, which is why I&amp;rsquo;m moving
+those into separate classes (and even libraries) in Phergie 3. See
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-parser&#34;&gt;https://github.com/phergie/phergie-irc-parser&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-generator&#34;&gt;https://github.com/phergie/phergie-irc-generator&lt;/a&gt;. (These also use a
+Phergie\Irc subnamespace, in anticipation of one or more Jabber
+drivers also being developed.) See also
+&lt;a href=&#34;https://github.com/phergie/phergie-irc-client-react&#34;&gt;https://github.com/phergie/phergie-irc-client-react&lt;/a&gt;, which is still
+very much in development but is an example of a driver implementation
+that still makes use of streams, but in a somewhat different way
+(because it uses the React library).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, that&amp;rsquo;s cool: I accidentally anticipated a change that he had already
+made for Phergie 3 (which I didn&amp;rsquo;t realize existed). He decided to split
+the new class into a parser and a generator — something I chose not to
+do in my report for the sake of simplicity.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also really pleased at how welcoming Matt&amp;rsquo;s been so far; he&amp;rsquo;s
+getting practically nothing in return except a bug fix or two (maybe)
+and he&amp;rsquo;s still more than willing to take the time to coddle newcomers
+like us. What a nice guy!&lt;/p&gt;
+
+&lt;h3 id=&#34;what-a-cool-project&#34;&gt;What a cool project!&lt;/h3&gt;
+
+&lt;p&gt;This is a really great idea for a project; although not everyone is
+going to feel like sticking their neck out and embarrassing themselves
+on the internet like I did, it&amp;rsquo;s still a great opportunity to learn from
+more experienced developers and think about theory in the context of
+actual software. I certainly learned a lot and had a blast doing it.&lt;/p&gt;
+
+&lt;p&gt;Now if only the course also spent some time looking at &lt;a href=&#34;http://aosabook.org&#34;&gt;more systems, as
+described by their developers&amp;hellip;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Semi-Coherent Review of PyCon Canada 2012</title>
+      <link>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</link>
+      <pubDate>Tue, 27 Nov 2012 17:20:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/11/27/a-semi-coherent-review-of-pycon-canada-2012</guid>
+      <description>
+
+&lt;p&gt;Two weeks ago I was foolish enough to take a few days to escape from
+university life long enough to go to &lt;a href=&#34;http://pycon.ca&#34;&gt;PyCon Canada&lt;/a&gt;, a
+nice little conference in Toronto that can only be described with words
+that end with exclamation marks: &lt;em&gt;fantastic!&lt;/em&gt;, &lt;em&gt;awesome!&lt;/em&gt;, etc. I’m no
+veteran of tech conferences — this was, I think, the ninth I’ve ever
+attended&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fn1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:fn1&#34;&gt;0&lt;/a&gt;&lt;/sup&gt;^ — so I have a narrow view of what conferences can
+look like.&lt;/p&gt;
+
+&lt;p&gt;This was, however, the first non-student conference I’ve been to without
+it being related to work. That was &lt;em&gt;nice&lt;/em&gt; — I could just relax and watch
+the talks and hang out with fellow Python enthusiasts like my friend
+(and former co-worker) &lt;a href=&#34;http://j-vk.com&#34;&gt;Jon “VK” Villemaire-Krajden&lt;/a&gt;.
+That also drew attention to something I noticed about the conference: it
+was delightfully non-commercial, as far as conferences go. Sure, there
+were sponsors, and the sponsors said things at the microphone, and there
+was an area where you could schmooze with the sponsors — but on the
+whole, it felt like a conference of enthusiasts and open source people,
+not people trying to sell things.&lt;/p&gt;
+
+&lt;h3 id=&#34;people-who-spoke-words&#34;&gt;People who spoke words&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pyvideo.org/video/1560/saturday-morning-keynote&#34;&gt;Jessica
+McKellar&lt;/a&gt;
+started things off with a talk on fostering a welcoming open source
+community. Near the beginning of her talk, she told a story about her
+time as an instructor at Hacker School: they took a few whiteboards and
+wrote questions on them like “What are your fears as a programmer?” She
+showed a slide with a bunch of students’ answers and it &lt;em&gt;really&lt;/em&gt;
+resonated with me.&lt;/p&gt;
+
+&lt;p&gt;Sometimes programming is hard because it is hard, and sometimes
+programming is hard because of seemingly silly, trivial emotions.
+Sometimes programming is hard because you’re afraid of breaking
+something. Or because you’re afraid of looking stupid on the internet.
+Or because you’re afraid of looking stupid &lt;em&gt;off&lt;/em&gt; the internet.
+Recognizing these things and talking about these things is more
+important than it sounds. To me, seeing this really smart open source
+hacker on a stage talk about these things and admit that they, too, are
+afraid of not being smart enough is so much more encouraging than just
+knowing that I &lt;em&gt;can&lt;/em&gt; contribute to open source.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=8gkrE6q9Tzw&#34;&gt;Michael Feathers&lt;/a&gt; spoke
+about functional programming. I’ve been drinking the FP Kool-Aid for a
+while now, so it wasn’t a mind-blowing talk for me; but he had a way
+with words and said what other people have been saying, but &lt;em&gt;better&lt;/em&gt;.
+I’m not sure what his exact words are, but he said something along the
+lines of “these functional things are cool because you need to learn
+them only once,” that is, a lot of those functional programming tools
+that people talk about are pre-packaged general, common algorithms.
+Sure, you can get the job done in two nested for-loops, but maybe using
+someone *else*’s for-loops will work out better?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pyvideo.org/video/1605/science-and-python-retrospective-of-a-mostly-s&#34;&gt;Fernando
+Perez&lt;/a&gt;
+ended the conference on a high note with his talk on the IPython
+Notebook, a browser-based tool for Python programming. The IPython
+Notebook is a bit like a REPL, a bit like an IDE, but the main idea is
+that it’s &lt;em&gt;in the browser&lt;/em&gt;. That means if you write code that generates
+an image, it can show the image alongside your code. It means that if
+you have code that outputs a protein, the result can be an interactive
+3D model. This project is so cool that I’ve wasted spent more time than
+I care to admit playing with it since the conference.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sprints&#34;&gt;Code Sprints!&lt;/h3&gt;
+
+&lt;p&gt;I wasn’t in town for long — and I wanted to spend some time with friends
+— but I did manage to drop by the code sprints for a while. The sprints
+were at the &lt;a href=&#34;http://ladieslearningcode.com/&#34;&gt;Ladies Learning Code&lt;/a&gt; space
+near Honest Ed’s, a lovely little building with a pretty decent cafe in
+the basement.&lt;/p&gt;
+
+&lt;p&gt;Sleep deprivation might have done strange things to me, but I’m &lt;em&gt;pretty
+sure&lt;/em&gt; these things happened:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Pizza with beet slices instead of pepperoni (awesome)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I had a really nice chat with Fernando Perez about IPython. And then
+he got me a cortado, which was incredibly sweet of him.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;After I thanked Diana Clark for putting on the conference and
+generally being awesome, &lt;em&gt;she gave me a hug&lt;/em&gt;. I swear to Guido, she
+almost made me cry.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although I wasn’t around to see much, it does sound like a lot got done
+at the sprint. I’ll be sure to stick around longer next time.&lt;/p&gt;
+
+&lt;h3 id=&#34;things-that-were-not-good-about-this-conference&#34;&gt;Things that were not good about this conference&lt;/h3&gt;
+
+&lt;p&gt;I really don’t have anything bad to say about how the conference was
+run. Really. Sure, the venue was cold the first day. The wireless was a
+bit patchy here and there. But whatever. Did I mention my ticket cost
+$25?&lt;/p&gt;
+
+&lt;p&gt;Personally, I think all “code sprints” should be called “Happy Fun Best
+Friends Coding Club But Also Testing and Documentation and Learning
+Extravaganza,” but sports and athletics metaphors are, unfortunately,
+thoroughly entrenched in the software world and I suppose I’m not going
+to win this one. &lt;em&gt;Sigh&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Oh, and it may not surprise you to hear that I detected a substantial
+dose of Python elitism. I like Python too, but can we all try not to
+alienate PHP and Java developers? Couldn&amp;rsquo;t hurt, anyways.&lt;/p&gt;
+
+&lt;h3 id=&#34;would-i-go-again-would-i-bring-a-friend&#34;&gt;Would I go again? Would I bring a friend?&lt;/h3&gt;
+
+&lt;p&gt;Yes and yes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Woah. When did that happen?&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Architecture of Open Source Applications, Volume 2</title>
+      <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
+      <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</guid>
+      <description>&lt;p&gt;The second volume of &lt;a href=&#34;http://aosabook.org/&#34;&gt;The Architecture of Open Source
+Applications&lt;/a&gt; was just released thanks to the hard
+work of &lt;a href=&#34;http://www.amyrbrown.ca/index.html&#34;&gt;Amy Brown&lt;/a&gt; and &lt;a href=&#34;http://third-bit.com/&#34;&gt;Greg
+Wilson&lt;/a&gt;. I had the privilege of helping copyedit
+a few chapters of the book. Here&amp;rsquo;s the blurb:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Architects look at thousands of buildings during their training, and
+study critiques of those buildings written by masters. In contrast,
+most software developers only ever get to know a handful of large
+programs well — usually programs they wrote themselves — and never
+study the great programs of history. As a result, they repeat one
+another’s mistakes rather than building on one another’s successes.&lt;/p&gt;
+
+&lt;p&gt;This second volume of The Architecture of Open Source Applications
+aims to change that. In it, the authors of twenty-four open source
+applications explain how their software is structured, and why. What
+are each program&amp;rsquo;s major components? How do they interact? And what
+did their builders learn during their development? In answering these
+questions, the contributors to this book provide unique insights into
+how they think.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go buy it &lt;a href=&#34;http://www.lulu.com/shop/amy-brown-and-greg-wilson/the-architecture-of-open-source-applications-volume-ii/paperback/product-20111008.html&#34;&gt;at
+Lulu&lt;/a&gt;
+(ebook versions will also be available). It&amp;rsquo;ll be available on Amazon at
+some point, but Lulu is preferred, because a greater percentage of the
+price goes towards royalties — which are going to Amnesty International.&lt;/p&gt;
+
+&lt;p&gt;&lt;strike&gt;A free online version will be up at some point next week.&lt;/strike&gt; The online
+version is available
+&lt;a href=&#34;http://aosabook.org&#34; title=&#34;The Architecture of Open Source Applications&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diversity in practice: How the Boston Python User Group grew to 1700 people and over 15% women</title>
+      <link>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</link>
+      <pubDate>Sun, 18 Mar 2012 19:37:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/03/18/diversity-in-practice-how-the-boston-python-user-group-grew-to-1700-people-and-over-15-women</guid>
+      <description>&lt;p&gt;The sheer humility, honesty, and deliberate action these two people took
+to fight a problem they saw in the world is inspiring. They listened to
+people, &lt;em&gt;really&lt;/em&gt; listened to people, and didn&amp;rsquo;t shy away from the faults
+in their approach. This is the most practical guide for how to get fresh
+blood into programming that I&amp;rsquo;ve seen yet.&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t been programming for that long. Three years ago, when I was in
+my first year of school, I really wanted to learn how to program. At
+that point, I had considered going to Montreal Python meetups, but I was
+too shy and didn&amp;rsquo;t think I&amp;rsquo;d know what was going on, or that I wouldn&amp;rsquo;t
+fit in. So when people make an effort to reach shy outsiders, especially
+people who are minorities in the development community who may feel even
+more shy than I did for that reason, it makes me really happy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[On advertising workshops:] Make the tone very clear. We&amp;rsquo;re about
+being inclusive and growing communities, and not about being
+exclusive. So if you&amp;rsquo;re just a little bit careful about your language
+there, I think you&amp;rsquo;ll find that everyone is thrilled to support you in
+this. Men, women, everyone. — Jessica McKellar&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Maeslant Kering: BOS development</title>
+      <link>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</link>
+      <pubDate>Tue, 31 Jan 2012 14:25:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/01/31/the-maeslant-kering-bos-development</guid>
+      <description>&lt;p&gt;I came across &lt;a href=&#34;http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.5280&#34;&gt;this
+paper&lt;/a&gt;
+(found via Lambda the Ultimate) on the development of BOS, the control
+system for The Maeslant Kering, which is &amp;ldquo;the movable dam which has to
+protect Rotterdam from floodings while, at (almost) the same time, not
+restricting ship traffic to the port of Rotterdam&amp;rdquo;. The development team
+used formal methods (such as formal models and proofs) to ensure the
+quality of the finished product. It&amp;rsquo;s an interesting look at a much
+different style of development than the one I&amp;rsquo;m used to. Whereas most of
+my experience is in projects where the requirements remained unknown for
+the length of the project and where getting the right design was more
+crucial than a controlled development cycle, in the case of BOS figuring
+out the requirements (and testing their logical consistency) ahead of
+time was worth the cost.&lt;/p&gt;
+
+&lt;p&gt;Software Engineering with Formal Methods: The Development of a Storm
+Surge Barrier Control System - Seven Myths of Formal Methods Revisited
+(2001), by Jan Tretmans, Klaas Wijbrans, Michel Chaudron:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The control system, called BOS, completely autonomously decides about
+closing and opening of the barrier and, when necessary, also performs
+these tasks without human intervention. BOS is a safety-critical
+software system of the highest Safety Integrity Level according to IEC
+61508. One of the reliability increasing techniques used during its
+development is formal methods. This paper reports experiences obtained
+from using formal methods in the development of BOS. These experiences
+are presented in the context of Hall’s famous “Seven Myths of Formal
+Methods”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As far as I can tell, it would be quite difficult to measure the
+effectiveness of the formal methods used in this case. The finished
+product was remarkably bug-free &amp;ndash; no faults have been found in the
+mission-critical subsystems since deployment. But it does seem like an
+attractive development model to me. Writing buggy software sucks. It&amp;rsquo;s
+annoying, and it&amp;rsquo;s costly. We can&amp;rsquo;t write perfect software, even with
+formal methods, but we should work towards writing better software.&lt;/p&gt;
+
+&lt;p&gt;Also, it&amp;rsquo;s awesome to see such a badass application of control systems.
+If my prof had opened the class with this as an example I would have
+been much more interested.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on the Quorum paper</title>
+      <link>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</link>
+      <pubDate>Sun, 04 Dec 2011 15:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/12/04/thoughts-on-the-quorum-paper</guid>
+      <description>&lt;p&gt;Recently on the &lt;a href=&#34;http://www.neverworkintheory.org/?p=197&#34;&gt;&amp;ldquo;It Will Never Work In Theory&amp;rdquo;
+blog&lt;/a&gt; Greg Wilson blogged about
+a paper by Andreas Stefik, Susanna Siebert, Melissa Stefik, and Kim
+Slattery on &amp;ldquo;An Empirical Comparison of the Accuracy Rates of Novices
+using the Quorum, Perl, and Randomo Programming Languages&amp;rdquo;
+(&lt;a href=&#34;http://www.cs.siue.edu/~astefik/papers/StefikPlateau2011.pdf&#34;&gt;pdf&lt;/a&gt;).
+The paper compares Perl, a popular programming language, to two others
+created by the researchers. One of the created languages is Quorum, a
+language they constructed specifically to be easy to use; and the other
+is Randomo, a language they constructed randomly as a &amp;ldquo;placebo&amp;rdquo;
+language. An empirical study showed that Quorum was significantly easier
+to learn than Perl and Randomo. Perl did not perform significantly
+better than Randomo, which should surprise anyone who read the paper.
+Randomo looks like complete garbage to anyone who knows how to program.
+I can make all kinds of jokes about Perl, but to me it looks much better
+than Randomo. However, the study showed that a programmer&amp;rsquo;s intuition on
+which language is easier to learn is not necessarily correct.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the sample of Perl from the study:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+$x = &amp;amp;z(1, 100, 3);
+sub z{
+  $a = $[0];
+  $b = $[1];
+  $c = $[2];
+  $d = 0.0;
+  $e = 0.0;
+  for ($i = $a; $i &amp;lt;= $b; $i++){
+    if ($i % $c == 0) {
+      $d = $d + 1;
+    }
+    else {
+      $e = $e + 1;
+    }
+  }
+  if ($d &amp;gt; $e) {
+    $d;
+  }
+  else {
+    $e;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And here&amp;rsquo;s the Randomo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::text
+^ Main {
+  ~ x \ z(1, 100, 3)
+}
+^ z(@ a % @ b % @ c) |  ~ {
+  ~ d \ 0.0
+    ~ e \ 0.0
+    @ i \ a
+# (b - a) {
+  : i ; c ! 0 {
+    d \ d + 1
+  }
+  , {
+    e \ e + 1
+  }
+  i \ i + 1
+}
+: d ` e {
+  d
+}
+, {
+  e
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are new to programming, and I asked you to pick one of the above
+languages based on which one you thought would afford you more accuracy,
+which one would you choose? I would choose the former, but the results
+of the study couldn&amp;rsquo;t determine with stastical significance that it
+affords novices any more accuracy.&lt;/p&gt;
+
+&lt;p&gt;The resulting discussion on &lt;a href=&#34;http://news.ycombinator.com/item?id=3152147&#34;&gt;Hacker
+News&lt;/a&gt; was pretty sad. I
+don&amp;rsquo;t think I saw any outright name-calling, but there were a tonne of
+emotionally charged responses that largely ignored the limited scope of
+the study. The study was not saying that Perl is a bad language. It was
+not saying that you are stupid if you use Perl. It is not even saying
+that Perl is a bad language for teaching; other factors like &amp;lsquo;how easy
+is it to run language X on my computer?&amp;rsquo; need to be considered before
+making such a claim. The point is simple; now we know something more
+about the learnability of programming languages. This isn&amp;rsquo;t an anecdote,
+and can&amp;rsquo;t be dismissed by a pithy counter-anecdote.&lt;/p&gt;
+
+&lt;p&gt;We need more studies like this done, so we can start to talk about
+programming languages as if they are tools, not religions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spam Filter in Haskell</title>
+      <link>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</link>
+      <pubDate>Wed, 02 Nov 2011 07:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/11/02/spam-filter-in-haskell</guid>
+      <description>&lt;p&gt;Check out this spam filter I wrote in Haskell while watching the
+&lt;a href=&#34;http://ai-class.com&#34;&gt;Stanford AI lectures&lt;/a&gt;! The same technique (Naive
+Bayes Classification) is used in most effective spam filters, albeit
+with more parameters. This version simply calculates the probability of
+a word being either spam or ham (the technical term for non-spam), based
+on how frequently it occurs in each corpus. At some point I&amp;rsquo;ll probably
+test it using comments that I receive on this blog and see how well it
+works!&lt;/p&gt;
+
+&lt;p&gt;Paul Graham has a very readable explanation of how this works
+&lt;a href=&#34;http://www.paulgraham.com/spam.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those of you who think programming is hard, I&amp;rsquo;m probably going to
+convince you further by posting this snippet of incredibly confusing,
+poorly written code. Sorry! Read &lt;a href=&#34;http://tavisharmstrong.com/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
+instead&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::haskell
+import qualified Data.Map as DM
+import Text.Printf
+
+-- Some sample text.
+spam = &amp;quot;i want to convey my passion for your generosity supporting folks that require assistance with the topic your very own&amp;quot;
+ham = &amp;quot;based on your artwork from elementary school i would guess you drew panels 1 and 4 and the camera on wayne coyne microphone you look like a pirate&amp;quot;
+
+fullcorp = spam ++ &amp;quot; &amp;quot; ++ ham
+
+-- Return a Map representing the &amp;quot;Bag of Words&amp;quot; count of all the words in the
+-- corpus.
+wordFreq :: String -&amp;gt; DM.Map String Float
+wordFreq corpus = DM.fromListWith (+) $ [(w, 1.0) | w &amp;lt;- (words corpus)]
+
+-- Count the occurrences of a word in a string.
+countWord :: String -&amp;gt; String -&amp;gt; Float
+countWord s m = fromIntegral $ length $ filter (==s) $ words m
+
+-- How many unique words are there in a string?
+uniqueWords :: String -&amp;gt; Float
+uniqueWords = fromIntegral . DM.size . wordFreq
+
+-- Parameter for Laplace smoothing.
+smoother :: Float
+smoother = 5.0
+
+-- What is the likelihood that  is in a , given a superset
+-- of that corpus called , which is all the possible words.
+pword :: String -&amp;gt; String -&amp;gt; Float -&amp;gt; String -&amp;gt; Float
+pword corpus fullCorpus k word = top/bottom
+  where top = k + (countWord word corpus)
+        bottom = (fromIntegral $ length . words $ corpus) + k*(uniqueWords fullCorpus)
+
+-- Use this for calculating the p(spam) and p(ham) likelihoods;
+-- i.e. a measure of how likely something is to be spam without taking
+-- into consideration the contents.
+pthing :: Float -&amp;gt; Float -&amp;gt; Float -&amp;gt; Float
+pthing count total k = (count + k)/(total + k*2) -- 2 = number of classes (spam, ham)
+
+-- What is the probability that a word is spam?
+pspam :: Float
+pspam = pthing (fromIntegral . length . words $ spam) (fromIntegral . length . words $ fullcorp) smoother
+
+-- What is the probability that a word is ham?
+pham :: Float
+pham = pthing (fromIntegral . length . words $ ham) (fromIntegral . length . words $ fullcorp) smoother
+
+-- What is the probability that a message is spam?
+pmessagespam :: String -&amp;gt; Float
+pmessagespam message = top/bottom
+  where top = pspam * product pspamwords
+        pspamwords = map (pword spam fullcorp smoother) $ words message
+        bottom = top + pham * product phamwords
+        phamwords = map (pword ham fullcorp smoother) $ words message
+
+main = do
+  -- Print out some probabilities to test.
+  putStrLn $ printf &amp;quot;p(spam) = %.9f&amp;quot; $ pspam
+  putStrLn $ printf &amp;quot;p(ham) = %.9f&amp;quot; $ pham
+  putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;my&amp;quot;
+  putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;my&amp;quot;
+
+  putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;you&amp;quot;
+  putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;you&amp;quot;
+  putStrLn $ printf &amp;quot;vocab %.2f&amp;quot; $ uniqueWords fullcorp
+
+  -- Test a message that is super spammy. Yeah, I get lots of spam that looks like this.
+  let message = &amp;quot;your generosity many thanks i want to convey your artwork&amp;quot;
+
+  putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
+  putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
+
+  -- Test something that&#39;s kind of nonsensical but is probably not spam.
+  let message = &amp;quot;i would guess wayne coyne look like a pirate&amp;quot;
+  putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
+  putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
+
+-- $ runhaskell spamfilter.hs
+-- p(spam) = 0.431034480
+-- p(ham) = 0.568965500
+-- p(&amp;quot;my&amp;quot; | spam) = 0.026666667
+-- p(&amp;quot;my&amp;quot; | ham) = 0.021459227
+-- p(&amp;quot;you&amp;quot; | spam) = 0.022222223
+-- p(&amp;quot;you&amp;quot; | ham) = 0.030042918
+-- vocab 41.00
+-- Message: &amp;quot;your generosity many thanks i want to convey your artwork&amp;quot;
+-- Spam probability: 0.716469300
+-- Message: &amp;quot;i would guess wayne coyne look like a pirate&amp;quot;
+-- Spam probability: 0.194385620
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Check out my talk at D4D Boston 2011!</title>
+      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
+      <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
+      <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
+2011&lt;/a&gt;, a Drupal conference with a
+focus on design. Even so, I was given the chance to do my talk on Drupal
+7&amp;rsquo;s Field API. To my surprise, I had an audience of around fifty to talk
+to (or it at least felt like fifty).&lt;/p&gt;
+
+&lt;p&gt;The talk was based on blog post I wrote for Evolving Web about &lt;a href=&#34;http://evolvingweb.ca/story/poutine-maker-introduction-field-api-drupal-7-part-1&#34;&gt;Poutine
+Maker&lt;/a&gt;,
+my custom Drupal field that lets users design crazy poutines. (You can
+see the formatter in action
+&lt;a href=&#34;http://poutinemaker.evolvingweb.ca/node/1&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;object name=&#34;ttvplayer&#34; id=&#34;ttvplayer&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allownetworking=&#34;all&#34; allowfullscreen=&#34;true&#34; height=&#34;165&#34; width=&#34;240&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;flashVars&#34; value=&#34;autoPlay=false&amp;amp;streamerType=rtmp&#34;&gt;&lt;a href=&#34;http://ttv.mit.edu&#34;&gt;MIT Tech TV&lt;/a&gt;&lt;/object&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a fantastic experience. I&amp;rsquo;m a little shy at conferences,
+so it was nice to meet people after who had seen my talk (even the guy
+who kept calling me Tarvis).&lt;/p&gt;
+
+&lt;p&gt;Also, I&amp;rsquo;m totally going to &lt;a href=&#34;http://london2011.drupal.org/&#34;&gt;DrupalCon
+London&lt;/a&gt; at the end of the month, which
+I&amp;rsquo;m super jazzed about. Co-op jobs aren&amp;rsquo;t supposed to be like this, but
+I am &lt;em&gt;definitely not complaining&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;(By the way, if you want to work with me and the cool people I work
+with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web is hiring&lt;/a&gt;.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Write Pretty Story, a writing program</title>
+      <link>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</link>
+      <pubDate>Fri, 01 Jul 2011 15:33:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2011/07/01/write-pretty-story-a-writing-program</guid>
+      <description>&lt;p&gt;I just made a browser-based writing program that lets you write without
+editing. Every time you hit return, it formats the paragraph you just
+wrote. You can&amp;rsquo;t go back and edit that paragraph. Editing is for people
+who have completed stories.&lt;/p&gt;
+
+&lt;p&gt;Download it here:
+&lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story/zipball/master&#34;&gt;.zip&lt;/a&gt;
+or
+&lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story/tarball/master&#34;&gt;.tar.gz&lt;/a&gt;
+or &lt;a href=&#34;https://github.com/tarmstrong/write_pretty_story&#34;&gt;github.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To run it, open the &amp;ldquo;pretty.html&amp;rdquo; file with your browser.&lt;/p&gt;
+
+&lt;p&gt;You can also try it
+&lt;a href=&#34;http://tavisharmstrong.com/pretty/pretty.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Now it saves your story locally, so when you refresh the
+page it&amp;rsquo;s still there.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
