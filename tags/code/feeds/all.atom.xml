@@ -821,8 +821,7 @@ convince you further by posting this snippet of incredibly confusing,
 poorly written code. Sorry! Read &lt;a href=&#34;http://tavisharmstrong.com/2010/12/15/exams-are-almost-over/&#34;&gt;this blog post
 instead&lt;/a&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;:::haskell
-import qualified Data.Map as DM
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;import qualified Data.Map as DM
 import Text.Printf
 
 -- Some sample text.
@@ -852,8 +851,8 @@ smoother = 5.0
 -- of that corpus called , which is all the possible words.
 pword :: String -&amp;gt; String -&amp;gt; Float -&amp;gt; String -&amp;gt; Float
 pword corpus fullCorpus k word = top/bottom
-  where top = k + (countWord word corpus)
-        bottom = (fromIntegral $ length . words $ corpus) + k*(uniqueWords fullCorpus)
+where top = k + (countWord word corpus)
+    bottom = (fromIntegral $ length . words $ corpus) + k*(uniqueWords fullCorpus)
 
 -- Use this for calculating the p(spam) and p(ham) likelihoods;
 -- i.e. a measure of how likely something is to be spam without taking
@@ -872,32 +871,32 @@ pham = pthing (fromIntegral . length . words $ ham) (fromIntegral . length . wor
 -- What is the probability that a message is spam?
 pmessagespam :: String -&amp;gt; Float
 pmessagespam message = top/bottom
-  where top = pspam * product pspamwords
-        pspamwords = map (pword spam fullcorp smoother) $ words message
-        bottom = top + pham * product phamwords
-        phamwords = map (pword ham fullcorp smoother) $ words message
+where top = pspam * product pspamwords
+    pspamwords = map (pword spam fullcorp smoother) $ words message
+    bottom = top + pham * product phamwords
+    phamwords = map (pword ham fullcorp smoother) $ words message
 
 main = do
-  -- Print out some probabilities to test.
-  putStrLn $ printf &amp;quot;p(spam) = %.9f&amp;quot; $ pspam
-  putStrLn $ printf &amp;quot;p(ham) = %.9f&amp;quot; $ pham
-  putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;my&amp;quot;
-  putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;my&amp;quot;
+-- Print out some probabilities to test.
+putStrLn $ printf &amp;quot;p(spam) = %.9f&amp;quot; $ pspam
+putStrLn $ printf &amp;quot;p(ham) = %.9f&amp;quot; $ pham
+putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;my&amp;quot;
+putStrLn $ printf &amp;quot;p(\&amp;quot;my\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;my&amp;quot;
 
-  putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;you&amp;quot;
-  putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;you&amp;quot;
-  putStrLn $ printf &amp;quot;vocab %.2f&amp;quot; $ uniqueWords fullcorp
+putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | spam) = %.9f&amp;quot; $ pword spam fullcorp smoother &amp;quot;you&amp;quot;
+putStrLn $ printf &amp;quot;p(\&amp;quot;you\&amp;quot; | ham) = %.9f&amp;quot; $ pword ham fullcorp smoother &amp;quot;you&amp;quot;
+putStrLn $ printf &amp;quot;vocab %.2f&amp;quot; $ uniqueWords fullcorp
 
-  -- Test a message that is super spammy. Yeah, I get lots of spam that looks like this.
-  let message = &amp;quot;your generosity many thanks i want to convey your artwork&amp;quot;
+-- Test a message that is super spammy. Yeah, I get lots of spam that looks like this.
+let message = &amp;quot;your generosity many thanks i want to convey your artwork&amp;quot;
 
-  putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
-  putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
+putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
+putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
 
-  -- Test something that&#39;s kind of nonsensical but is probably not spam.
-  let message = &amp;quot;i would guess wayne coyne look like a pirate&amp;quot;
-  putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
-  putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
+-- Test something that&#39;s kind of nonsensical but is probably not spam.
+let message = &amp;quot;i would guess wayne coyne look like a pirate&amp;quot;
+putStrLn $ printf (&amp;quot;Message: \&amp;quot;&amp;quot; ++ message ++ &amp;quot;\&amp;quot;&amp;quot;)
+putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam message
 
 -- $ runhaskell spamfilter.hs
 -- p(spam) = 0.431034480

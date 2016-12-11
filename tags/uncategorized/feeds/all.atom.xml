@@ -44,24 +44,28 @@
 &lt;p&gt;Here&amp;rsquo;s an example. When modeling time series (e.g., fish population and water temperature over time), it&amp;rsquo;s useful to detect if one variable has a dependence on the other at a certain log. Does a spike in water temperature at a given time cause an increase in fish a week later? The &lt;a href=&#34;https://en.wikipedia.org/wiki/Cross-correlation&#34;&gt;cross-correlation&lt;/a&gt; of water temperature and fish population would let us detect this relationship.&lt;/p&gt;
 
 &lt;p&gt;In R, there&amp;rsquo;s a handy &lt;code&gt;ccf()&lt;/code&gt; function that will do this for me. But I&amp;rsquo;m not totally sure how it works, or what it looks like when it works. I&amp;rsquo;ll run it on some fake data to see what happens.&lt;/p&gt;
-require(graphics)
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;require(graphics)
 # This is contrived, but let&#39;s pretend that water temperature is
 # around 300 kelvin, +/- 5 kelvins. The error is normally distributed.
-watertemp &lt;- 300 + rnorm(500, 0, 5)
+watertemp &amp;lt;- 300 + rnorm(500, 0, 5)
 # This is even more contrived. Let&#39;s pretend that the fish population is
 # around 270 in our pond, and that you can predict the population ten
 # periods from now by multiplying the current water temperature by 0.9.
-fishpop &lt;- c(rep(270, 10), watertemp[11:500]*0.9)
-x &lt;- 1:500
-df &lt;- data.frame(fishpop, watertemp)
-df.ts &lt;- ts(df)
+fishpop &amp;lt;- c(rep(270, 10), watertemp[11:500]*0.9)
+x &amp;lt;- 1:500
+df &amp;lt;- data.frame(fishpop, watertemp)
+df.ts &amp;lt;- ts(df)
 plot(df.ts, plot.type=&#39;single&#39;, col = 1:ncol(df.ts))
-legend(&#34;bottomleft&#34;, colnames(df.ts), col=1:ncol(df), lty=1)
+legend(&amp;quot;bottomleft&amp;quot;, colnames(df.ts), col=1:ncol(df), lty=1)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is silly. But this lets me make a hypothesis about what the result of the &lt;code&gt;ccf()&lt;/code&gt; function will be. I &lt;em&gt;think&lt;/em&gt; it&amp;rsquo;ll show a correlation around 1 for a lag of 10. Let&amp;rsquo;s try it out.&lt;/p&gt;
-ccf(fishpop, watertemp)
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;ccf(fishpop, watertemp)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -71,8 +75,10 @@ ccf(fishpop, watertemp)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;does not produce a shifted time series; it just creates one identical to &lt;code&gt;watertemp&lt;/code&gt; but with the first 10 values changed to 270. If I change this line to properly shift the series, I should see a correlation at &lt;code&gt;lag = -10&lt;/code&gt;. Right?&lt;/p&gt;
-fishpop &lt;- c(rep(270, 10), watertemp[1:489]*0.9)
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;fishpop &amp;lt;- c(rep(270, 10), watertemp[1:489]*0.9)
 ccf(fishpop, watertemp)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_02.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
