@@ -3,7 +3,5 @@ languageCode = "en-us"
 baseurl = "http://tavisharmstrong.com/"
 theme = "super-minimal"
 rssuri = "feeds/all.atom.xml"
-pygmentsstyle = "colorful"
-PygmentsCodeFences = true
 [permalinks]
     post = "/:year/:month/:day/:slug"

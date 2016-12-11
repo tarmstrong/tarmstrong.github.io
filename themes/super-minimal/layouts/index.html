@@ -1,11 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-    <body>
-        {{- range .Data.Pages -}}
-            {{- if eq .Type "page" }}
-                <h4><a href="{{ .Permalink }}">{{ .Title  }}</a></h4>
-            {{- end -}}
-          {{- end }}  -->
 {{ partial "header.html" . }}
         <ul>
             {{- range .Data.Pages -}}
