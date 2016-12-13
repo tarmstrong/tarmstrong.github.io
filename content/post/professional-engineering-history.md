@@ -19,7 +19,7 @@ Does the Ritual of the Calling of the Engineer provoke good work and behaviour f
 
 So, with all that out of the way, what would it look like to regulate software engineers like me?
 
-For starters, I like Mike Hoye's [blog post](http://exple.tive.org/blarg/2016/10/12/minimum-viable-basic-human-decency/) on the bare minimum developers of social software should do to protect and support their users and his much longer post on [how software affects your everyday freedoms](http://exple.tive.org/blarg/2016/08/29/free-as-in-health-care/) and why this is such a different issue than the notion of software freedom that the Free Software Foundation pushes [^fsf].
+For starters, I like Mike Hoye's [blog post](http://exple.tive.org/blarg/2016/10/12/minimum-viable-basic-human-decency/) on the bare minimum developers of social software should do to protect and support their users and his much longer post on [how software affects your everyday freedoms](http://exple.tive.org/blarg/2016/08/29/free-as-in-health-care/) and why this is such a different issue than the notion of software freedom that the Free Software Foundation pushes.
 
 The ACM has published a [code of ethics](https://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct) that contains passages like:
 
@@ -38,6 +38,3 @@ I'm interested in learning more about the history of professional organizations 
 [^waterloo]: Many also mistakenly assume I studied at Waterloo.
 
 [^autocad]: it also clicks against the mouse when you use autocad, I guess?
-
-[^fsf]: to be perfectly clear, I support free software, but don't believe the free software fight is sufficient to protect every day humans.
-
