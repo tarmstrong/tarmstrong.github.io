@@ -6,8 +6,101 @@
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tavisharmstrong.com/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>neveragain.tech</title>
+      <link>http://tavisharmstrong.com/2016/12/13/neveragaintech</link>
+      <pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/12/13/neveragaintech</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m co-signing this &lt;a href=&#34;http://neveragain.tech&#34;&gt;pledge not to help build the muslim registry&lt;/a&gt;. If you work in tech in the US, I hope you will sign it too.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+We, the undersigned,
+are employees of tech organizations and companies based in the United States.
+We are engineers, designers, business executives, and others
+whose jobs include managing or processing data about people.
+We are choosing to stand in solidarity with Muslim Americans,
+immigrants, and all people whose lives and livelihoods
+are threatened by the incoming administration&amp;rsquo;s
+proposed data collection policies.
+We refuse to build a database of people
+based on their Constitutionally-protected religious beliefs.
+We refuse to facilitate mass deportations
+of people the government believes to be undesirable.
+
+&lt;p&gt;
+We have educated ourselves on the history of threats like these,
+and on the roles that technology and technologists played
+in carrying them out.
+We see how &lt;a href=&#34;http://www.ibmandtheholocaust.com/&#34;&gt;IBM collaborated to digitize and streamline the Holocaust&lt;/a&gt;,
+contributing to the deaths of six million Jews and millions of others.
+We recall the &lt;a href=&#34;https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans&#34;&gt;internment of Japanese Americans&lt;/a&gt;
+during the Second World War.
+We recognize that &lt;a href=&#34;https://en.wikipedia.org/wiki/Armenian_Genocide#Deportations&#34;&gt;mass deportations&lt;/a&gt;
+precipitated the very atrocity the word genocide
+was &lt;a href=&#34;https://en.wiktionary.org/wiki/genocide#Etymology&#34;&gt;created&lt;/a&gt; to describe:
+the murder of 1.5 million Armenians in Turkey.
+We acknowledge that
+genocides are not merely a relic of the distant &lt;nobr&gt;past&amp;mdash;&lt;/nobr&gt;&lt;wbr&gt;among others,
+&lt;a href=&#34;http://www.rwandanstories.org/genocide/hate_radio.html&#34;&gt;Tutsi Rwandans&lt;/a&gt; and
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Bosnian_genocide&#34;&gt;Bosnian Muslims&lt;/a&gt;
+have been victims in our lifetimes.
+
+&lt;p&gt;
+Today we stand together to say: not on our watch, and never again.
+
+&lt;p&gt;
+We commit to the following actions:
+
+&lt;ul&gt;
+  &lt;li&gt;We refuse to participate in the creation of
+  databases of identifying information
+  for the United States government
+  to target individuals based on race, religion, or national origin.
+
+  &lt;li&gt;We will advocate within our organizations:
+    &lt;ul&gt;
+      &lt;li&gt;to minimize the collection and retention of data
+      that would facilitate ethnic or religious targeting.
+      &lt;li&gt;to scale back existing datasets
+      with unnecessary racial, ethnic, and national origin data.
+      &lt;li&gt;to responsibly destroy high-risk datasets and backups.
+      &lt;li&gt;to implement security and privacy best practices,
+      in particular,
+      for end-to-end encryption to be the default wherever possible.
+      &lt;li&gt;to demand appropriate legal process
+      should the government request that we turn over
+      user data collected by our organization, even in small amounts.
+    &lt;/ul&gt;
+
+  &lt;li&gt;If we discover misuse of data that we consider illegal or unethical
+  in our organizations:
+    &lt;ul&gt;
+      &lt;li&gt;We will work with our colleagues and leaders to correct it.
+      &lt;li&gt;If we cannot stop these practices,
+      we will exercise our &lt;a href=&#34;https://www.shrm.org/resourcesandtools/legal-and-compliance/state-and-local-updates/pages/california-whistleblowers.aspx&#34;&gt;rights&lt;/a&gt; and responsibilities to speak out publicly
+      and engage in &lt;a href=&#34;https://www.theengineroom.org/responsible-data-leaks-and-whistleblowing/&#34;&gt;responsible whistleblowing&lt;/a&gt;
+      without endangering users.
+      &lt;li&gt;If we have the authority to do so,
+      we will use all available legal defenses to stop these practices.
+      &lt;li&gt;If we do not have such authority,
+      and our organizations force us to engage in such misuse,
+      we will resign from our positions rather than comply.
+    &lt;/ul&gt;
+
+  &lt;li&gt;We will raise awareness and ask critical questions
+  about the responsible and fair use of data and algorithms
+  beyond our organization and our industry.
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t want to sign your name on it, I&amp;rsquo;d be curious to know why.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How would we regulate software engineers?</title>
@@ -607,77 +700,6 @@ Hackers should be able to answer questions they have about a code base without
 too much of a fuss. If I can find the time, I hope to make this a bit easier
 with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
 you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Git Harness</title>
-      <link>http://tavisharmstrong.com/2013/11/24/the-git-harness</link>
-      <pubDate>Sun, 24 Nov 2013 16:30:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2013/11/24/the-git-harness</guid>
-      <description>
-
-&lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
-
-&lt;p&gt;That said, most people can agree on one thing: the interface sucks. Git is a powerful tool, but it&amp;rsquo;s almost impossible to learn how all the commands and their options work. The arguments have inconsistent orders, and the flags mean different things in different contexts. Some of the commands share duties with others. I&amp;rsquo;ve learned to deal with it — it involves reading the man pages every time you want to use &lt;code&gt;git branch&lt;/code&gt; — but it is a struggle.&lt;/p&gt;
-
-&lt;p&gt;Complaining is fun, but it isn&amp;rsquo;t going to get us anywhere —  how do we go about fixing this problem instead? Is the answer a slick GUI like the GitHub desktop client? For some people, sure. But too many GUIs solve the wrong problem: &lt;em&gt;affordance&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Affordance is the idea that you should be able to figure out how to use parts of an interface intuitively. Buttons should look like they can be pressed, editable text should look like it can be edited, etc. Command line tools generally solve this problem with man pages and usage messages — and that&amp;rsquo;s a powerful mechanism.&lt;/p&gt;
-
-&lt;p&gt;However, it doesn&amp;rsquo;t let you predict the outcome of your actions. Git forces you to have a solid mental model of how a Git history works. You have to understand what the various commands do to that mental model, and be able to simulate a proposed action in your head. Most of us developed this mental model through using Git and making a lot of mistakes.&lt;/p&gt;
-
-&lt;p&gt;Practice makes perfect, but there is no virtue in unnecessary struggle. We &lt;em&gt;could&lt;/em&gt; build a Git interface that helps novices develop their mental models faster, with less pain. We could do it without hiding the complexities of Git, too. And I think we should.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is the Git interface that I would actually want to use:&lt;/p&gt;
-
-&lt;h2 id=&#34;the-napkin-sketch&#34;&gt;The Napkin Sketch&lt;/h2&gt;
-
-&lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you use Git, you probably understand this. You might visualize it differently — maybe your arrows go the other way, or maybe you like a vertical graph. In any case, this visualization helps you make decisions about what to do next, depending on your goals.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
-
-&lt;p&gt;This idea reminds me of &lt;a href=&#34;http://www.jumpharness.com/skate%20harness%20system.jpg&#34;&gt;figure skating harnesses&lt;/a&gt;. When you&amp;rsquo;re learning to do a double salchow, your coach will often strap you into one of those. You are then free to throw yourself into the jump without fear of falling on your ass. You get to try things out without suffering the consequences, so that you can develop good habits before it hurts.&lt;/p&gt;
-
-&lt;p&gt;With Git, the idea is the same, but instead of falling on your ass,
-you&amp;rsquo;re avoiding an hour of sifting through your reflogs.&lt;/p&gt;
-
-&lt;p&gt;So: who wants to build the Git harness?&lt;/p&gt;
 </description>
     </item>
     
