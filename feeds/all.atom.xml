@@ -10,12 +10,12 @@
     <atom:link href="http://tavisharmstrong.com/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>POSA in Czech</title>
-      <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech</link>
+      <title>POSA in Czech: Výkonnost open source aplikací</title>
+      <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech-v%C3%BDkonnost-open-source-aplikac%C3%AD</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://tavisharmstrong.com/2016/12/20/posa-in-czech</guid>
-      <description>&lt;p&gt;Ladislav Lhotka at cz.nic (which, from what I understand, is the administrator of the .cz TLD) have published a translation of The Performance of Open Source Applications.&lt;/p&gt;
+      <guid>http://tavisharmstrong.com/2016/12/20/posa-in-czech-v%C3%BDkonnost-open-source-aplikac%C3%AD</guid>
+      <description>&lt;p&gt;Ladislav Lhotka at cz.nic (which, from what I understand, is the administrator of the .cz TLD) have published a translation of The Performance of Open Source Applications: &amp;ldquo;Výkonnost Open Source Aplikací&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;On their site you can read an &lt;a href=&#34;https://www.nic.cz/page/3318/&#34;&gt;overview&lt;/a&gt; of the book, &lt;a href=&#34;https://knihy.nic.cz/&#34;&gt;download links&lt;/a&gt; for the book and many others, or go straight for the &lt;a href=&#34;https://knihy.nic.cz/files/edice/vykonnost_open_source_aplikaci.pdf&#34;&gt;pdf version&lt;/a&gt;.&lt;/p&gt;
 
