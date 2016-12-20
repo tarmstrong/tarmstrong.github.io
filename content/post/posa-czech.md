@@ -1,6 +1,6 @@
 +++
 title = "POSA in Czech"
-date = "2016-20-00T00:00:00"
+date = "2016-12-20T00:00:00"
 tags = [ "code", "posa" ]
 +++
 
