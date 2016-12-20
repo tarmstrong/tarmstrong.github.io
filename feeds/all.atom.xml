@@ -6,8 +6,22 @@
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tavisharmstrong.com/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>POSA in Czech</title>
+      <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/12/20/posa-in-czech</guid>
+      <description>&lt;p&gt;Ladislav Lhotka at cz.nic (which, from what I understand, is the administrator of the .cz TLD) have published a translation of The Performance of Open Source Applications.&lt;/p&gt;
+
+&lt;p&gt;On their site you can read an &lt;a href=&#34;https://www.nic.cz/page/3318/&#34;&gt;overview&lt;/a&gt; of the book, &lt;a href=&#34;https://knihy.nic.cz/&#34;&gt;download links&lt;/a&gt; for the book and many others, or go straight for the &lt;a href=&#34;https://knihy.nic.cz/files/edice/vykonnost_open_source_aplikaci.pdf&#34;&gt;pdf version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wish I could explain to you how cool it is that this book got translated by people I don&amp;rsquo;t know on the internet without any contact from them. Creative Commons has always seemed like a great way to license your works, especially community efforts like POSA, but I don&amp;rsquo;t often see it in action. Thank you Ladislav and friends!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>neveragain.tech</title>
@@ -680,26 +694,6 @@ about things they like, and it makes you look like a jerk. &lt;sup class=&#34;fo
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How long does it take to review a pull request on IPython?</title>
-      <link>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
-      <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
-      <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
-IPython Notebook that looks at how long it takes to review a pull request on
-the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/tarmstrong/code-analysis/blob/master/IPythonReviewTime.ipynb&#34;&gt;How long does it take to review a pull request on IPython?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I had fun writing it, and I&amp;rsquo;d like to see more of this from non-academics.
-Hackers should be able to answer questions they have about a code base without
-too much of a fuss. If I can find the time, I hope to make this a bit easier
-with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
-you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tavish Armstrong</title>
+    <link>http://tavisharmstrong.com/tags/posa/feeds/all.atom/index.xml</link>
+    <description>Recent content on Tavish Armstrong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://tavisharmstrong.com/tags/posa/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>POSA in Czech</title>
+      <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/12/20/posa-in-czech</guid>
+      <description>&lt;p&gt;Ladislav Lhotka at cz.nic (which, from what I understand, is the administrator of the .cz TLD) have published a translation of The Performance of Open Source Applications.&lt;/p&gt;
+
+&lt;p&gt;On their site you can read an &lt;a href=&#34;https://www.nic.cz/page/3318/&#34;&gt;overview&lt;/a&gt; of the book, &lt;a href=&#34;https://knihy.nic.cz/&#34;&gt;download links&lt;/a&gt; for the book and many others, or go straight for the &lt;a href=&#34;https://knihy.nic.cz/files/edice/vykonnost_open_source_aplikaci.pdf&#34;&gt;pdf version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wish I could explain to you how cool it is that this book got translated by people I don&amp;rsquo;t know on the internet without any contact from them. Creative Commons has always seemed like a great way to license your works, especially community efforts like POSA, but I don&amp;rsquo;t often see it in action. Thank you Ladislav and friends!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
