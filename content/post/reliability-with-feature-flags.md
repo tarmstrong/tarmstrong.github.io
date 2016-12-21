@@ -1,6 +1,6 @@
 +++
 title = "Building for reliability: feature flags"
-date = "2016-12-20T00:00:00"
+date = "2016-12-21T00:00:00"
 tags = [ "code", "software engineering" ]
 +++
 
