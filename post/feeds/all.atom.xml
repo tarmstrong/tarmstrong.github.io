@@ -6,15 +6,15 @@
     <description>Recent content in Post-rsses on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Dec 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tavisharmstrong.com/post/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building for reliability: feature flags</title>
-      <link>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</link>
-      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      <link>http://tavisharmstrong.com/2016/12/21/building-for-reliability-feature-flags</link>
+      <pubDate>Wed, 21 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</guid>
+      <guid>http://tavisharmstrong.com/2016/12/21/building-for-reliability-feature-flags</guid>
       <description>&lt;p&gt;A while back I started writing about [everything I learned][bio] before I got my current job. My original intention was to make an exhaustive list of all the random things I learned, and then work through it to figure out which of those skills was essential to my job, which were merely useful for social signaling, and which were merely good for passing interviews. I still want to finish writing that, but I also want to write more about what I&amp;rsquo;ve learned since I left school. None of what I&amp;rsquo;ve learned is that novel or impressive; I just hope it&amp;rsquo;s useful to students or people who have had different work experience. I also want to write it down to test my own understanding.&lt;/p&gt;
 
 &lt;p&gt;Today I&amp;rsquo;ll write about a technique for improving reliability that I learned on the job: feature flags.&lt;/p&gt;
