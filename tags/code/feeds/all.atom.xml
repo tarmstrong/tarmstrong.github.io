@@ -9,6 +9,103 @@
     <atom:link href="http://tavisharmstrong.com/tags/code/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Building for reliability: feature flags</title>
+      <link>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</guid>
+      <description>&lt;p&gt;A while back I started writing about [everything I learned][bio] before I got my current job. My original intention was to make an exhaustive list of all the random things I learned, and then work through it to figure out which of those skills was essential to my job, which were merely useful for social signaling, and which were merely good for passing interviews. I still want to finish writing that, but I also want to write more about what I&amp;rsquo;ve learned since I left school. None of what I&amp;rsquo;ve learned is that novel or impressive; I just hope it&amp;rsquo;s useful to students or people who have had different work experience. I also want to write it down to test my own understanding.&lt;/p&gt;
+
+&lt;p&gt;Today I&amp;rsquo;ll write about a technique for improving reliability that I learned on the job: feature flags.&lt;/p&gt;
+
+&lt;p&gt;Before I start explain what these are, I&amp;rsquo;ll talk a bit about why you would even care about reliability, and in the sorts of situations you might want to use feature flags.&lt;/p&gt;
+
+&lt;p&gt;First, context matters and reliability is not inherently virtuous. If you operate an API that delivers cat gifs to clients on request and all the users are hobby projects that can go down without upsetting anyone, you probably don&amp;rsquo;t need to care about reliability that much. If you push a bad commit and take down your site, people will not see cats for a few minutes while you try to fix it. That&amp;rsquo;s probably fine.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of situations where you might want to care about reliability. The boring examples involve money: if you go down you don&amp;rsquo;t make money or your customers don&amp;rsquo;t make money. This is a really easy reason to care about reliability because you can trade off software developer time against potential lost money. If you want the dollars lost to go down, you can pay more engineers to make your reliability better &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:tradeoffs&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:tradeoffs&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are more exciting reasons to care about reliability. You might want your software to be reliable if it is important for the medical treatment of people in your hospital. Let&amp;rsquo;s say, for example, that your electronic medical record system helps save X lives per year by being more efficient and less error-prone than the paper-based equivalent. That marginal improvement (X) probably goes away if the system is down for a 48-hours straight at some point in that month because your doctors will have to do more guesswork. This is more important than lost money because lives are on the line; the tradeoff is just harder to make.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s talk about a hypothetical example. Let&amp;rsquo;s say I have too many cats and would like to capitalize upon this surplus of fluff. I don&amp;rsquo;t know how to teach these cats how to do my bidding, so I have to capitalize on these cats in some other way. I know one thing: cats love to pose for photos. I have the perfect solution: I develop an API that serves cat gifs in response to payments. This API is adopted by struggling social media apps to keep their user engaged. In exchange for referrals, I give the social media companies a commission on every sale.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say in the begging I started by writing my app in Ruby. I&amp;rsquo;m pretty comfortable with Ruby, after all, and it made getting set up pretty fast. This Ruby on Rails app talks to another server inside my VPN that operates a remote webcam pointed at these cats. It&amp;rsquo;s going great and the cats are thrilled. Here&amp;rsquo;s what that code looks like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  client = CatCamClient.new(host: &#39;https://cats.tavi.sh&#39;)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Unforunately, the masses want more cats from more angles. I make a new backend server that operates multiple cameras: a helmet cam for Alice the cat, a motion-sensing robot camera that follows Bob the cat around, etc. This new server is much more complicated but I&amp;rsquo;ve tested it pretty well.&lt;/p&gt;
+
+&lt;p&gt;When I switch traffic over to the new backend server, I discover that the database on my cat server is not well indexed, which slows down my API to the point where most requests are timing out. The social networks are now mad at me because the cats were the only reason people were still using their apps, and the cats are mad at me because they want more attention.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  client = CatCamClient.new(host: &#39;https://fancycats.tavi.sh&#39;)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In future I resolve to do better. The next time I make my change I write some code that looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  url = if CatApp.flag_on?(&#39;fancy_cats&#39;)
+    &#39;https://fancy-cats.tavi.sh&#39;
+  else
+    &#39;https://cats.tavi.sh&#39;
+  end
+  client = CatCamClient.new(host: url)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example, before I make my request to the backend server, I first check to see which backend server to use. To do so, the &lt;code&gt;CatApp.flag_on?&lt;/code&gt; helper checks the database to see if the confuration flag is on. If so, we use the &lt;code&gt;https://fancy-cats.tavi.sh&lt;/code&gt; url to fetch a cat.&lt;/p&gt;
+
+&lt;p&gt;What does this get me? It means that I no longer need to deploy my code in order to change which backend server my web frontend server is talking to. I can just flip a switch in the database (maybe I&amp;rsquo;m fancy enough to have an administrative web app for employees where I can put it) and have the new backend run. Now when I run into problems with the backend server being slow, I can immediately fix it without having to write or deploy code. That makes the downtime shorter. Nice!&lt;/p&gt;
+
+&lt;p&gt;I could even go one step further and have the flag be a &lt;em&gt;probability&lt;/em&gt; rather than a boolean. In that case, I could set the feature flag to only go hit the new backend 10% of the time. That way, if there&amp;rsquo;s a problem with the new backend, I&amp;rsquo;ve only broken cats for 10% of people. It&amp;rsquo;s definitely not nice to break things for 10% of people, but I&amp;rsquo;ve mitigated a pretty serious failure. In the event of downtime, I lose 90% less money, which makes it easier for me to afford more helmet cams for my cats.&lt;/p&gt;
+
+&lt;p&gt;What are some other fun things you can do with feature flags?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You could profile both paths and figure out which one is faster. That way you can tell whether you are actually making something faster with your new database (instead of trusting the hype).
+
+&lt;ul&gt;
+&lt;li&gt;Github&amp;rsquo;s Scientist library has support for this!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;You can display new features of your product to a smaller portion of your visitors to see whether or not it works well before rolling it out completely.&lt;/li&gt;
+&lt;li&gt;You could use feature flags on desktop software (which would probably talk to a server you control) in order to slowly roll out risky changes while mitigating the risk of bricking a few billion dollars worth of computers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are more tips for using feature flags:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In my example I suggested using a database field to determine whether a flag is on. Using a database can cause you a lot of pain if it shares a database with the rest of your app, because a problematic change to the main app could harm your ability to change the feature flag.&lt;/li&gt;
+&lt;li&gt;Adding feature flags makes it harder to write tests, because you now have to test both code paths. Even though the feature flag decreases the risk of your new code path taking down your site, it doesn&amp;rsquo;t help much if the new code path does the same calculation incorrectly. (In the best case scenario, it raises an exception and quits; in the worst, it silently fails while your tests gleefully pass).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There you go: feature flags. They are so much fun!!!&lt;/p&gt;
+
+&lt;p&gt;Is there anything I missed out on? Does anybody have great reference implementations that I can look at? Send me emails!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:tradeoffs&#34;&gt;software engineering, like all engineering, is about making tradeoffs. One thing to keep in mind, though, is that no one really knows how to make these tradeoffs with any level of precision. You might think you can dump $X bazillions of dollars of engineering time into making your thing Y% more reliable and then end up with less reliable software because you replaced the database with a crappier database and didn&amp;rsquo;t realize it was going to be crappier until 6 months after you finished your project.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:tradeoffs&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>POSA in Czech: Výkonnost open source aplikací</title>
       <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech-v%C3%BDkonnost-open-source-aplikac%C3%AD</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
@@ -925,40 +1022,6 @@ putStrLn $ printf &amp;quot;Spam probability: %.9f&amp;quot; $ pmessagespam mess
 -- Message: &amp;quot;i would guess wayne coyne look like a pirate&amp;quot;
 -- Spam probability: 0.194385620
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Check out my talk at D4D Boston 2011!</title>
-      <link>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</link>
-      <pubDate>Wed, 03 Aug 2011 03:14:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2011/08/03/check-out-my-talk-at-d4d-boston-2011</guid>
-      <description>&lt;p&gt;In July I went to &lt;a href=&#34;http://boston2011.design4drupal.org/&#34;&gt;D4D Boston
-2011&lt;/a&gt;, a Drupal conference with a
-focus on design. Even so, I was given the chance to do my talk on Drupal
-7&amp;rsquo;s Field API. To my surprise, I had an audience of around fifty to talk
-to (or it at least felt like fifty).&lt;/p&gt;
-
-&lt;p&gt;The talk was based on blog post I wrote for Evolving Web about &lt;a href=&#34;http://evolvingweb.ca/story/poutine-maker-introduction-field-api-drupal-7-part-1&#34;&gt;Poutine
-Maker&lt;/a&gt;,
-my custom Drupal field that lets users design crazy poutines. (You can
-see the formatter in action
-&lt;a href=&#34;http://poutinemaker.evolvingweb.ca/node/1&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;&lt;object name=&#34;ttvplayer&#34; id=&#34;ttvplayer&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allownetworking=&#34;all&#34; allowfullscreen=&#34;true&#34; height=&#34;165&#34; width=&#34;240&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34;&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/_203822/uiconf_id/1898102/entry_id/1_zf3z37dl/&#34;&gt;&lt;param name=&#34;flashVars&#34; value=&#34;autoPlay=false&amp;amp;streamerType=rtmp&#34;&gt;&lt;a href=&#34;http://ttv.mit.edu&#34;&gt;MIT Tech TV&lt;/a&gt;&lt;/object&gt;&lt;/p&gt;
-
-&lt;p&gt;Overall, it was a fantastic experience. I&amp;rsquo;m a little shy at conferences,
-so it was nice to meet people after who had seen my talk (even the guy
-who kept calling me Tarvis).&lt;/p&gt;
-
-&lt;p&gt;Also, I&amp;rsquo;m totally going to &lt;a href=&#34;http://london2011.drupal.org/&#34;&gt;DrupalCon
-London&lt;/a&gt; at the end of the month, which
-I&amp;rsquo;m super jazzed about. Co-op jobs aren&amp;rsquo;t supposed to be like this, but
-I am &lt;em&gt;definitely not complaining&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;(By the way, if you want to work with me and the cool people I work
-with, &lt;a href=&#34;http://evolvingweb.ca/web-developer&#34;&gt;Evolving Web is hiring&lt;/a&gt;.)&lt;/p&gt;
 </description>
     </item>
     

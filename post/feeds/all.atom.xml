@@ -10,6 +10,103 @@
     <atom:link href="http://tavisharmstrong.com/post/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Building for reliability: feature flags</title>
+      <link>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2016/12/20/building-for-reliability-feature-flags</guid>
+      <description>&lt;p&gt;A while back I started writing about [everything I learned][bio] before I got my current job. My original intention was to make an exhaustive list of all the random things I learned, and then work through it to figure out which of those skills was essential to my job, which were merely useful for social signaling, and which were merely good for passing interviews. I still want to finish writing that, but I also want to write more about what I&amp;rsquo;ve learned since I left school. None of what I&amp;rsquo;ve learned is that novel or impressive; I just hope it&amp;rsquo;s useful to students or people who have had different work experience. I also want to write it down to test my own understanding.&lt;/p&gt;
+
+&lt;p&gt;Today I&amp;rsquo;ll write about a technique for improving reliability that I learned on the job: feature flags.&lt;/p&gt;
+
+&lt;p&gt;Before I start explain what these are, I&amp;rsquo;ll talk a bit about why you would even care about reliability, and in the sorts of situations you might want to use feature flags.&lt;/p&gt;
+
+&lt;p&gt;First, context matters and reliability is not inherently virtuous. If you operate an API that delivers cat gifs to clients on request and all the users are hobby projects that can go down without upsetting anyone, you probably don&amp;rsquo;t need to care about reliability that much. If you push a bad commit and take down your site, people will not see cats for a few minutes while you try to fix it. That&amp;rsquo;s probably fine.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of situations where you might want to care about reliability. The boring examples involve money: if you go down you don&amp;rsquo;t make money or your customers don&amp;rsquo;t make money. This is a really easy reason to care about reliability because you can trade off software developer time against potential lost money. If you want the dollars lost to go down, you can pay more engineers to make your reliability better &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:tradeoffs&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:tradeoffs&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are more exciting reasons to care about reliability. You might want your software to be reliable if it is important for the medical treatment of people in your hospital. Let&amp;rsquo;s say, for example, that your electronic medical record system helps save X lives per year by being more efficient and less error-prone than the paper-based equivalent. That marginal improvement (X) probably goes away if the system is down for a 48-hours straight at some point in that month because your doctors will have to do more guesswork. This is more important than lost money because lives are on the line; the tradeoff is just harder to make.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s talk about a hypothetical example. Let&amp;rsquo;s say I have too many cats and would like to capitalize upon this surplus of fluff. I don&amp;rsquo;t know how to teach these cats how to do my bidding, so I have to capitalize on these cats in some other way. I know one thing: cats love to pose for photos. I have the perfect solution: I develop an API that serves cat gifs in response to payments. This API is adopted by struggling social media apps to keep their user engaged. In exchange for referrals, I give the social media companies a commission on every sale.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say in the begging I started by writing my app in Ruby. I&amp;rsquo;m pretty comfortable with Ruby, after all, and it made getting set up pretty fast. This Ruby on Rails app talks to another server inside my VPN that operates a remote webcam pointed at these cats. It&amp;rsquo;s going great and the cats are thrilled. Here&amp;rsquo;s what that code looks like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  client = CatCamClient.new(host: &#39;https://cats.tavi.sh&#39;)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Unforunately, the masses want more cats from more angles. I make a new backend server that operates multiple cameras: a helmet cam for Alice the cat, a motion-sensing robot camera that follows Bob the cat around, etc. This new server is much more complicated but I&amp;rsquo;ve tested it pretty well.&lt;/p&gt;
+
+&lt;p&gt;When I switch traffic over to the new backend server, I discover that the database on my cat server is not well indexed, which slows down my API to the point where most requests are timing out. The social networks are now mad at me because the cats were the only reason people were still using their apps, and the cats are mad at me because they want more attention.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  client = CatCamClient.new(host: &#39;https://fancycats.tavi.sh&#39;)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In future I resolve to do better. The next time I make my change I write some code that looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;def handle_successful_payment
+  url = if CatApp.flag_on?(&#39;fancy_cats&#39;)
+    &#39;https://fancy-cats.tavi.sh&#39;
+  else
+    &#39;https://cats.tavi.sh&#39;
+  end
+  client = CatCamClient.new(host: url)
+  cat_photo = client.get_cat!
+  # return a 200 with the cat!
+  [200, cat_photo]
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example, before I make my request to the backend server, I first check to see which backend server to use. To do so, the &lt;code&gt;CatApp.flag_on?&lt;/code&gt; helper checks the database to see if the confuration flag is on. If so, we use the &lt;code&gt;https://fancy-cats.tavi.sh&lt;/code&gt; url to fetch a cat.&lt;/p&gt;
+
+&lt;p&gt;What does this get me? It means that I no longer need to deploy my code in order to change which backend server my web frontend server is talking to. I can just flip a switch in the database (maybe I&amp;rsquo;m fancy enough to have an administrative web app for employees where I can put it) and have the new backend run. Now when I run into problems with the backend server being slow, I can immediately fix it without having to write or deploy code. That makes the downtime shorter. Nice!&lt;/p&gt;
+
+&lt;p&gt;I could even go one step further and have the flag be a &lt;em&gt;probability&lt;/em&gt; rather than a boolean. In that case, I could set the feature flag to only go hit the new backend 10% of the time. That way, if there&amp;rsquo;s a problem with the new backend, I&amp;rsquo;ve only broken cats for 10% of people. It&amp;rsquo;s definitely not nice to break things for 10% of people, but I&amp;rsquo;ve mitigated a pretty serious failure. In the event of downtime, I lose 90% less money, which makes it easier for me to afford more helmet cams for my cats.&lt;/p&gt;
+
+&lt;p&gt;What are some other fun things you can do with feature flags?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You could profile both paths and figure out which one is faster. That way you can tell whether you are actually making something faster with your new database (instead of trusting the hype).
+
+&lt;ul&gt;
+&lt;li&gt;Github&amp;rsquo;s Scientist library has support for this!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;You can display new features of your product to a smaller portion of your visitors to see whether or not it works well before rolling it out completely.&lt;/li&gt;
+&lt;li&gt;You could use feature flags on desktop software (which would probably talk to a server you control) in order to slowly roll out risky changes while mitigating the risk of bricking a few billion dollars worth of computers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are more tips for using feature flags:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In my example I suggested using a database field to determine whether a flag is on. Using a database can cause you a lot of pain if it shares a database with the rest of your app, because a problematic change to the main app could harm your ability to change the feature flag.&lt;/li&gt;
+&lt;li&gt;Adding feature flags makes it harder to write tests, because you now have to test both code paths. Even though the feature flag decreases the risk of your new code path taking down your site, it doesn&amp;rsquo;t help much if the new code path does the same calculation incorrectly. (In the best case scenario, it raises an exception and quits; in the worst, it silently fails while your tests gleefully pass).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There you go: feature flags. They are so much fun!!!&lt;/p&gt;
+
+&lt;p&gt;Is there anything I missed out on? Does anybody have great reference implementations that I can look at? Send me emails!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:tradeoffs&#34;&gt;software engineering, like all engineering, is about making tradeoffs. One thing to keep in mind, though, is that no one really knows how to make these tradeoffs with any level of precision. You might think you can dump $X bazillions of dollars of engineering time into making your thing Y% more reliable and then end up with less reliable software because you replaced the database with a crappier database and didn&amp;rsquo;t realize it was going to be crappier until 6 months after you finished your project.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:tradeoffs&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>POSA in Czech: Výkonnost open source aplikací</title>
       <link>http://tavisharmstrong.com/2016/12/20/posa-in-czech-v%C3%BDkonnost-open-source-aplikac%C3%AD</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
@@ -574,126 +671,6 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CUSEC 2014</title>
-      <link>http://tavisharmstrong.com/2014/01/22/cusec-2014</link>
-      <pubDate>Wed, 22 Jan 2014 13:16:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2014/01/22/cusec-2014</guid>
-      <description>
-
-&lt;p&gt;The 2014 edition of &lt;a href=&#34;http://2014.cusec.net&#34;&gt;the Canadian University Software Engineering Conference&lt;/a&gt; was this past weekend and I thought I&amp;rsquo;d write a short post about it.&lt;/p&gt;
-
-&lt;p&gt;Since I wasn&amp;rsquo;t on the organizing board this year, I got to enjoy the conference in a much more relaxing fashion.
-It was also my fifth CUSEC, so I&amp;rsquo;ve figured out how this conference works and how to talk to people.
-Having a lot of friends in the companies at the career fair helps; being friends with &lt;a href=&#34;http://jvns.ca&#34;&gt;one&lt;/a&gt; of the speakers helps too.
-But more importantly, I&amp;rsquo;m just way older and more confident than my 19-year-old self.
-I feel comfortable around nerds, and I&amp;rsquo;m not totally lost in a technical conversation.
-I&amp;rsquo;ve grown just as much as CUSEC has grown.&lt;/p&gt;
-
-&lt;h2 id=&#34;talks&#34;&gt;Talks!&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;ll talk about a few of the talks that really stood out to me.&lt;/p&gt;
-
-&lt;p&gt;Famous blogger &lt;a href=&#34;http://jvns.ca&#34;&gt;Julia Evans&lt;/a&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; gave a fun talk on hacking
-on the kernel. Operating system kernels are a really neat part of computers
-that I don&amp;rsquo;t know much about, and Julia makes it seem easy and not scary at
-all. She had a neat trick of hiding all the parts of a C program that aren&amp;rsquo;t
-relevant to understanding it on a high level. It&amp;rsquo;s quite rare for someone to
-take a very technically intimidating subject and make it seem within your
-grasp.&lt;/p&gt;
-
-&lt;p&gt;Josh Matthews gave a &lt;a href=&#34;http://www.joshmatthews.net/cusec14/&#34;&gt;talk&lt;/a&gt; on developing
-for Firefox: the kinds of projects Mozilla has that you can work on, how to
-find a bug to work on, and what the patch process is like. I spent the last
-summer looking at how open source projects do code review, so a lot of this
-was obvious to me, but this is exactly the kind of talk that would have
-completely blown my mind a couple years ago.&lt;/p&gt;
-
-&lt;p&gt;He went a few steps further and bravely walked the audience through a complete
-Firefox patch, explaining the important parts of the code, and giving a brief
-overview of the architecture along the way. Similarly to Julia&amp;rsquo;s talk, it was a
-very non-threatening introduction to an extremely intimidating topic.&lt;/p&gt;
-
-&lt;p&gt;Nadim Kobeissi spoke about &lt;a href=&#34;http://crypto.cat&#34;&gt;CryptoCat&lt;/a&gt;, a controvertial
-encrypted chat service that&amp;rsquo;s been under a lot of fire since it started for
-horrible &lt;a href=&#34;http://tobtu.com/decryptocat.php&#34;&gt;bugs&lt;/a&gt; and being developed by a 23
-year old (ad-hominem attacks abound). I admit I have a soft spot for Nadim
-because he is a recent Concordia graduate &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but also because I think he&amp;rsquo;s
-solving a tough problem that needs solving if encryption is ever to become
-popular &amp;mdash; usability.&lt;/p&gt;
-
-&lt;p&gt;Nadim&amp;rsquo;s talk wasn&amp;rsquo;t technical in nature &amp;mdash; it was more about the political
-side of things. He shared insightful observations on the nature of the struggle
-between hackers and the surveillance state. In essence, he argued that they
-both feed off making the other look like an adversary to be defeated, but the
-real solution lies in common understanding. That&amp;rsquo;s no easy feat when your
-adversaries are organizations like CSEC and the NSA who have had no serious
-oversight.&lt;/p&gt;
-
-&lt;p&gt;I was honestly surprised to find Nadim very approachable, humble, and easy to
-talk to. He gave me some good advice on learning more about computer security
-and finding mentors.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to spoil &lt;a href=&#34;https://www.destroyallsoftware.com/screencasts&#34;&gt;Gary
-Bernhardt&lt;/a&gt;&amp;rsquo;s talk &amp;mdash;
-you&amp;rsquo;ll have to watch it when it comes out &amp;mdash; but it was stylistically very
-interesting to me. I love science fiction and informative, thought-provoking
-technical talks. The marriage of both is something else entirely, and I liked it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://nerd.kelseyinnis.com/&#34;&gt;Kelsey Gilmore-Innis&lt;/a&gt; gave a fun, bombastic
-introduction to functional programming.  &lt;a href=&#34;https://twitter.com/avibryant&#34;&gt;Avi
-Bryant&lt;/a&gt; spoke about detecting fraud, but I
-missed the first half of his talk because I was talking to someone in the
-hallway and didn&amp;rsquo;t realize it had started. Oops. I had a nice chat with him
-later, though, which sort of made up for it.&lt;/p&gt;
-
-&lt;h2 id=&#34;question-time&#34;&gt;Question time&lt;/h2&gt;
-
-&lt;p&gt;This year I gave myself a challenge: to ask a question after every talk I saw.
-With two exceptions, I managed to do this, and it went pretty well. I got a
-little better at handling my nerves throughout the weekend and managed not to
-say anything too stupid. Julia&amp;rsquo;s encouragement &amp;mdash; something along the
-lines of &amp;ldquo;everyone thinks you&amp;rsquo;re dumb anyways&amp;rdquo; &amp;mdash; was very helpful.&lt;/p&gt;
-
-&lt;p&gt;I &lt;em&gt;think&lt;/em&gt; I have good taste in questions. I might write a blog post on what I
-think makes a good post-talk question at some point.&lt;/p&gt;
-
-&lt;h2 id=&#34;conference-pro-tips&#34;&gt;Conference pro-tips&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Volunteering is a good way to make friends.&lt;/li&gt;
-&lt;li&gt;Talk to younger students and say nice encouraging things to them. Don&amp;rsquo;t act like a smartypants, even if you are. Lower the ladder instead of pulling it up behind you.&lt;/li&gt;
-&lt;li&gt;Have a &lt;a href=&#34;http://aosabook.org&#34;&gt;physical object&lt;/a&gt; that you built that you can
-show off to company recruiters. Hack together a bunch of LEDs and a
-microcontroller and sew it into your backpack. Whatever.&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t complain about talks you didn&amp;rsquo;t like, unless the presenter said
-something harmful. Life is too short for inadvertently making people feel bad
-about things they like, and it makes you look like a jerk. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;Get as much sleep as you can without being a hermit. &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
-
-&lt;p&gt;CUSEC was fun and I recommend going.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;She really likes it when you call her internet-famous.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;I&amp;rsquo;m pretty sure we were at least registered for a class together at one point, though he was in a much different degree program.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;Ahem.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:4&#34;&gt;This is probably the most controversial part of this post.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 </description>
     </item>
     
