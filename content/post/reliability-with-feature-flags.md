@@ -79,3 +79,5 @@ Here are more tips for using feature flags:
 * Adding feature flags makes it harder to write tests, because you now have to test both code paths. Even though the feature flag decreases the risk of your new code path taking down your site, it doesn't help much if the new code path does the same calculation incorrectly. (In the best case scenario, it raises an exception and quits; in the worst, it silently fails while your tests gleefully pass).
 
 There you go: feature flags. They are so much fun!!!
+
+Is there anything I missed out on? Does anybody have great reference implementations that I can look at? Send me emails!
