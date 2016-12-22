@@ -6,6 +6,8 @@ tags = [ "code", "software engineering" ]
 
 A while back I started writing about [everything I learned][bio] before I got my current job. My original intention was to make an exhaustive list of all the random things I learned, and then work through it to figure out which of those skills was essential to my job, which were merely useful for social signaling, and which were merely good for passing interviews. I still want to finish writing that, but I also want to write more about what I've learned since I left school. None of what I've learned is that novel or impressive; I just hope it's useful to students or people who have had different work experience. I also want to write it down to test my own understanding.
 
+[bio]: https://github.com/tarmstrong/longcv/tree/master/bio.md
+
 Today I'll write about a technique for improving reliability that I learned on the job: feature flags.
 
 Before I start explain what these are, I'll talk a bit about why you would even care about reliability, and in the sorts of situations you might want to use feature flags.
