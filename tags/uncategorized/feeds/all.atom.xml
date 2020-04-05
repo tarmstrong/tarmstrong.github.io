@@ -9,25 +9,6 @@
     <atom:link href="http://tavisharmstrong.com/tags/uncategorized/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>April links 2016</title>
-      <link>http://tavisharmstrong.com/2016/04/04/april-links-2016</link>
-      <pubDate>Mon, 04 Apr 2016 20:09:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/04/04/april-links-2016</guid>
-      <description>&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://dancres.github.io/Pages/&#34;&gt;A Distributed Systems Reading List&lt;/a&gt;. I found the &amp;ldquo;Harvest and Yield&amp;rdquo; paper particularly helpful.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://12factor.net/&#34;&gt;The Twelve-Factor App&lt;/a&gt;: opinionated guidelines for how to architect web services.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.wipp.energy.gov/picsprog/articles/wipp%20exhibit%20message%20to%2012,000%20a_d.htm&#34;&gt;This is not a place of honour&lt;/a&gt;: how to identify nuclear waste to future generations. (via mhoye)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/programmer-moneyball/&#34;&gt;We only hire the trendiest&lt;/a&gt; by Dan Luu, who is great.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/postmortem-lessons/&#34;&gt;Lessons learned from reading postmortems&lt;/a&gt;, also Dan Luu&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf&#34;&gt;How Complex Systems Fail&lt;/a&gt;, which is referenced in the above Dan Luu post&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>What I cannot create, I cannot understand</title>
       <link>http://tavisharmstrong.com/2013/07/06/what-i-cannot-create-i-cannot-understand</link>
       <pubDate>Sat, 06 Jul 2013 16:54:00 +0000</pubDate>
@@ -99,49 +80,6 @@ microcontroller in the hopes that people (e.g. fellow students of SOEN
 422) might find it useful. Keep in mind that it&amp;rsquo;s a work in progress and
 has some bugs. &lt;a href=&#34;http://tavisharmstrong.com/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
 16-bit timer (Timer1)&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>April links</title>
-      <link>http://tavisharmstrong.com/2011/04/14/april-links</link>
-      <pubDate>Thu, 14 Apr 2011 22:49:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2011/04/14/april-links</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.pnas.org/content/early/2011/03/29/1018033108&#34;&gt;Hungry judges are
-ruthless&lt;/a&gt;. This
-study finds that judges will not grant parole right before breaks or
-meals, or when they are tired. Assuming some pre-lunch cases deserved a
-favourable ruling (i.e. the judges were indeed being too heavy-handed
-with their pre-lunch cases), this suggests that you should &lt;a href=&#34;http://lesswrong.com/lw/58y/the_bias_you_didnt_expect/&#34;&gt;avoid making
-difficult decisions when you are
-hungry&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Charlie Stross
-&lt;a href=&#34;http://www.antipope.org/charlie/blog-static/2011/04/you-probably-already-saw-this-.html&#34;&gt;predicts&lt;/a&gt;
-that SpaceX could put a man on the moon by 2016 for \$1 Billion USD.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fakescience.tumblr.com/&#34;&gt;Fake Science&lt;/a&gt; is so amusing that I
-think some dopamines leaked out of my ear. (Thanks Helen!)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://maycontaindragons.blogspot.com/2011/03/few-d-things-and-happy-birthday-to.html&#34;&gt;Simon paints awesome
-stuff&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cultureisnotyourfriend.bandcamp.com/&#34;&gt;Lachlan is saving Japan with his drone
-friends&lt;/a&gt;. His bass is like
-an earthquake that helps Japan instead of destroying it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cjlo.com/news/concordia/your-concordia-and-action-disqualified-csu-elections&#34;&gt;Concordia&amp;rsquo;s undergraduate student union is
-ridiculous&lt;/a&gt;.
-After a decent party finally got voted in, the guy in charge of
-elections, Oliver Cohen, decides both parties broke the rules, and thus
-we need to have a another election. &lt;a href=&#34;http://oncampus.macleans.ca/education/2011/04/14/concordia-student-elecitons-chief-throws-out-vote-results/&#34;&gt;The party that got voted in is not
-allowed to run again for two
-years.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; I forgot: if you&amp;rsquo;re a software engineering student at
-Concordia, you can now plan your class schedule with the
-&lt;a href=&#34;http://wolfdragon.org&#34;&gt;WolfDragonScheduler&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

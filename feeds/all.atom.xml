@@ -6,8 +6,29 @@
     <description>Recent content on Tavish Armstrong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://tavisharmstrong.com/feeds/all.atom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://tavisharmstrong.com/about/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/about/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m a software engineer from the Toronto area, now based in the San Francisco Bay Area. From 2008&amp;endash;2014 I studied software engineering at Concordia University in Montreal. After that, I spent four years building financial infrastructure at &lt;a href=&#34;https://stripe.com&#34;&gt;Stripe&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In my free time, I enjoy skating (on the ice or on wheels), studying languages, fostering kittens, and travelling.&lt;/p&gt;
+
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; tavisharmstrong at gmail dot com.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github:&lt;/strong&gt; &lt;a href=&#34;https://github.com/tarmstrong&#34;&gt;tarmstrong&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Building for reliability: feature flags</title>
@@ -265,20 +286,6 @@ adequate basis for violation of any other ethical imperatives of this code.&lt;/
     </item>
     
     <item>
-      <title>Making sounds with overtone</title>
-      <link>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</link>
-      <pubDate>Sat, 23 Jul 2016 23:12:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/07/23/making-sounds-with-overtone</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been messing about with &lt;a href=&#34;https://github.com/overtone/overtone&#34;&gt;Overtone&lt;/a&gt;, a Clojure interface to &lt;a href=&#34;http://supercollider.github.io/&#34;&gt;SuperCollider&lt;/a&gt; to make interesting sounds as a way to combine my interests in programming and music. Overtone has been particularly enjoyable to use because it is (unlike SuperCollider) a programming language that has uses beyond sound synthesis, it is surprisingly easy to set up, and is not under active development (which, for the time being, means that it is stable. I&amp;rsquo;m looking on the bright side here.)&lt;/p&gt;
-
-&lt;p&gt;At some point I&amp;rsquo;ll probably write down what I&amp;rsquo;ve learned about working with Overtone, but in the mean time, enjoy these sounds:&lt;/p&gt;
-
-&lt;iframe width=&#34;100%&#34; height=&#34;450&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273272287&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Time.utc in ruby</title>
       <link>http://tavisharmstrong.com/2016/07/20/timeutc-in-ruby</link>
       <pubDate>Wed, 20 Jul 2016 20:09:00 +0000</pubDate>
@@ -300,25 +307,6 @@ irb(main):006:0&amp;gt; Time.utc(2015, 4, 31)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Clearly the authors made the effort to stop you from passing in obviously bad values. But I still find it so odd that it rolls over values that are just a little incorrect without telling you.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>April links 2016</title>
-      <link>http://tavisharmstrong.com/2016/04/04/april-links-2016</link>
-      <pubDate>Mon, 04 Apr 2016 20:09:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2016/04/04/april-links-2016</guid>
-      <description>&lt;p&gt;Here are a few pages on the internets that I&amp;rsquo;ve enjoyed recently:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://dancres.github.io/Pages/&#34;&gt;A Distributed Systems Reading List&lt;/a&gt;. I found the &amp;ldquo;Harvest and Yield&amp;rdquo; paper particularly helpful.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://12factor.net/&#34;&gt;The Twelve-Factor App&lt;/a&gt;: opinionated guidelines for how to architect web services.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.wipp.energy.gov/picsprog/articles/wipp%20exhibit%20message%20to%2012,000%20a_d.htm&#34;&gt;This is not a place of honour&lt;/a&gt;: how to identify nuclear waste to future generations. (via mhoye)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/programmer-moneyball/&#34;&gt;We only hire the trendiest&lt;/a&gt; by Dan Luu, who is great.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://danluu.com/postmortem-lessons/&#34;&gt;Lessons learned from reading postmortems&lt;/a&gt;, also Dan Luu&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf&#34;&gt;How Complex Systems Fail&lt;/a&gt;, which is referenced in the above Dan Luu post&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -409,27 +397,6 @@ looking over your shoulder, but do it anyways.&lt;/p&gt;
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Shows I&#39;ve been watching</title>
-      <link>http://tavisharmstrong.com/2015/07/12/shows-ive-been-watching</link>
-      <pubDate>Sun, 12 Jul 2015 22:32:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2015/07/12/shows-ive-been-watching</guid>
-      <description>&lt;p&gt;Earlier this year I learned to knit. Part of the appeal for me is that it&amp;rsquo;s very easy to sit down, knit some stitches, and make progress. It&amp;rsquo;s possible to screw up so badly you have to start over, but for the most part it&amp;rsquo;s difficult to take large steps backward. Unlike with programming, it&amp;rsquo;s hard to knit a scarf so badly it causes active harm to you and the people around you. If you&amp;rsquo;re patient, you&amp;rsquo;ll eventually have a scarf or a sweater, and no matter how many stiches you accidentally added in the wrong places, you still have something that represents a tonne of work to be proud of. Also you are now warmer than you were before, which is kind of cool.&lt;/p&gt;
-
-&lt;p&gt;One nice thing about knitting is that you can do it while you watch television. Some shows I&amp;rsquo;ve been watching lately:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;The West Wing&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Adventure Time&lt;/em&gt;, which is hilarious and cuter than a show has any right to be.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Bomb Girls&lt;/em&gt;, which follows the stories of the workers of a Toronto munitions factory during WWII. Like &lt;em&gt;The Bletchley Circle&lt;/em&gt;, it focuses on parts of the war effort that are not usually explored in war movies, viz., the home front. It also spends some time on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Italian-Canadian_internment&#34;&gt;darker parts of Canadian history&lt;/a&gt;, which I appreciate.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sense8&lt;/em&gt;, the new Netflix show from The Wachowskis and J. Michael Straczynski. &lt;a href=&#34;https://twitter.com/aphyr/status/617943823243546625&#34;&gt;This show is great&lt;/a&gt;. And hey, some of it takes place in SF which is kind of neat.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(This fluff post is brought to you by a few weeks of travel and strep throat. Pro-tip: don&amp;rsquo;t get strep throat.)&lt;/p&gt;
 </description>
     </item>
     
@@ -543,112 +510,6 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     </item>
     
     <item>
-      <title>Books I read in 2014</title>
-      <link>http://tavisharmstrong.com/2015/04/04/books-i-read-in-2014</link>
-      <pubDate>Sat, 04 Apr 2015 14:35:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2015/04/04/books-i-read-in-2014</guid>
-      <description>&lt;p&gt;I&amp;rsquo;d like to start writing on this blog again, but blogging takes a lot of work so I&amp;rsquo;m just going to list some of the fiction I read in 2014. I&amp;rsquo;m pretty sure I read more books than this, but these are the ones that I remember. They are in order from most to least favourite.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Use of Weapons&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Ancillary Justice&lt;/em&gt; by Ann Leckie&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Dispossessed&lt;/em&gt; by Ursula K. Le Guin&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;A Deepness in the Sky&lt;/em&gt; by Vernor Vinge&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Diamond Age&lt;/em&gt; by Neal Stephenson&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Player of Games&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Excession&lt;/em&gt; by Iain M. Banks&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Name of the Wind&lt;/em&gt; by Patrick Rothfuss&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;The Windup Girl&lt;/em&gt; by Paolo Bacigalupi&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I also read some short fiction, but mostly can&amp;rsquo;t remember it. This is what I do remember:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://subterraneanpress.com/magazine/fall_2010/fiction_the_lifecycle_of_software_objects_by_ted_chiang&#34;&gt;&lt;em&gt;The Lifecycle of Software Objects&lt;/em&gt;&lt;/a&gt; by Ted Chiang&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/mcdonald_07_13_reprint/&#34;&gt;&lt;em&gt;The Dust Assassin&lt;/em&gt;&lt;/a&gt; by Ian McDonald&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://clarkesworldmagazine.com/macfarlane_08_13/&#34;&gt;&lt;em&gt;Found&lt;/em&gt;&lt;/a&gt; by Alex Dally MacFarlane&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Graduation</title>
-      <link>http://tavisharmstrong.com/2014/06/10/graduation</link>
-      <pubDate>Tue, 10 Jun 2014 22:34:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2014/06/10/graduation</guid>
-      <description>&lt;p&gt;Six years ago I moved to Montreal for university. An undergraduate degree should not be treated as a race, but it starts to feel that way after six years. Today, I finally graduated.&lt;/p&gt;
-
-&lt;p&gt;It feels good. I can complain all day about the things I didn&amp;rsquo;t like about university &amp;ndash; there are all too many of them, and I like to complain &amp;ndash; but I&amp;rsquo;m happy enough with where I am professionally, personally, intellectually right now that I can overlook that and just be happy.&lt;/p&gt;
-
-&lt;p&gt;Onward!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Two Solitudes (for Hackers)</title>
-      <link>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</link>
-      <pubDate>Sat, 19 Apr 2014 13:49:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2014/04/19/the-two-solitudes-for-hackers</guid>
-      <description>&lt;p&gt;Last weekend was PyCon 2014, the annual conference on the Python programming language.
-This year we were lucky to have it in Montreal (only a short walk from my apartment)
-and I was even more fortunate to be allowed to give a talk.&lt;/p&gt;
-
-&lt;p&gt;As I &lt;a href=&#34;https://twitter.com/tavarm/status/379409322943320064&#34;&gt;wrote&lt;/a&gt; when I submitted the proposal, I proposed a talk on a topic
-that I wished someone smarter would speak about. I was pretty nervous about giving the talk
-&amp;mdash; the usual nerves, but also a sense that the topic was much larger than I could give
-credit to in 30 minutes with the limited experience I have as someone a few weeks shy
-of an undergraduate engineering degree.&lt;/p&gt;
-
-&lt;p&gt;The gist of the talk is this:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;We have a lot to learn about how we work as software engineers.&lt;/li&gt;
-&lt;li&gt;We can learn a lot about how we in the open source community work through
-examining version control history, code review data, etc., and we have the
-tools and skills necessary to analyze the data. (This is a bit of an
-understatement &amp;ndash; many people in the Python community &lt;em&gt;wrote the data analysis tools&lt;/em&gt;.)&lt;/li&gt;
-&lt;li&gt;We understand our own projects better than any researcher could so we are in a good
-position to study them.&lt;/li&gt;
-&lt;li&gt;We have the most to gain from studying the way we work; we don&amp;rsquo;t care about citation
-counts, we just want to write better software and be happier while we do it.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I finished the talk by challenging the audience to go out, learn cool things about the
-projects they work on, and present their findings next year at PyCon 2015.&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/vvEY6bhLXsU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I went into the talk with the goal of finding &lt;em&gt;one&lt;/em&gt; person who thought the topic was cool. Just one.
-I seem to have struck a chord though, and had lots of really interesting conversations with people
-after my talk.&lt;/p&gt;
-
-&lt;p&gt;Joel Landsteiner &lt;a href=&#34;https://twitter.com/LucidOndine/status/455417980227420160&#34;&gt;was perhaps the most generous&lt;/a&gt; :&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash; really cool talk. Most directly applicable talk I&amp;rsquo;ve attended this
-conference. Really quite inspirational.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And I&amp;rsquo;m looking forward to seeing what &lt;a href=&#34;https://twitter.com/zmagg/status/455783156256624642&#34;&gt;Maggie Zhou&lt;/a&gt; (an engineer at
-Etsy) comes up with:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;hey! i really liked your talk @pycon &amp;amp; am inspired to go data collecting &amp;amp;
-visualizing for our codebase. thx. will share what i find&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So all in all, I&amp;rsquo;d call it a success. If you saw the talk and this sort of thing gets you excited, please send me an email (tavisharmstrong at gmail dot com). My hope is that if a bunch of us get together and do some cool work like this, we can make some real progress on closing the gap between the &lt;a href=&#34;http://www.slideshare.net/gvwilson/two-solitudes&#34;&gt;two solitudes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks to Dana Bauer for encouraging me to give the talk, Greg Wilson for helping me revise it (and inspiring it), Julia Evans and Kamal Marhubi for calming my nerves beforehand, Jonathan Villemaire-Krajden for helping me tighten up the delivery a little, Titus Brown for not &lt;em&gt;actually&lt;/em&gt; heckling me, and Jessica McKellar for giving me thumbs-ups every time I faltered in the spotlight.&lt;/p&gt;
-
-&lt;p&gt;My notes are available &lt;a href=&#34;http://tavisharmstrong.com/solitude&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>NBDiff: A diffing and merging tool for the IPython Notebook</title>
       <link>http://tavisharmstrong.com/2014/04/06/nbdiff-a-diffing-and-merging-tool-for-the-ipython-notebook</link>
       <pubDate>Sun, 06 Apr 2014 15:18:00 +0000</pubDate>
@@ -671,6 +532,194 @@ visualizing for our codebase. thx. will share what i find&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/nbdiff-screenshots/stars.png&#34; alt=&#34;50 github stars and counting&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How long does it take to review a pull request on IPython?</title>
+      <link>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</link>
+      <pubDate>Fri, 06 Dec 2013 00:32:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/12/06/how-long-does-it-take-to-review-a-pull-request-on-ipython</guid>
+      <description>&lt;p&gt;I wrote this a while ago, but I never linked to it from my blog. It&amp;rsquo;s an
+IPython Notebook that looks at how long it takes to review a pull request on
+the &lt;a href=&#34;http://ipython.org&#34;&gt;IPython&lt;/a&gt; project.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nbviewer.ipython.org/github/tarmstrong/code-analysis/blob/master/IPythonReviewTime.ipynb&#34;&gt;How long does it take to review a pull request on IPython?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I had fun writing it, and I&amp;rsquo;d like to see more of this from non-academics.
+Hackers should be able to answer questions they have about a code base without
+too much of a fuss. If I can find the time, I hope to make this a bit easier
+with tools like &lt;a href=&#34;https://github.com/tarmstrong/git2json&#34;&gt;git2json&lt;/a&gt; &amp;mdash; if
+you&amp;rsquo;d like to help, I&amp;rsquo;d be grateful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Git Harness</title>
+      <link>http://tavisharmstrong.com/2013/11/24/the-git-harness</link>
+      <pubDate>Sun, 24 Nov 2013 16:30:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/11/24/the-git-harness</guid>
+      <description>
+
+&lt;p&gt;Git&amp;rsquo;s usefulness far surpasses the frustration caused by its clunky interface, so I don&amp;rsquo;t like to bash it. It was the first version control system I learned, and I learned it before I could program much more than CS101 assignments. Throughout the years, I&amp;rsquo;ve used various languages and various version control systems, but Git is the only one I&amp;rsquo;ve used seriously for any amount of time. So not only do I not like to bash it — I lack the perspective necessary for critique.&lt;/p&gt;
+
+&lt;p&gt;That said, most people can agree on one thing: the interface sucks. Git is a powerful tool, but it&amp;rsquo;s almost impossible to learn how all the commands and their options work. The arguments have inconsistent orders, and the flags mean different things in different contexts. Some of the commands share duties with others. I&amp;rsquo;ve learned to deal with it — it involves reading the man pages every time you want to use &lt;code&gt;git branch&lt;/code&gt; — but it is a struggle.&lt;/p&gt;
+
+&lt;p&gt;Complaining is fun, but it isn&amp;rsquo;t going to get us anywhere —  how do we go about fixing this problem instead? Is the answer a slick GUI like the GitHub desktop client? For some people, sure. But too many GUIs solve the wrong problem: &lt;em&gt;affordance&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Affordance is the idea that you should be able to figure out how to use parts of an interface intuitively. Buttons should look like they can be pressed, editable text should look like it can be edited, etc. Command line tools generally solve this problem with man pages and usage messages — and that&amp;rsquo;s a powerful mechanism.&lt;/p&gt;
+
+&lt;p&gt;However, it doesn&amp;rsquo;t let you predict the outcome of your actions. Git forces you to have a solid mental model of how a Git history works. You have to understand what the various commands do to that mental model, and be able to simulate a proposed action in your head. Most of us developed this mental model through using Git and making a lot of mistakes.&lt;/p&gt;
+
+&lt;p&gt;Practice makes perfect, but there is no virtue in unnecessary struggle. We &lt;em&gt;could&lt;/em&gt; build a Git interface that helps novices develop their mental models faster, with less pain. We could do it without hiding the complexities of Git, too. And I think we should.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This&lt;/em&gt; is the Git interface that I would actually want to use:&lt;/p&gt;
+
+&lt;h2 id=&#34;the-napkin-sketch&#34;&gt;The Napkin Sketch&lt;/h2&gt;
+
+&lt;p&gt;Most people who know how to use Git have a conceptual model of a Git log that looks something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, you&amp;rsquo;ve got the initial state of the repository &amp;ndash; the files that were there when you started. Then you have a set of commits (or &amp;ldquo;changes&amp;rdquo;) that transform those initial files into what they are today in the &lt;code&gt;HEAD&lt;/code&gt; version. The state of the working directory is indicated by the &lt;code&gt;HEAD&lt;/code&gt; ref. In the above diagram, our &lt;code&gt;HEAD&lt;/code&gt; is pointed at &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you use Git, you probably understand this. You might visualize it differently — maybe your arrows go the other way, or maybe you like a vertical graph. In any case, this visualization helps you make decisions about what to do next, depending on your goals.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you have some unstaged changes in your working directory. You start typing &lt;code&gt;git commit -a&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-start-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; and when the interface realizes what command you&amp;rsquo;re typing in, it shows you a preview of what will happen if you hit enter. First, it creates a new commit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit-pre-refmove.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then it updates &lt;code&gt;master&lt;/code&gt; and &lt;code&gt;HEAD&lt;/code&gt; to point to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/adding-a-commit.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But you haven&amp;rsquo;t hit enter yet. This lets you understand the change you&amp;rsquo;re about to make. If it&amp;rsquo;s not what you wanted, you have a chance to avoid running that command and having to correct your mistake — which is especially difficult for novices.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s another situation. You have a &lt;code&gt;dev&lt;/code&gt; branch and you want to take a look at the files in it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/basic-branch-vis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You try &lt;code&gt;git checkout dev&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/checking-out-a-branch-typing.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It fades the current &lt;code&gt;HEAD&lt;/code&gt; and shows you where your new &lt;code&gt;HEAD&lt;/code&gt; will be after hitting enter. If that&amp;rsquo;s what you want, you can run that command and feel confident you&amp;rsquo;re doing the right thing.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say that you don&amp;rsquo;t want to check it out, though. Instead, you want to merge &lt;code&gt;dev&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;. This is what the preview shows you:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/git-diagrams/git-merge.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Interpreting this is a challenge, and probably gives little solace to a bewildered novice. Once you get over the conceptual hurdles behind Git, though, you can start to experiment a bit, without fear of breaking your repository. It means you can try out a command and figure out for yourself whether it&amp;rsquo;s going to do what you want without having to ask your friend the Git wizard if it&amp;rsquo;s going to break stuff.&lt;/p&gt;
+
+&lt;p&gt;This idea reminds me of &lt;a href=&#34;http://www.jumpharness.com/skate%20harness%20system.jpg&#34;&gt;figure skating harnesses&lt;/a&gt;. When you&amp;rsquo;re learning to do a double salchow, your coach will often strap you into one of those. You are then free to throw yourself into the jump without fear of falling on your ass. You get to try things out without suffering the consequences, so that you can develop good habits before it hurts.&lt;/p&gt;
+
+&lt;p&gt;With Git, the idea is the same, but instead of falling on your ass,
+you&amp;rsquo;re avoiding an hour of sifting through your reflogs.&lt;/p&gt;
+
+&lt;p&gt;So: who wants to build the Git harness?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Performance of Open Source Applications is out!</title>
+      <link>http://tavisharmstrong.com/2013/10/07/the-performance-of-open-source-applications-is-out</link>
+      <pubDate>Mon, 07 Oct 2013 08:00:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/10/07/the-performance-of-open-source-applications-is-out</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m happy to announce that &lt;em&gt;The Performance of Open Source Applications&lt;/em&gt; is
+finally out. You can head over to &lt;a href=&#34;http://aosabook.org&#34;&gt;the AOSA website&lt;/a&gt; to
+read it for free online and find links to places where you can purchase paper
+or, soon, electronic copies.&lt;/p&gt;
+
+&lt;p&gt;If you do purchase it, the royalties go to Amnesty International.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/photos/posa-front.jpg&#34; alt=&#34;The Performance of Open Source Applications Cover&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to know more about what the book is about, the
+&lt;a href=&#34;http://aosabook.org/en/posa/introduction.html&#34;&gt;introduction&lt;/a&gt; is a good place
+to start. The authors worked hard to share what they know and I learned a lot
+from them; I hope you do too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What I cannot create, I cannot understand</title>
+      <link>http://tavisharmstrong.com/2013/07/06/what-i-cannot-create-i-cannot-understand</link>
+      <pubDate>Sat, 06 Jul 2013 16:54:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2013/07/06/what-i-cannot-create-i-cannot-understand</guid>
+      <description>&lt;p&gt;My friend Corey, author of the excellent &lt;a href=&#34;http://bayesianbiologist.com&#34;&gt;Bayesian Biologist&lt;/a&gt; blog, recently &lt;a href=&#34;https://twitter.com/CjBayesian/status/350630554804305922&#34;&gt;said&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;What I cannot create, I cannot understand&amp;rdquo; -Richard Feynman. This is why I always build a simulation of any problem I&amp;rsquo;m working on.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bayesianbiologist.com/2012/08/10/simulation-the-modellers-laboratory/&#34;&gt;This post&lt;/a&gt; gives a good, elaborate example involving &amp;ldquo;trip taking behaviour of recreational boaters in Ontario.&amp;rdquo; I&amp;rsquo;ve recently been dabbling in statistical analysis but I&amp;rsquo;m not as much of a smartypants as Corey, so I&amp;rsquo;ve been using the same technique to &lt;em&gt;learn&lt;/em&gt; basic statistical analysis.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example. When modeling time series (e.g., fish population and water temperature over time), it&amp;rsquo;s useful to detect if one variable has a dependence on the other at a certain log. Does a spike in water temperature at a given time cause an increase in fish a week later? The &lt;a href=&#34;https://en.wikipedia.org/wiki/Cross-correlation&#34;&gt;cross-correlation&lt;/a&gt; of water temperature and fish population would let us detect this relationship.&lt;/p&gt;
+
+&lt;p&gt;In R, there&amp;rsquo;s a handy &lt;code&gt;ccf()&lt;/code&gt; function that will do this for me. But I&amp;rsquo;m not totally sure how it works, or what it looks like when it works. I&amp;rsquo;ll run it on some fake data to see what happens.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;require(graphics)
+# This is contrived, but let&#39;s pretend that water temperature is
+# around 300 kelvin, +/- 5 kelvins. The error is normally distributed.
+watertemp &amp;lt;- 300 + rnorm(500, 0, 5)
+# This is even more contrived. Let&#39;s pretend that the fish population is
+# around 270 in our pond, and that you can predict the population ten
+# periods from now by multiplying the current water temperature by 0.9.
+fishpop &amp;lt;- c(rep(270, 10), watertemp[11:500]*0.9)
+x &amp;lt;- 1:500
+df &amp;lt;- data.frame(fishpop, watertemp)
+df.ts &amp;lt;- ts(df)
+plot(df.ts, plot.type=&#39;single&#39;, col = 1:ncol(df.ts))
+legend(&amp;quot;bottomleft&amp;quot;, colnames(df.ts), col=1:ncol(df), lty=1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_00.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is silly. But this lets me make a hypothesis about what the result of the &lt;code&gt;ccf()&lt;/code&gt; function will be. I &lt;em&gt;think&lt;/em&gt; it&amp;rsquo;ll show a correlation around 1 for a lag of 10. Let&amp;rsquo;s try it out.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;ccf(fishpop, watertemp)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That wasn&amp;rsquo;t what I expected. This plot suggests that the two series are correlated &lt;em&gt;without&lt;/em&gt; a lag. After a moment, I realize that there&amp;rsquo;s a bug in my code. The line&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fishpop &amp;lt;- c(rep(270, 10), watertemp[11:500]*0.9)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;does not produce a shifted time series; it just creates one identical to &lt;code&gt;watertemp&lt;/code&gt; but with the first 10 values changed to 270. If I change this line to properly shift the series, I should see a correlation at &lt;code&gt;lag = -10&lt;/code&gt;. Right?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;fishpop &amp;lt;- c(rep(270, 10), watertemp[1:489]*0.9)
+ccf(fishpop, watertemp)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tavisharmstrong.com/what-i-cannot-create_files/what-i-cannot-create_fig_02.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was close. The correlation is at &lt;code&gt;lag = 10&lt;/code&gt;. The correct way to read the plot is &lt;em&gt;&lt;code&gt;watertemp&lt;/code&gt; predicts &lt;code&gt;fishpop&lt;/code&gt; ten periods later&lt;/em&gt;. Or, more simply, &lt;code&gt;fishpop&lt;/code&gt; leads watertemp by 10 periods. Either way, I now have a better mental model of how the &lt;code&gt;ccf()&lt;/code&gt; function works. If I applied it to real data, I&amp;rsquo;d be better equipped to interpret the results.&lt;/p&gt;
+
+&lt;p&gt;Most programmers do this instinctually in other domains. I certainly do. But with data analysis, my instinct is to run analyses on real data first &amp;mdash; sometimes without really understanding what I&amp;rsquo;m doing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teensy/Arduino timer simulator</title>
+      <link>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</link>
+      <pubDate>Wed, 03 Oct 2012 17:52:00 +0000</pubDate>
+      
+      <guid>http://tavisharmstrong.com/2012/10/03/teensy/arduino-timer-simulator</guid>
+      <description>&lt;p&gt;I built a simulator for the 16-bit timer in the Teensy++/Arduino
+microcontroller in the hopes that people (e.g. fellow students of SOEN
+422) might find it useful. Keep in mind that it&amp;rsquo;s a work in progress and
+has some bugs. &lt;a href=&#34;http://tavisharmstrong.com/timer1/&#34;&gt;A Simple and Interactive Explanation of the Teensy&amp;rsquo;s
+16-bit timer (Timer1)&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

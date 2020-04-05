@@ -67,51 +67,6 @@ code the same thing as &lt;em&gt;good&lt;/em&gt; code?&lt;/p&gt;
     </item>
     
     <item>
-      <title>Blog your mistakes, please</title>
-      <link>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</link>
-      <pubDate>Wed, 13 Nov 2013 00:23:00 +0000</pubDate>
-      
-      <guid>http://tavisharmstrong.com/2013/11/13/blog-your-mistakes-please</guid>
-      <description>&lt;p&gt;Earlier this week I read a neat post by Sarah Mei called &lt;a href=&#34;http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/&#34;&gt;Why You Should Never
-Use MongoDB&lt;/a&gt;. Usually I would skip a blog post with that title, but
-for some reason I stuck with it, and I&amp;rsquo;m glad I did.&lt;/p&gt;
-
-&lt;p&gt;I usually don&amp;rsquo;t like titles like &amp;ldquo;why you should never use MongoDB&amp;rdquo; because the
-author usually means &amp;ldquo;why you shouldn&amp;rsquo;t use MongoDB if you are me and you are
-using it in the specific way I am using it and you are in the specific business
-that I work for.&amp;rdquo; The author writes the snappy title because it looks good on
-the Hacker News front page.&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t that kind of blog post, though, and she makes a compelling argument
-that almost earns the title.&lt;/p&gt;
-
-&lt;p&gt;The title &lt;em&gt;should&lt;/em&gt; be &amp;ldquo;Why &lt;em&gt;You&lt;/em&gt; Should Never Use MongoDB&amp;rdquo;. I&amp;rsquo;m being pedantic,
-but I think the emphasis makes the point clearer. The post is making an
-assumption about you, and that assumption is this: you are not as smart as she
-is and if you are not as smart as she is, how can you hope to avoid the problem
-she is describing? I am not as smart as she is, so I&amp;rsquo;m going to learn from her
-mistake.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m an inexperienced software developer; a n00b. I haven&amp;rsquo;t watched a large
-software system go from infancy to smouldering ruins, nor have I watched design
-decisions explode in my face nine months after making them. And how could I
-have? I&amp;rsquo;m an undergraduate student and there aren&amp;rsquo;t enough months of summer
-jobs to string together to create those experiences.&lt;/p&gt;
-
-&lt;p&gt;Since I don&amp;rsquo;t have many of these experiences of my own, I&amp;rsquo;m forced to use the
-experiences of others. Let&amp;rsquo;s call these &lt;a href=&#34;http://aosabook.org/en/index.html&#34;&gt;&lt;em&gt;prosthetic experiences&lt;/em&gt;&lt;/a&gt;.
-Brave, humble, smart folks like Sarah Mei, who can talk about the projects
-they&amp;rsquo;ve seen crash and burn, are a boon; prosthetic experiences can help me
-think about design tradeoffs in ways I wouldn&amp;rsquo;t otherwise be able to without
-dealing with those problems myself.  They help me develop paranoia in the right
-places. Hopefully, it&amp;rsquo;ll help me avoid boring mistakes and make more
-interesting messes instead.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not fun to write about your mistakes. But I like it when you do.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>The Architecture of Open Source Applications, Volume 2</title>
       <link>http://tavisharmstrong.com/2012/05/08/the-architecture-of-open-source-applications-volume-2</link>
       <pubDate>Tue, 08 May 2012 22:11:00 +0000</pubDate>
